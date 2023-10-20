@@ -1,0 +1,36 @@
+.people,
+.total1 {
+  position: absolute;
+  top: 19px;
+  left: 0;
+  line-height: 140%;
+}
+.total1 {
+  top: 0;
+  font-size: var(--font-size-sm);
+  line-height: 100%;
+  font-weight: 500;
+  font-family: var(--font-lato);
+}
+.invited {
+  position: absolute;
+  top: 20px;
+  left: 24px;
+  width: 97px;
+  height: 44px;
+}
+.invited-wrapper {
+  position: absolute;
+  top: calc(50% - 79px);
+  left: 45px;
+  border-radius: var(--br-xl);
+  background: linear-gradient(126.97deg, #060c29, rgba(4, 12, 48, 0.5));
+  backdrop-filter: blur(120px);
+  width: 217px;
+  height: 93px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-lg);
+  color: var(--secondary-primary-white);
+  font-family: var(--font-open-sans);
+}

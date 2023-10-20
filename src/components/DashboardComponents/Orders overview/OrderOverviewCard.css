@@ -1,0 +1,263 @@
+.background-item {
+  border-radius: var(--br-xl);
+  background: linear-gradient(
+    126.97deg,
+    rgba(41, 63, 177, 0.74),
+    rgba(10, 14, 35, 0.71)
+  );
+  backdrop-filter: blur(120px);
+}
+.background-item,
+.background1,
+.sep-720-am {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 519px;
+  height: 521px;
+}
+.sep-720-am {
+  top: 24.09px;
+  line-height: 150%;
+  font-weight: 500;
+  display: inline-block;
+  width: 80px;
+  height: 18.07px;
+}
+.icon,
+.kgs-breakfast,
+.title {
+  position: absolute;
+  top: 0;
+  width: 114px;
+}
+.kgs-breakfast {
+  left: 0;
+  font-size: var(--font-size-sm);
+  line-height: 150%;
+  font-weight: 500;
+  color: var(--secondary-primary-white);
+  display: inline-block;
+  height: 21.08px;
+}
+.icon,
+.title {
+  left: 35px;
+  height: 42.16px;
+}
+.icon {
+  height: 25.4%;
+  width: 10.74%;
+  top: 5.56%;
+  right: 89.26%;
+  bottom: 69.05%;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.line-icon {
+  position: absolute;
+  top: 26.1px;
+  left: 7px;
+  width: 0;
+  height: 37.14px;
+}
+.items,
+.list,
+.list1,
+.sep-620-pm {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 149px;
+  height: 63.24px;
+}
+.list,
+.list1,
+.sep-620-pm {
+  top: 427.64px;
+  left: 23px;
+}
+.list1,
+.sep-620-pm {
+  top: 111.93px;
+  left: 21px;
+}
+.sep-620-pm {
+  top: 24.09px;
+  left: 0;
+  line-height: 150%;
+  font-weight: 500;
+  display: inline-block;
+  width: 79px;
+  height: 18.07px;
+}
+.icon2,
+.kgs-dinner,
+.title2 {
+  position: absolute;
+  top: 0;
+  width: 98px;
+}
+.kgs-dinner {
+  left: 0;
+  font-size: var(--font-size-sm);
+  line-height: 150%;
+  font-weight: 500;
+  color: var(--secondary-primary-white);
+  display: inline-block;
+  height: 21.08px;
+}
+.icon2,
+.title2 {
+  left: 35px;
+  height: 42.16px;
+}
+.icon2 {
+  height: 25.4%;
+  width: 12.03%;
+  top: 5.56%;
+  right: 87.97%;
+  bottom: 69.05%;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.design-changes2,
+.list2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 133px;
+  height: 63.24px;
+}
+.list2 {
+  top: 194.75px;
+  left: 23px;
+}
+.icon3,
+.kgs-lunch,
+.title3 {
+  position: absolute;
+  top: 0;
+  width: 93px;
+}
+.kgs-lunch {
+  left: 0;
+  font-size: var(--font-size-sm);
+  line-height: 150%;
+  font-weight: 500;
+  color: var(--secondary-primary-white);
+  display: inline-block;
+  height: 21.08px;
+}
+.icon3,
+.title3 {
+  left: 35px;
+  height: 42.16px;
+}
+.icon3 {
+  height: 25.4%;
+  width: 12.5%;
+  top: 5.56%;
+  right: 87.5%;
+  bottom: 69.05%;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.items2,
+.list3,
+.sep-1020-am {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 128px;
+  height: 63.24px;
+}
+.list3,
+.sep-1020-am {
+  top: 275.06px;
+  left: 23px;
+}
+.sep-1020-am {
+  top: 24.09px;
+  left: 0;
+  line-height: 150%;
+  font-weight: 500;
+  display: inline-block;
+  width: 87px;
+  height: 18.07px;
+}
+.icon4,
+.kgs-snack,
+.title4 {
+  position: absolute;
+  top: 0;
+  width: 92px;
+}
+.kgs-snack {
+  left: 0;
+  font-size: var(--font-size-sm);
+  line-height: 150%;
+  font-weight: 500;
+  color: var(--secondary-primary-white);
+  display: inline-block;
+  height: 21.08px;
+}
+.icon4,
+.title4 {
+  left: 35px;
+  height: 42.16px;
+}
+.icon4 {
+  height: 25.4%;
+  width: 12.6%;
+  top: 5.56%;
+  right: 87.4%;
+  bottom: 69.05%;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.items3,
+.list4,
+.orders-overview {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 127px;
+  height: 63.24px;
+}
+.list4,
+.orders-overview {
+  top: 350.35px;
+  left: 23px;
+}
+.orders-overview {
+  top: 28.11px;
+  left: 21px;
+  font-size: var(--font-size-lg);
+  line-height: 140%;
+  display: inline-block;
+  font-family: var(--font-open-sans);
+  color: var(--secondary-primary-white);
+  width: 149px;
+  height: 25.1px;
+}
+.second-card {
+  position: absolute;
+  top: 0;
+  left: 1081px;
+  box-shadow: 0 3.500000238418579px 5.5px rgba(0, 0, 0, 0.02);
+  width: 519px;
+  height: 521px;
+  text-align: left;
+  font-size: var(--font-size-xs);
+  color: var(--gray-gray-400);
+  font-family: var(--font-lato);
+}

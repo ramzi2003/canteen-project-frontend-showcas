@@ -1,0 +1,170 @@
+.text1 {
+  position: absolute;
+  top: calc(50% - 7px);
+  left: calc(50% - 24.13px);
+  line-height: 100%;
+  font-weight: 500;
+}
+.ioniconaarrowforward1 {
+  position: absolute;
+  top: 1px;
+  left: 35.25px;
+  width: 13px;
+  height: 13px;
+  overflow: hidden;
+}
+.more {
+  position: absolute;
+  top: calc(50% + 55.5px);
+  left: calc(50% + 461.87px);
+  width: 48.25px;
+  height: 14px;
+  text-align: center;
+}
+.line-icon5 {
+  position: absolute;
+  top: 50.19px;
+  left: 0;
+  width: 1013px;
+  height: 1px;
+}
+.creamy-mushroom-risotto,
+.vegetarian-contains-dairy {
+  position: absolute;
+  top: 0;
+  left: 0;
+  line-height: 140%;
+  display: inline-block;
+  width: 151px;
+  height: 51.2px;
+}
+.vegetarian-contains-dairy {
+  top: 6.02px;
+  left: 180px;
+  width: 161px;
+  height: 34.13px;
+}
+.budget {
+  position: absolute;
+  top: 0;
+  left: 662px;
+  width: 341px;
+  height: 51.2px;
+}
+.beef-stir-fry {
+  top: 0;
+  line-height: 140%;
+  font-weight: 500;
+  display: inline-block;
+  width: 226px;
+  height: 20.08px;
+}
+.beef-stir-fry,
+.content,
+.title5 {
+  position: absolute;
+  left: 0;
+}
+.title5 {
+  top: 10.04px;
+  width: 226px;
+  height: 20.08px;
+  font-size: var(--font-size-sm);
+  font-family: var(--font-lato);
+}
+.content {
+  top: 0;
+  width: 1003px;
+  height: 51.2px;
+}
+.soft-ui-xd {
+  top: 0;
+  width: 1012.5px;
+  height: 51.2px;
+}
+.dinner-child,
+.items4,
+.soft-ui-xd {
+  position: absolute;
+  left: 0;
+}
+.items4 {
+  top: 67.26px;
+  width: 1012.5px;
+  height: 51.2px;
+  font-family: var(--font-open-sans);
+}
+.dinner-child {
+  top: 55.21px;
+  width: 1013px;
+  height: 1px;
+}
+.dietary-info {
+  position: absolute;
+  left: 841.5px;
+  width: 67px;
+  height: 15.06px;
+}
+.description,
+.dietary-info,
+.price {
+  top: 0;
+  line-height: 150%;
+  font-weight: 500;
+  display: inline-block;
+}
+.description {
+  position: absolute;
+  left: 664px;
+  width: 66px;
+  height: 15.06px;
+}
+.price {
+  left: 450px;
+  width: 28px;
+}
+.dinner1,
+.food,
+.price,
+.titles {
+  position: absolute;
+  height: 15.06px;
+}
+.food {
+  top: 0;
+  left: 0;
+  line-height: 150%;
+  font-weight: 500;
+  display: inline-block;
+  width: 30px;
+}
+.dinner1,
+.titles {
+  top: 28.11px;
+  left: 0.5px;
+  width: 908.5px;
+  font-size: var(--font-size-3xs);
+  color: var(--gray-gray-400);
+}
+.dinner1 {
+  top: 0;
+  left: 0;
+  font-size: var(--font-size-sm);
+  line-height: 140%;
+  font-weight: 800;
+  font-family: var(--font-open-sans);
+  display: inline-block;
+  width: 49px;
+  height: 20.08px;
+}
+.dinner {
+  position: absolute;
+  top: calc(50% + 106.5px);
+  left: calc(50% - 506.5px);
+  width: 1020.25px;
+  height: 139px;
+  text-align: left;
+  font-size: var(--font-size-xs);
+  color: var(--secondary-primary-white);
+  font-family: var(--font-lato);
+}

@@ -1,0 +1,174 @@
+.total-expenses-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: var(--br-xl);
+  background: linear-gradient(
+    126.97deg,
+    rgba(41, 63, 177, 0.74),
+    rgba(26, 31, 55, 0.5)
+  );
+  backdrop-filter: blur(120px);
+  width: 382px;
+  height: 80px;
+}
+.total-expenses1 {
+  position: absolute;
+  top: 0;
+  left: 0.5px;
+  line-height: 100%;
+  font-weight: 500;
+  font-family: var(--font-lato);
+  display: inline-block;
+  width: 85px;
+  height: 18px;
+}
+.kgs {
+  top: 16px;
+  left: 0;
+  font-size: var(--font-size-lg);
+  line-height: 140%;
+}
+.b6,
+.kgs,
+.text8 {
+  position: absolute;
+}
+.b6 {
+  top: 21px;
+  left: 115.5px;
+  font-size: var(--font-size-sm);
+  line-height: 140%;
+  color: var(--primary-green-500-success-color);
+}
+.text8 {
+  top: 20.5px;
+  left: 21.5px;
+  width: 144.5px;
+  height: 41px;
+}
+.icon10,
+.total-expenses {
+  position: absolute;
+  top: 15.5px;
+  left: 314px;
+  width: 56px;
+  height: 56px;
+}
+.total-expenses {
+  top: 0;
+  left: 1218px;
+  width: 382px;
+  height: 80px;
+}
+.last-login,
+.sep-2023 {
+  position: absolute;
+  left: 0;
+}
+.last-login {
+  top: 0;
+  line-height: 100%;
+  font-weight: 500;
+  display: inline-block;
+  width: 68.5px;
+  height: 18px;
+}
+.sep-2023 {
+  top: 16px;
+  font-size: var(--font-size-lg);
+  line-height: 140%;
+  font-family: var(--font-open-sans);
+}
+.text9 {
+  position: absolute;
+  top: 20.5px;
+  left: 21.5px;
+  width: 109px;
+  height: 41px;
+}
+.last-logins,
+.last-weeks-expenses1 {
+  position: absolute;
+  top: 0;
+  font-family: var(--font-lato);
+}
+.last-logins {
+  left: 812px;
+  width: 382px;
+  height: 80px;
+}
+.last-weeks-expenses1 {
+  left: 0;
+  line-height: 100%;
+  font-weight: 500;
+}
+.b7,
+.text10 {
+  position: absolute;
+}
+.b7 {
+  top: 20px;
+  left: 86.5px;
+  font-size: var(--font-size-sm);
+  line-height: 140%;
+  color: var(--primary-green-500-success-color);
+}
+.text10 {
+  top: 20.5px;
+  left: 21.5px;
+  width: 113px;
+  height: 41px;
+}
+.last-weeks-expenses {
+  position: absolute;
+  top: 0;
+  left: 406px;
+  width: 382px;
+  height: 80px;
+}
+.kgs2 {
+  top: 15px;
+  left: 0;
+  font-size: var(--font-size-lg);
+  line-height: 140%;
+  display: inline-block;
+  width: 77px;
+}
+.b8,
+.kgs2,
+.text11 {
+  position: absolute;
+}
+.b8 {
+  top: 19px;
+  left: 85.5px;
+  font-size: var(--font-size-sm);
+  line-height: 140%;
+  color: var(--color-mediumseagreen-100);
+}
+.text11 {
+  top: 21.5px;
+  left: 21.5px;
+  width: 122.5px;
+  height: 40px;
+}
+.analytics-cards1,
+.current-balance {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 382px;
+  height: 80px;
+}
+.analytics-cards1 {
+  top: 103.5px;
+  left: 298px;
+  width: 1600px;
+  text-align: left;
+  font-size: var(--font-size-xs);
+  color: var(--secondary-primary-white);
+  font-family: var(--font-open-sans);
+}
+
+
