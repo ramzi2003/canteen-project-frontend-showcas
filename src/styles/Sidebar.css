@@ -1,0 +1,102 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .sidebar {
+    background: linear-gradient(#ff0101, #ff0101);
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .sidebar {
+    background: linear-gradient(#ffe600, #ffe600);
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .sidebar {
+    background: linear-gradient(#51ff00, #51ff00);
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .sidebar {
+    background: linear-gradient(#2200ff, #2200ff);
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .sidebar {
+    background: linear-gradient(#0e1437, #111949);
+    width: 13.8%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 14px;
+    border-radius: 20px;
+    user-select: none;
+    position: fixed;
+  }
+
+  .sidebar-logo {
+    width: 66%;
+  }
+
+  .border {
+    background: linear-gradient(
+      to left,
+      rgba(255, 255, 255, 0.1),
+      rgb(255, 255, 255) 40%,
+      rgba(255, 255, 255, 0.6),
+      transparent
+    );
+
+    margin-top: 5%;
+    width: 80%;
+    height: 1px;
+    margin-bottom: 10%;
+  }
+
+  .sidebar-btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    padding-left: 5%;
+    width: 77%;
+    color: #ffffff;
+    height: 6vh;
+    border-radius: 10px;
+    font-size: 1.77vh;
+    margin-bottom: 2%;
+  }
+
+  .sidebar-btn:hover {
+    cursor: pointer;
+    background-color: #1a1f37;
+  }
+
+  .sidebar-btn:active {
+    background-color: #111425;
+  }
+
+  .sidebar-btn ion-icon {
+    color: #05cd99;
+  }
+
+  .sidebar-icon-div {
+    background-color: #1a1f37;
+    border-radius: 10px;
+    padding: 4% 5%;
+    margin-right: 7%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.09);
+  }
+
+  .sidebar-category-name {
+    color: #ffffff;
+    font-size: 1.77vh;
+    width: 77%;
+  }
+}
