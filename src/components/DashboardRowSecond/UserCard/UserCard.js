@@ -7,7 +7,7 @@ function UserCard() {
       style={{
         background: `url(${require("../../../assets/images/UserCardBackground.png")})`,
         backgroundSize: 'cover',
-        borderRadius: "15px",
+        borderRadius: "2vh",
         fontSize: "1.77vh",
         color: "#ffffff",
         paddingLeft: "3vh",

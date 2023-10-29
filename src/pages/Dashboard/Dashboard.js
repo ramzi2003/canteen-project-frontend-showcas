@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import "./Dashboard.css";
 import Balance from "../../components/DashboardRowFirst/Balance/Balance";
@@ -14,25 +14,26 @@ import TodaysMenu from "../../components/DashboardRowFourth/TodaysMenu/TodaysMen
 import OrdersOverview from "../../components/DashboardRowFourth/OrdersOverview/OrdersOverview";
 
 function Dashboard() {
+ 
   return (
     <div className="dashboard">
-      <table className="dashboard-table">
+      <table className="dashboard-table" id="firstTable">
         <tr className="first-row">
-          <td className="dashboard-first-row">
+          <td>
             <Balance />
           </td>
-          <td className="dashboard-second-row">
+          <td>
             <LastWeekExpenses />
           </td>
-          <td className="dashboard-third-row">
+          <td>
             <LastLogin />
           </td>
-          <td className="dashboard-third-row">
+          <td>
             <TotalExpenses />
           </td>
         </tr>
       </table>
-      <table className="dashboard-table">
+      <table className="dashboard-table" id="secondTable">
         <tr>
           <td
             style={{
@@ -54,18 +55,18 @@ function Dashboard() {
         </tr>
       </table>
       <table className="dashboard-table">
-        <tr>
-          <td style={{ width: "61%" }}>
+        <tr className="third-row">
+          <td className="communication">
             <CommunicationCenter />
           </td>
-          <td>
+          <td id="missedMeals">
             <MissedMeals />
           </td>
         </tr>
       </table>
       <table className="dashboard-table">
-        <tr>
-          <td style={{ width: "68%" }}>
+        <tr className="fourth-row">
+          <td id="todays-menu">
             <TodaysMenu />
           </td>
           <td>

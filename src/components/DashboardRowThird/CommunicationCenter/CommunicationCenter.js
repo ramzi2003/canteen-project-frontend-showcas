@@ -6,11 +6,11 @@ function CommunicationCenter() {
       style={{
         background:
           "linear-gradient(145deg ,rgba(41, 63, 177, 0.74), rgba(26, 31, 55, 0.5))",
-        borderRadius: "15px",
+        borderRadius: "2vh",
         fontSize: "1.77vh",
         color: "#ffffff",
         paddingLeft: "3vh",
-        height: "50vh",
+        paddingBottom: "3vh",
         display: "flex",
         flexDirection: "column",
         paddingTop: "3vh",
@@ -36,10 +36,11 @@ function CommunicationCenter() {
         style={{
           background:
             "linear-gradient(145deg ,rgba(11, 6, 40, 1), rgba(4, 12, 48, 0.5))",
-          width: "90%",
-          borderRadius: "13px",
+          width: "70%",
+          borderRadius: "1.5vh",
           marginTop: "2vh",
-          padding: "2vh 3vh",
+          padding: "2vh",
+          paddingLeft: "3vh",
           fontSize: "1.77vh",
         }}
       >
@@ -54,10 +55,11 @@ function CommunicationCenter() {
         style={{
           background:
             "linear-gradient(145deg ,rgba(11, 6, 40, 1), rgba(4, 12, 48, 0.5))",
-          width: "90%",
-          borderRadius: "13px",
+          width: "70%",
+          borderRadius: "1.5vh",
           marginTop: "2vh",
-          padding: "2vh 3vh",
+          padding: "2vh",
+          paddingLeft: "3vh",
           fontSize: "1.77vh",
         }}
       >

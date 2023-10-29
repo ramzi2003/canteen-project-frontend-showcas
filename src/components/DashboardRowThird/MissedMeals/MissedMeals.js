@@ -7,7 +7,7 @@ function MissedMeals() {
       style={{
         background:
           "linear-gradient(145deg ,rgba(41, 63, 177, 0.74), rgba(26, 31, 55, 0.5))",
-        borderRadius: "15px",
+        borderRadius: "2vh",
         fontSize: "1.77vh",
         color: "#ffffff",
         paddingLeft: "3vh",
@@ -34,7 +34,13 @@ function MissedMeals() {
           than last week
         </p>
       </div>
-      <div style={{ display: "flex", flexDirection: "row", justifyContent: "space-around" }}>
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "row",
+          justifyContent: "space-around",
+        }}
+      >
         <div
           style={{
             display: "flex",
@@ -52,7 +58,7 @@ function MissedMeals() {
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center",
-                borderRadius: "6px",
+                borderRadius: "1vh",
                 marginRight: "1vh",
               }}
             >
@@ -81,7 +87,7 @@ function MissedMeals() {
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center",
-                borderRadius: "6px",
+                borderRadius: "1vh",
                 marginRight: "1vh",
               }}
             >
@@ -110,7 +116,7 @@ function MissedMeals() {
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center",
-                borderRadius: "6px",
+                borderRadius: "1vh",
                 marginRight: "1vh",
               }}
             >
@@ -139,7 +145,7 @@ function MissedMeals() {
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center",
-                borderRadius: "6px",
+                borderRadius: "1vh",
                 marginRight: "1vh",
               }}
             >

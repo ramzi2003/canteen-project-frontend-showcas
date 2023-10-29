@@ -6,11 +6,11 @@ function OrdersOverview() {
       style={{
         background:
           "linear-gradient(145deg ,rgba(41, 63, 177, 0.74), rgba(26, 31, 55, 0.5))",
-        borderRadius: "15px",
+        borderRadius: "2vh",
         fontSize: "1.77vh",
         color: "#ffffff",
         paddingLeft: "3vh",
-        height: "60vh",
+        paddingBottom: "3vh",
         display: "flex",
         flexDirection: "column",
         paddingTop: "3vh",

@@ -10,7 +10,7 @@ function WasteReduction() {
       style={{
         background: `url(${require("../../../assets/images/WasteReductionGraph.png")})`,
         backgroundSize: "100% 100%",
-        borderRadius: "15px",
+        borderRadius: "2vh",
         fontSize: "1.77vh",
         color: "#ffffff",
         paddingLeft: "3vh",
@@ -50,7 +50,7 @@ function WasteReduction() {
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
-            borderRadius: "10px",
+            borderRadius: "1.5vh",
           }}
           onMouseEnter={() => {
             setIsButtonHovered(true);

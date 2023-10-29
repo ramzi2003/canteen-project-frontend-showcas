@@ -10,22 +10,6 @@ function Header() {
       </div>
 
       <div className="toolbox">
-        <div className="toolbox-search-bar">
-          <div className="toolbox-search-bar-icon">
-            <ion-icon name="search"></ion-icon>
-          </div>
-          <input
-            placeholder="Type here ..."
-            style={{
-              fontSize: "1.77vh",
-              background: "transparent",
-              border: "none",
-              outline: "none",
-              color: "white",
-              marginLeft: "1%",
-            }}
-          ></input>
-        </div>
         <div
           className="toolbox-login"
           style={{ display: "flex", alignItems: "center" }}

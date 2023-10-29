@@ -6,7 +6,7 @@ function Balance() {
       style={{
         background:
           "linear-gradient(145deg ,rgba(41, 63, 177, 0.74), rgba(26, 31, 55, 0.5))",
-        borderRadius: "15px",
+        borderRadius: "2vh",
         fontSize: "1.77vh",
         color: "#ffffff",
         paddingLeft: "3vh",
@@ -18,6 +18,8 @@ function Balance() {
         paddingRight: "3vh",
         width: "84%",
       }}
+
+      className="first-row-balance"
     >
       <div style={{ lineHeight: "0.6vh" }}>
         <p style={{ fontWeight: "300" }}>Current balance</p> <br />
@@ -27,7 +29,7 @@ function Balance() {
       <div
         style={{
           backgroundColor: "#05cd99",
-          borderRadius: "10px",
+          borderRadius: "1.5vh",
           height: "5vh",
           display: "flex",
           justifyContent: "center",

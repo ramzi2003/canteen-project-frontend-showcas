@@ -1,4 +1,100 @@
-@media only screen and (min-width: 1200px) {
+@media only screen and (max-width: 768px) {
+  .header {
+    width: 84.5%;
+    float: right;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .header-pages {
+    display: none;
+  }
+
+  .toolbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    font-size: 130%;
+    width: 100%;
+    align-items: center;
+  }
+
+  .toolbox-login ion-icon {
+    display: none;
+  }
+
+  .toolbox-login,
+  .toolbox-setting,
+  .toolbox-notification {
+    color: #ffffff;
+    margin-left: 7%;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .toolbox-login:hover,
+  .toolbox-setting:hover,
+  .toolbox-notification:hover {
+    color: #05cd99;
+  }
+
+  .toolbox-login:active,
+  .toolbox-setting:active,
+  .toolbox-notification:active {
+    color: #05946e;
+  }
+}
+
+
+@media only screen and (min-width: 768px) {
+  .header {
+    width: 84.5%;
+    float: right;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .header-pages {
+    display: none;
+  }
+
+  .toolbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    font-size: 130%;
+    width: 100%;
+    align-items: center;
+  }
+
+  .toolbox-login ion-icon {
+    display: none;
+  }
+
+  .toolbox-login,
+  .toolbox-setting,
+  .toolbox-notification {
+    color: #ffffff;
+    margin-left: 2%;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .toolbox-login:hover,
+  .toolbox-setting:hover,
+  .toolbox-notification:hover {
+    color: #05cd99;
+  }
+
+  .toolbox-login:active,
+  .toolbox-setting:active,
+  .toolbox-notification:active {
+    color: #05946e;
+  }
+}
+
+/* Medium devices, large devices, and extra large devices (laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 992px) {
   .header {
     width: 84.5%;
     float: right;
@@ -21,41 +117,11 @@
     align-items: center;
   }
 
-  .toolbox-search-bar {
-    display: flex;
-    flex: row;
-    height: 5vh;
-    width: 20%;
-    background-color: rgba(41, 63, 177, 0.74);
-    border-radius: 15px;
-    align-items: center;
-  }
-
-  .toolbox-search-bar-icon {
-    color: #ffffff;
-    background-color: #05cd99;
-    display: flex;
-    align-items: center;
-    padding: 0 2%;
-    border-radius: 5px;
-    height: 60%;
-    margin-left: 5%;
-    cursor: pointer;
-  }
-
-  .toolbox-search-bar-icon:hover {
-    background-color: #05946e;
-  }
-
-  .toolbox-search-bar-icon:active {
-    background-color: #067456;
-  }
-
   .toolbox-login,
   .toolbox-setting,
   .toolbox-notification {
     color: #ffffff;
-    margin-left: 1%;
+    margin-left: 2%;
     cursor: pointer;
     user-select: none;
   }

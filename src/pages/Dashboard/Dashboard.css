@@ -1,14 +1,58 @@
-@media only screen and (min-width: 1200px) {
+@media only screen and (max-width: 600px) {
+  #secondTable {
+    display: none;
+  }
+
+  .dashboard {
+    float:right;
+    margin-top: 4vw;
+    width: 84.5%;
+  }
+
+  .first-row {
+    display: grid;
+    grid-row-gap: 4vw;
+    margin-bottom: 20vw;
+
+  }
+
+  .first-row td {
+    width: 75vw;
+  }
+
+  .third-row {
+    display: grid;
+  }
+
+  .third-row td {
+    width: 75vw;
+    margin-bottom: 20vw;
+  }
+
+  #missedMeals {
+    display: none;
+  }
+
+  .fourth-row {
+    display: grid;
+  }
+
+  .fourth-row td {
+    width: 75vw;
+    margin-bottom: 20vw;
+  }
+
+  #todays-menu {
+    width: 69vw;
+  }
+}
+
+/* Medium devices, large devices, and extra large devices (laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 992px) {
   .dashboard {
     width: 84.5%;
     float: right;
-   
   }
-
-  /* .dashboard-balance,
-    .dashboard-expenses {
-        
-    } */
 
   .dashboard table {
     width: 100%;
@@ -17,6 +61,14 @@
 
   .first-row td {
     width: 20%;
+  }
+
+  .communication {
+    width: 61%;
+  }
+
+  #todays-menu {
+    width: 70%;
   }
   
 }
