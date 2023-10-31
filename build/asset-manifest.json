@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/Canteen-project-frontend/static/css/main.791b1871.css",
+    "main.js": "/Canteen-project-frontend/static/js/main.b6afcccb.js",
+    "static/js/787.71365524.chunk.js": "/Canteen-project-frontend/static/js/787.71365524.chunk.js",
+    "static/media/UserCardBackground.png": "/Canteen-project-frontend/static/media/UserCardBackground.e49fdddbda7ccc95fc4a.png",
+    "static/media/WasteReductionGraph.png": "/Canteen-project-frontend/static/media/WasteReductionGraph.b1ecacef09c6f5280db7.png",
+    "static/media/MissedMealsGraph.png": "/Canteen-project-frontend/static/media/MissedMealsGraph.b834df37e20d96924d5e.png",
+    "static/media/SatisfactionRateProgessBar.png": "/Canteen-project-frontend/static/media/SatisfactionRateProgessBar.77cb3b81286bf6e71616.png",
+    "index.html": "/Canteen-project-frontend/index.html",
+    "main.791b1871.css.map": "/Canteen-project-frontend/static/css/main.791b1871.css.map",
+    "main.b6afcccb.js.map": "/Canteen-project-frontend/static/js/main.b6afcccb.js.map",
+    "787.71365524.chunk.js.map": "/Canteen-project-frontend/static/js/787.71365524.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.791b1871.css",
+    "static/js/main.b6afcccb.js"
+  ]
+}
