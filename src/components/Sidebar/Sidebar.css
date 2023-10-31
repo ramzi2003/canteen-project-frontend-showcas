@@ -141,6 +141,10 @@
     z-index: 10;
   }
 
+  .sidebar-logo {
+    width: 66%;
+  }
+
     .border {
     background: linear-gradient(
       to left,
@@ -166,6 +170,27 @@
     border-radius: 2vh;
     margin-top: 0;
     font-size: 2vh;
+  }
+
+  .sidebar-btn:hover {
+    cursor: pointer;
+    background-color: #1a1f37;
+  }
+
+  .sidebar-btn:active {
+    background-color: #111425;
+  }
+
+  .sidebar-btn ion-icon {
+    color: #05cd99;
+  }
+
+  .sidebar-icon-div {
+    background-color: #1a1f37;
+    border-radius: 1.5vh;
+    padding: 2% 3%;
+    margin-right: 7%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.09);
   }
   
   .sidebar-category-name {
@@ -296,7 +321,7 @@
     color: #ffffff;
     height: 6vh;
     border-radius: 2vh;
-    font-size: 1.77vh;
+    font-size: 1.7vh;
     margin-bottom: 2%;
   }
 
@@ -323,7 +348,7 @@
 
   .sidebar-category-name {
     color: #ffffff;
-    font-size: 1.77vh;
+    font-size: 1.7vh;
     width: 77%;
   }
 }
