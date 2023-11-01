@@ -1,0 +1,387 @@
+.background-icon1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40.75em;
+  height: 27.81em;
+}
+.b1,
+.total {
+  position: absolute;
+  display: inline-block;
+}
+.total {
+  top: 0;
+  left: 0.18em;
+  font-size: 0.88em;
+  line-height: 150%;
+  font-weight: 500;
+  width: 2.43em;
+  height: 1.49em;
+}
+.b1 {
+  top: 1.6em;
+  left: 0;
+  font-size: 1.13em;
+  line-height: 140%;
+  font-family: "Open Sans";
+  width: 1.72em;
+  height: 1.38em;
+}
+.icon-child,
+.text16 {
+  position: absolute;
+  top: 0.16em;
+  left: 2.09em;
+  width: 2.28em;
+  height: 3.35em;
+}
+.icon-child {
+  top: 0;
+  left: 0;
+  border-radius: 6px;
+  background-color: #05cd99;
+  box-shadow: 0 3.5px 5.5px rgba(0, 0, 0, 0.02);
+  width: 1.56em;
+  height: 1.55em;
+}
+.ioniconbbuilddefault4 {
+  position: absolute;
+  top: 0.39em;
+  left: 0.39em;
+  width: 0.78em;
+  height: 0.78em;
+  overflow: hidden;
+}
+.icon31,
+.items7 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1.56em;
+  height: 1.55em;
+}
+.items7 {
+  left: 29.25em;
+  width: 4.38em;
+  height: 3.51em;
+}
+.b2,
+.dinner2 {
+  position: absolute;
+  display: inline-block;
+}
+.dinner2 {
+  top: 0;
+  left: 0;
+  font-size: 0.88em;
+  line-height: 150%;
+  font-weight: 500;
+  width: 3.14em;
+  height: 1.5em;
+}
+.b2 {
+  top: 1.63em;
+  left: 0.03em;
+  font-size: 1.13em;
+  line-height: 140%;
+  font-family: "Open Sans";
+  width: 3.17em;
+  height: 1.38em;
+}
+.icon32,
+.sales,
+.text17 {
+  position: absolute;
+  top: 0.13em;
+  left: 2.25em;
+  width: 3.59em;
+  height: 3.38em;
+}
+.icon32,
+.sales {
+  top: -0.12em;
+  left: -0.34em;
+  width: 2.25em;
+  height: 2.24em;
+}
+.sales {
+  top: 0;
+  left: 19.5em;
+  width: 5.84em;
+  height: 3.51em;
+}
+.b3,
+.lunch2 {
+  position: absolute;
+  display: inline-block;
+}
+.lunch2 {
+  top: 0;
+  left: 0.04em;
+  font-size: 0.88em;
+  line-height: 150%;
+  font-weight: 500;
+  width: 3.57em;
+  height: 1.5em;
+}
+.b3 {
+  top: 1.63em;
+  left: 0;
+  font-size: 1.13em;
+  line-height: 140%;
+  font-family: "Open Sans";
+  width: 3em;
+  height: 1.38em;
+}
+.clicks,
+.text18 {
+  position: absolute;
+  top: 0.13em;
+  left: 2.22em;
+  width: 3.38em;
+  height: 3.38em;
+}
+.clicks {
+  top: 0;
+  left: 9.75em;
+  width: 5.59em;
+  height: 3.51em;
+}
+.b4,
+.breakfast2 {
+  position: absolute;
+  left: 0;
+  display: inline-block;
+}
+.breakfast2 {
+  top: 0;
+  font-size: 0.88em;
+  line-height: 150%;
+  font-weight: 500;
+  width: 4.57em;
+  height: 1.5em;
+}
+.b4 {
+  top: 1.61em;
+  font-size: 1.13em;
+  line-height: 140%;
+  font-family: "Open Sans";
+  width: 1.39em;
+  height: 1.39em;
+}
+.cards,
+.text19,
+.users {
+  position: absolute;
+  top: 0.13em;
+  left: 2.25em;
+  width: 4em;
+  height: 3.38em;
+}
+.cards,
+.users {
+  top: 0;
+  left: 0;
+  width: 6.25em;
+  height: 3.5em;
+}
+.cards {
+  top: 22.31em;
+  left: 1.38em;
+  width: 33.63em;
+  height: 3.51em;
+}
+.than-last-week {
+  font-weight: 500;
+  font-family: Lato;
+  color: #fff;
+}
+.missed-meals,
+.than-last-week-container {
+  position: absolute;
+  top: 3.71em;
+  left: 0;
+  font-size: 0.88em;
+  line-height: 140%;
+}
+.missed-meals {
+  top: 0;
+  font-size: 1.13em;
+  display: inline-block;
+  color: #fff;
+  width: 4.33em;
+  height: 1.39em;
+}
+.text20 {
+  position: absolute;
+  top: 16.75em;
+  left: 1em;
+  width: 7.94em;
+  height: 4.5em;
+  color: #01b574;
+  font-family: "Open Sans";
+}
+.background-child17 {
+  border-radius: 20px;
+  background: linear-gradient(126.97deg, #060c29, rgba(4, 12, 48, 0.5));
+  backdrop-filter: blur(120px);
+}
+.background-child17,
+.background16 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 38.75em;
+  height: 13.88em;
+}
+.lines-child,
+.lines-inner,
+.lines-item {
+  position: absolute;
+  top: 3.38em;
+  left: 0;
+  border-radius: 15px;
+  background-color: #fff;
+  width: 0.44em;
+  height: 6.22em;
+}
+.lines-inner,
+.lines-item {
+  top: 5.16em;
+  left: 3.75em;
+  height: 4.44em;
+}
+.lines-inner {
+  top: 7.22em;
+  left: 7.5em;
+  height: 2.38em;
+}
+.lines-child1,
+.lines-child2,
+.lines-child3,
+.lines-child4,
+.lines-child5,
+.lines-child6 {
+  position: absolute;
+  top: 4.03em;
+  left: 11.25em;
+  border-radius: 15px;
+  background-color: #fff;
+  width: 0.44em;
+  height: 5.56em;
+}
+.lines-child2,
+.lines-child3,
+.lines-child4,
+.lines-child5,
+.lines-child6 {
+  top: 0;
+  left: 15em;
+  height: 9.59em;
+}
+.lines-child3,
+.lines-child4,
+.lines-child5,
+.lines-child6 {
+  top: 1.69em;
+  left: 18.75em;
+  height: 7.91em;
+}
+.lines-child4,
+.lines-child5,
+.lines-child6 {
+  top: 0.56em;
+  left: 22.5em;
+  height: 9.03em;
+}
+.lines-child5,
+.lines-child6 {
+  top: 4.03em;
+  left: 26.25em;
+  height: 5.56em;
+}
+.lines-child6 {
+  top: 6.47em;
+  left: 30em;
+  height: 3.13em;
+}
+.lines {
+  position: absolute;
+  top: 2.09em;
+  left: 6.13em;
+  width: 30.44em;
+  height: 9.59em;
+}
+.div17 {
+  top: 14.45em;
+  left: 0;
+  font-size: 0.63em;
+  line-height: 150%;
+  font-weight: 500;
+}
+.div17,
+.div18,
+.div19 {
+  position: absolute;
+}
+.div18 {
+  top: 11.6em;
+  left: 0;
+  font-size: 0.63em;
+  line-height: 150%;
+  font-weight: 500;
+}
+.div19 {
+  top: 8.7em;
+}
+.div19,
+.div20,
+.div21 {
+  left: 0;
+  font-size: 0.63em;
+  line-height: 150%;
+  font-weight: 500;
+}
+.div20 {
+  position: absolute;
+  top: 5.8em;
+}
+.div21 {
+  top: 2.9em;
+}
+.data,
+.div21,
+.div22 {
+  position: absolute;
+}
+.div22 {
+  top: 0;
+  left: 0;
+  font-size: 0.63em;
+  line-height: 150%;
+  font-weight: 500;
+}
+.data {
+  top: 1.97em;
+  left: 1.88em;
+  width: 1.13em;
+  height: 9.97em;
+}
+.first-card2,
+.graph {
+  position: absolute;
+  top: 1.5em;
+  left: 1em;
+  width: 38.75em;
+  height: 13.88em;
+}
+.first-card2 {
+  top: 22.5em;
+  left: 59.25em;
+  width: 40.75em;
+  height: 27.81em;
+  text-align: left;
+  color: #fff;
+  font-family: Lato;
+}

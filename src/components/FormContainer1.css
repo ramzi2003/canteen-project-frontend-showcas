@@ -1,0 +1,448 @@
+.table-child {
+  position: absolute;
+  top: 2.88em;
+  left: 0;
+  border-radius: 20px;
+  background: linear-gradient(
+    126.97deg,
+    rgba(41, 63, 177, 0.74),
+    rgba(9, 14, 35, 0.71)
+  );
+  backdrop-filter: blur(120px);
+  width: 100em;
+  height: 28.34em;
+}
+.edit10 {
+  position: relative;
+  font-size: 0.88em;
+  line-height: 140%;
+  font-weight: 500;
+  display: inline-block;
+  width: 3.07em;
+  height: 1.54em;
+  flex-shrink: 0;
+}
+.b10 {
+  top: 0;
+  left: 67.21em;
+  font-family: "Open Sans";
+}
+.b10,
+.b11,
+.students-2021- {
+  position: absolute;
+  font-size: 0.88em;
+  line-height: 140%;
+}
+.b11 {
+  top: 0;
+  left: 47.46em;
+  font-family: "Open Sans";
+}
+.students-2021- {
+  top: 0.32em;
+  left: 2.64em;
+  font-weight: 500;
+}
+.vector-icon1 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.stud {
+  position: absolute;
+  height: 51.28%;
+  width: 85%;
+  top: 15.38%;
+  left: 10%;
+  font-size: 0.5em;
+  line-height: 140%;
+  font-weight: 500;
+  display: inline-block;
+}
+.students-2021-2025,
+.students-2021-2025-icon {
+  position: absolute;
+  top: 0.25em;
+  left: 0;
+  width: 1.25em;
+  height: 1.22em;
+}
+.students-2021-2025 {
+  top: 18.56em;
+  width: 81.13em;
+  height: 1.81em;
+}
+.clients-table-child,
+.guests-button {
+  position: absolute;
+  top: 17.19em;
+  left: 0;
+  width: 97.25em;
+  height: 0.06em;
+}
+.guests-button {
+  top: 0;
+  left: 77.06em;
+  border-radius: 8px;
+  border: 1px solid #fff;
+  box-sizing: border-box;
+  width: 4.06em;
+  height: 1.69em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0.13em 0.56em;
+  text-align: center;
+}
+.b12 {
+  top: 0.36em;
+  left: 67.21em;
+  font-family: "Open Sans";
+}
+.b12,
+.b13,
+.guests2 {
+  position: absolute;
+  font-size: 0.88em;
+  line-height: 140%;
+}
+.b13 {
+  top: 0.36em;
+  left: 47.46em;
+  font-family: "Open Sans";
+}
+.guests2 {
+  top: 0.46em;
+  left: 2.64em;
+  font-weight: 500;
+}
+.guests-icon {
+  position: absolute;
+  top: 0.38em;
+  left: 0;
+  width: 1.25em;
+  height: 1.22em;
+}
+.clients-table-item,
+.guests1 {
+  position: absolute;
+  top: 14.38em;
+  left: 0;
+  width: 81.13em;
+  height: 1.69em;
+}
+.clients-table-item {
+  top: 13.31em;
+  width: 97.25em;
+  height: 0.06em;
+}
+.b14 {
+  top: 0.21em;
+  left: 67.21em;
+  font-size: 0.88em;
+  line-height: 140%;
+  font-family: "Open Sans";
+}
+.b14,
+.b15,
+.faculty {
+  position: absolute;
+}
+.b15 {
+  top: 0.21em;
+  left: 47.46em;
+  font-size: 0.88em;
+  line-height: 140%;
+  font-family: "Open Sans";
+}
+.faculty {
+  top: 10.63em;
+  left: 0;
+  width: 81.13em;
+  height: 1.69em;
+}
+.clients-table-inner,
+.student-button {
+  position: absolute;
+  top: 9.44em;
+  left: 0;
+  width: 97.25em;
+  height: 0.06em;
+}
+.student-button {
+  top: 0.13em;
+  left: 77.06em;
+  border-radius: 8px;
+  border: 1px solid #fff;
+  box-sizing: border-box;
+  width: 4.06em;
+  height: 1.69em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0.13em 0.56em;
+  text-align: center;
+}
+.b16,
+.students-text {
+  position: absolute;
+  font-size: 0.88em;
+  line-height: 140%;
+}
+.b16 {
+  top: 0.14em;
+  left: 67.21em;
+  font-family: "Open Sans";
+}
+.students-text {
+  top: 0.04em;
+  left: 2.64em;
+  font-weight: 500;
+}
+.students-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1.25em;
+  height: 1.22em;
+  overflow: hidden;
+}
+.clients-table-child1,
+.students {
+  position: absolute;
+  top: 6.75em;
+  left: 0;
+  width: 81.13em;
+  height: 1.81em;
+}
+.clients-table-child1 {
+  top: 5.56em;
+  width: 97.25em;
+  height: 0.06em;
+}
+.adm1,
+.b19,
+.contractors3 {
+  position: absolute;
+  top: 0.14em;
+  font-size: 0.88em;
+  line-height: 140%;
+}
+.b19 {
+  left: 47.43em;
+  font-family: "Open Sans";
+}
+.adm1,
+.contractors3 {
+  left: 2.64em;
+  font-weight: 500;
+}
+.adm1 {
+  top: 0.31em;
+  left: 0.19em;
+  font-size: 0.5em;
+  display: inline-block;
+  width: 2.13em;
+  height: 1.25em;
+}
+.contractors-icon {
+  position: absolute;
+  top: 0.09em;
+  left: 0;
+  width: 1.25em;
+  height: 1.22em;
+}
+.contractor-button {
+  position: absolute;
+  top: 0;
+  left: 77.03em;
+  border-radius: 8px;
+  border: 1px solid #fff;
+  box-sizing: border-box;
+  width: 4.06em;
+  height: 1.69em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0.13em 0.56em;
+  text-align: center;
+}
+.contractors2 {
+  position: absolute;
+  top: 2.94em;
+  left: 0.03em;
+  width: 81.09em;
+  height: 1.69em;
+}
+.clients-table-child2 {
+  position: absolute;
+  top: 1.69em;
+  left: 0;
+  width: 97.25em;
+  height: 0.06em;
+}
+.actions1,
+.departments,
+.total-balance,
+.total2 {
+  position: absolute;
+  top: 0;
+  left: 123.15em;
+  font-size: 0.63em;
+  line-height: 150%;
+  font-weight: 500;
+}
+.departments,
+.total-balance,
+.total2 {
+  left: 93.55em;
+}
+.departments,
+.total2 {
+  left: 66.4em;
+}
+.departments {
+  left: 0;
+}
+.clients-page-table-titles {
+  position: absolute;
+  top: 0;
+  left: 0.03em;
+  width: 79.72em;
+  height: 0.94em;
+  color: #a0aec0;
+}
+.clients-table {
+  position: absolute;
+  top: 9.56em;
+  left: 1.38em;
+  width: 97.22em;
+  height: 20.38em;
+}
+.total-9001 {
+  position: absolute;
+  top: 2.18em;
+  left: 1.39em;
+  font-size: 0.88em;
+  line-height: 140%;
+}
+.ioniconccheckmarkccircle1 {
+  position: absolute;
+  top: 2.06em;
+  left: 0;
+  width: 0.94em;
+  height: 0.94em;
+  overflow: hidden;
+}
+.clients7 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 1.13em;
+  line-height: 140%;
+  color: #fff;
+}
+.clients-page-text {
+  position: absolute;
+  top: 4.63em;
+  left: 1.31em;
+  width: 5.47em;
+  height: 3.16em;
+  color: #a0aec0;
+  font-family: "Open Sans";
+}
+.add-department-button-child {
+  position: relative;
+  border-radius: 8px;
+  background-color: #05cd99;
+  width: 7.5em;
+  height: 1.69em;
+}
+.add-department {
+  position: relative;
+  font-size: 0.88em;
+  line-height: 140%;
+  font-weight: 500;
+  display: inline-block;
+  width: 9.07em;
+  height: 1.5em;
+  flex-shrink: 0;
+  margin-top: -1.71em;
+}
+.add-department-button {
+  flex: 1;
+  height: 1.69em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0 0 0.19em;
+  box-sizing: border-box;
+}
+.change-department {
+  position: relative;
+  font-size: 0.88em;
+  line-height: 140%;
+  font-weight: 500;
+  display: inline-block;
+  width: 10.86em;
+}
+.change-department-button {
+  flex: 1;
+  border-radius: 8px;
+  background-color: #056dcd;
+  height: 1.69em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.clients-export-child {
+  position: relative;
+  border-radius: 8px;
+  background-color: #09cd05;
+  width: 6.11em;
+  height: 1.69em;
+}
+.clients-export1 {
+  position: relative;
+  font-size: 0.88em;
+  line-height: 140%;
+  font-weight: 500;
+  display: inline-block;
+  width: 7.29em;
+  height: 1.5em;
+  flex-shrink: 0;
+  margin-top: -1.71em;
+}
+.clients-page-button {
+  position: absolute;
+  top: 0;
+  left: 0.19em;
+  width: 25em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.56em;
+  text-align: center;
+}
+.table {
+  align-self: stretch;
+  position: relative;
+  height: 31.22em;
+  text-align: left;
+  color: #fff;
+  font-family: Lato;
+}

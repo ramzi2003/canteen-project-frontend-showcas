@@ -1,0 +1,133 @@
+.background-child19 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 20px;
+  background: linear-gradient(
+    127.09deg,
+    rgba(41, 63, 177, 0.94),
+    rgba(9, 14, 35, 0.49)
+  );
+  backdrop-filter: blur(120px);
+  width: 99.88em;
+  height: 8.06em;
+}
+.richard-horvath-nwaetf6qo0-un-icon5 {
+  position: absolute;
+  top: 26.44em;
+  left: 1.69em;
+  width: 103.06em;
+  height: 57.81em;
+  object-fit: cover;
+  display: none;
+}
+.background-child20 {
+  border-radius: 15px;
+  background: linear-gradient(
+    90.06deg,
+    rgba(6, 11, 40, 0.94),
+    rgba(10, 14, 35, 0)
+  );
+  display: none;
+}
+.background-child20,
+.background18 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 99.88em;
+  height: 8.06em;
+}
+.ivan-ivanov6 {
+  position: relative;
+  font-size: 1.13em;
+  line-height: 140%;
+}
+.ivanivanovgmailcom5 {
+  position: relative;
+  font-size: 0.88em;
+  line-height: 150%;
+  font-family: Lato;
+  color: #a0aec0;
+}
+.name-and-email5 {
+  position: absolute;
+  top: 1.09em;
+  left: 6.38em;
+  width: 8.69em;
+  height: 2.91em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0;
+  box-sizing: border-box;
+}
+.image-icon15 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5em;
+  height: 5em;
+  object-fit: cover;
+}
+.avatar10,
+.icon41 {
+  position: absolute;
+  top: 3.69em;
+  left: 3.69em;
+  width: 1.63em;
+  height: 1.63em;
+}
+.avatar10 {
+  top: 1.38em;
+  left: 1.41em;
+  width: 15.06em;
+  height: 5.31em;
+}
+.icon42,
+.text26 {
+  position: relative;
+}
+.icon42 {
+  width: 0.69em;
+  height: 0.69em;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.text26 {
+  font-size: 0.63em;
+  line-height: 150%;
+}
+.buttons5,
+.overview13 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.overview13 {
+  border-radius: 12px;
+  background-color: #05cd99;
+  backdrop-filter: blur(120px);
+  width: 8.41em;
+  height: 2.19em;
+  justify-content: center;
+  padding: 0 0.5em;
+  box-sizing: border-box;
+}
+.buttons5 {
+  position: absolute;
+  top: 3.06em;
+  left: 79.69em;
+  width: 18.09em;
+  justify-content: space-between;
+  text-align: center;
+}
+.user5 {
+  align-self: stretch;
+  position: relative;
+  height: 8.06em;
+  text-align: left;
+  color: #fff;
+  font-family: "Open Sans";
+}

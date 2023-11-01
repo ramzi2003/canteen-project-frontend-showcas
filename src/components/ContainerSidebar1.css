@@ -1,0 +1,341 @@
+.contact-icon3,
+.contact7 {
+  position: absolute;
+  top: -0.12em;
+  left: -0.34em;
+  width: 2.56em;
+  height: 2.51em;
+}
+.contact7 {
+  top: 0.56em;
+  left: 3.25em;
+  font-size: 0.88em;
+  line-height: 100%;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  width: 3.5em;
+  height: 0.97em;
+}
+.contact-menu3,
+.profile7 {
+  position: absolute;
+  top: 16.58em;
+  left: 0.94em;
+  width: 5.91em;
+  height: 1.83em;
+}
+.profile7 {
+  top: 0.56em;
+  left: 3.25em;
+  font-size: 0.88em;
+  line-height: 100%;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  width: 2.86em;
+  height: 0.97em;
+}
+.account-pages5,
+.profile-menu3 {
+  position: absolute;
+  top: 13.3em;
+  left: 0.94em;
+  width: 5.34em;
+  height: 1.83em;
+}
+.account-pages5 {
+  top: 14.33em;
+  left: 1.25em;
+  font-size: 0.75em;
+  line-height: 150%;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  width: 8.75em;
+  height: 1.46em;
+}
+.settings-icon-child1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 12px;
+  background-color: #1a1f37;
+  box-shadow: 0 3.5px 5.5px rgba(0, 0, 0, 0.02);
+  width: 1.88em;
+  height: 1.83em;
+}
+.ioniconbbuilddefault6 {
+  position: absolute;
+  top: 0.46em;
+  left: 0.47em;
+  width: 0.94em;
+  height: 0.91em;
+  overflow: hidden;
+}
+.settings-icon3,
+.settings7 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1.88em;
+  height: 1.83em;
+}
+.settings7 {
+  top: 0.56em;
+  left: 3.25em;
+  font-size: 0.88em;
+  line-height: 100%;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  width: 3.57em;
+  height: 0.97em;
+}
+.payment7,
+.settings-menu3 {
+  position: absolute;
+  top: 7.47em;
+  left: 0.94em;
+  width: 5.97em;
+  height: 1.83em;
+}
+.payment7 {
+  top: 0.56em;
+  left: 3.25em;
+  font-size: 0.88em;
+  line-height: 100%;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  width: 3.93em;
+  height: 0.97em;
+}
+.dashboard-icon3,
+.dashboard8,
+.payment-menu3 {
+  position: absolute;
+  top: 4.19em;
+  left: 0.94em;
+  width: 6.28em;
+  height: 1.83em;
+}
+.dashboard-icon3,
+.dashboard8 {
+  top: 0;
+  width: 1.88em;
+}
+.dashboard8 {
+  top: 0.56em;
+  left: 4.29em;
+  font-size: 0.88em;
+  line-height: 100%;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  width: 4.79em;
+  height: 0.97em;
+}
+.accounting7,
+.dashboard-menu3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 13.72em;
+  height: 28.3em;
+}
+.accounting7 {
+  top: 0.56em;
+  left: 3.25em;
+  font-size: 0.88em;
+  line-height: 100%;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  width: 5em;
+  height: 0.97em;
+}
+.accounting-menu3,
+.canteen7 {
+  position: absolute;
+  top: 28.63em;
+  left: 0.94em;
+  width: 7.22em;
+  height: 1.83em;
+}
+.canteen7 {
+  top: 0.56em;
+  left: 3.25em;
+  font-size: 0.88em;
+  line-height: 100%;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  width: 3.71em;
+  height: 0.97em;
+}
+.canteen-menu3,
+.clients8 {
+  position: absolute;
+  top: 25.35em;
+  left: 0.94em;
+  width: 6.09em;
+  height: 1.83em;
+}
+.clients8 {
+  top: 0.56em;
+  left: 3.25em;
+  font-size: 0.88em;
+  line-height: 100%;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  width: 3.07em;
+  height: 0.97em;
+}
+.cash7,
+.clients-menu3 {
+  position: absolute;
+  top: 22.07em;
+  left: 0.94em;
+  width: 5.53em;
+  height: 1.83em;
+}
+.cash7 {
+  top: 0.56em;
+  left: 3.25em;
+  font-size: 0.88em;
+  line-height: 100%;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  width: 2.21em;
+  height: 0.97em;
+}
+.cash-menu3 {
+  position: absolute;
+  top: 38.47em;
+  left: 0.94em;
+  width: 4.78em;
+  height: 1.83em;
+}
+.admin-menu-child {
+  position: absolute;
+  top: -0.76em;
+  left: -1.06em;
+  border-radius: 15px;
+  width: 14.41em;
+  height: 3.97em;
+}
+.admin7 {
+  position: absolute;
+  top: 0.56em;
+  left: 3.25em;
+  font-size: 0.88em;
+  line-height: 100%;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  width: 2.93em;
+  height: 0.97em;
+}
+.admin-menu3,
+.reception9 {
+  position: absolute;
+  top: 35.19em;
+  left: 0.94em;
+  width: 5.41em;
+  height: 1.83em;
+}
+.reception9 {
+  top: 0.56em;
+  left: 3.25em;
+  font-size: 0.88em;
+  line-height: 100%;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  width: 4.5em;
+  height: 0.97em;
+}
+.admin-pages5,
+.reception-menu3 {
+  position: absolute;
+  top: 31.91em;
+  left: 0.94em;
+  width: 6.78em;
+  height: 1.83em;
+}
+.admin-pages5 {
+  top: 26.03em;
+  left: 1.25em;
+  font-size: 0.75em;
+  line-height: 150%;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  width: 8.75em;
+  height: 1.46em;
+}
+.menu16,
+.uca-canteen5 {
+  position: absolute;
+  top: 7.17em;
+  left: 1.44em;
+  width: 13.72em;
+  height: 43.79em;
+}
+.uca-canteen5 {
+  top: 1.25em;
+  left: 2.79em;
+  font-size: 0.88em;
+  letter-spacing: 0.18em;
+  line-height: 100%;
+  font-weight: 500;
+  background: linear-gradient(97.89deg, #fff, rgba(117, 122, 140, 0));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  width: 9.5em;
+  height: 1.04em;
+}
+.removebg-preview-1-icon5 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2.83em;
+  height: 2.86em;
+  object-fit: cover;
+}
+.logo5 {
+  position: absolute;
+  top: 0.97em;
+  left: 2.88em;
+  width: 10.75em;
+  height: 2.86em;
+  text-align: center;
+}
+.sidebar-child4,
+.sidebar5 {
+  position: absolute;
+  top: 4.61em;
+  left: 0.94em;
+  width: 14.58em;
+  height: 0.06em;
+}
+.sidebar5 {
+  top: 0;
+  left: 0.13em;
+  border-radius: 20px;
+  background: linear-gradient(
+    111.84deg,
+    rgba(41, 63, 177, 0.3) 99.99%,
+    rgba(26, 31, 55, 0)
+  );
+  backdrop-filter: blur(120px);
+  width: 16.5em;
+  height: 68.94em;
+  text-align: left;
+  color: #fff;
+  font-family: Lato;
+}

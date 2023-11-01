@@ -1,0 +1,259 @@
+.background-child21 {
+  position: absolute;
+  top: -0.12em;
+  left: -0.12em;
+  border-radius: 30px;
+  width: 28.53em;
+  height: 44.84em;
+}
+.already-have-an {
+  font-weight: 500;
+}
+.sign-in {
+  font-family: "Open Sans";
+  color: #fff;
+}
+.already-have-an-container {
+  position: absolute;
+  top: 46.32em;
+  left: 8.61em;
+  font-size: 0.88em;
+  line-height: 140%;
+}
+.background19 {
+  position: absolute;
+  top: 9.38em;
+  left: 0;
+  width: 28.28em;
+  height: 44.59em;
+}
+.div25 {
+  position: relative;
+  font-size: 0.69em;
+  line-height: 1.09em;
+}
+.icon45 {
+  overflow: hidden;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 0.03em;
+}
+.text28 {
+  position: relative;
+  font-size: 0.63em;
+  line-height: 150%;
+  font-family: "Open Sans";
+  color: #fff;
+}
+.button-body1,
+.height-structure1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.button-body1 {
+  overflow: hidden;
+  align-items: flex-start;
+  gap: 0.25em;
+}
+.height-structure1 {
+  height: 1.5em;
+  align-items: center;
+}
+.content19 {
+  position: relative;
+  background-color: #c4c4c4;
+  width: 0;
+  height: 0;
+}
+.minwidth14 {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 0.75em;
+}
+.buttonbase1,
+.width-structure1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.width-structure1 {
+  overflow: hidden;
+  flex-direction: column;
+}
+.buttonbase1 {
+  position: absolute;
+  height: 5.21%;
+  width: 77.35%;
+  top: 84.71%;
+  right: 12.04%;
+  bottom: 10.08%;
+  left: 10.61%;
+  border-radius: 12px;
+  background-color: #05cd99;
+  backdrop-filter: blur(120px);
+  flex-direction: row;
+  padding: 0 0.5em;
+  box-sizing: border-box;
+  color: #000;
+  font-family: "Font Awesome 5 Free";
+}
+.remember-me3 {
+  position: absolute;
+  top: 0;
+  left: 3.83em;
+  font-size: 0.75em;
+  line-height: 150%;
+  font-weight: 500;
+}
+.switchbase-item {
+  position: relative;
+  border-radius: 50%;
+  background-color: #fff;
+  width: 0.84em;
+  height: 0.84em;
+}
+.switchbase1 {
+  position: absolute;
+  height: 100%;
+  width: 29.27%;
+  top: 0;
+  right: 70.73%;
+  bottom: 0;
+  left: 0;
+  border-radius: 97.74px;
+  background-color: #05cd99;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 0.09em 0.16em 0.09em 0.09em;
+  box-sizing: border-box;
+}
+.remember-me2 {
+  position: absolute;
+  top: 42.31em;
+  left: 3em;
+  width: 7.69em;
+  height: 1.16em;
+  text-align: left;
+  color: #fff;
+}
+.google-child,
+.ioniconllogogoogle {
+  position: absolute;
+  border-radius: 20px;
+}
+.google-child {
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+    123.64deg,
+    rgba(255, 255, 255, 0) 0.01%,
+    rgba(255, 255, 255, 0.04)
+  );
+  backdrop-filter: blur(42px);
+  width: 4.69em;
+  height: 4.69em;
+}
+.ioniconllogogoogle {
+  top: 1.59em;
+  left: 1.59em;
+  width: 1.5em;
+  height: 1.5em;
+  overflow: hidden;
+}
+.google {
+  position: absolute;
+  top: 2.94em;
+  left: 11.25em;
+  backdrop-filter: blur(120px);
+  width: 4.69em;
+  height: 4.69em;
+}
+.apple-icon,
+.facebook-icon {
+  position: absolute;
+  top: 2.81em;
+  left: 5.5em;
+  width: 4.94em;
+  height: 4.94em;
+}
+.facebook-icon {
+  left: -0.12em;
+}
+.or,
+.register-with1 {
+  position: absolute;
+  top: 7.92em;
+  left: 2.75em;
+  font-size: 1.13em;
+  line-height: 140%;
+}
+.register-with1 {
+  top: 0;
+  left: 0;
+  line-height: 130%;
+  color: #fff;
+}
+.register-with,
+.title12 {
+  position: absolute;
+  top: 0;
+  left: 4.22em;
+  width: 7.5em;
+  height: 10.47em;
+}
+.register-with {
+  top: 12.22em;
+  left: 5.97em;
+  width: 15.94em;
+  font-family: "Open Sans";
+}
+.use-these-awesome {
+  margin: 0;
+}
+.use-these-awesome-container {
+  position: absolute;
+  top: 3.61em;
+  left: 0;
+  font-size: 0.88em;
+  line-height: 1.71em;
+  font-weight: 500;
+  display: inline-block;
+  width: 23.79em;
+  height: 3.21em;
+}
+.welcome {
+  position: absolute;
+  top: 0;
+  left: 3.15em;
+  font-size: 1.88em;
+  line-height: 130%;
+  font-family: "Open Sans";
+  text-align: left;
+}
+.inputs1,
+.title13 {
+  position: absolute;
+  top: 0;
+  left: 3.47em;
+  width: 20.81em;
+  height: 5.97em;
+  color: #fff;
+}
+.inputs1 {
+  top: 13.63em;
+  left: 44.75em;
+  width: 28.28em;
+  height: 53.97em;
+  text-align: center;
+  color: #a0aec0;
+  font-family: Lato;
+}

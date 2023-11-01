@@ -1,0 +1,15 @@
+.breadcrumb {
+  position: relative;
+  font-size: 16px;
+  line-height: 150%;
+}
+.breadcrumbitemprevious {
+  width: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: left;
+  color: #000;
+  font-family: Helvetica;
+}

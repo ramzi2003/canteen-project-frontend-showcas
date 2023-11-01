@@ -1,0 +1,172 @@
+.addons8,
+.icon23 {
+  position: relative;
+  flex-shrink: 0;
+}
+.icon23 {
+  width: 0.94em;
+  height: 0.94em;
+  overflow: hidden;
+}
+.addons8 {
+  font-size: 0.44em;
+  line-height: 150%;
+  display: none;
+  align-items: center;
+  width: 3.43em;
+  height: 1.5em;
+}
+.addon8,
+.auto-added-frame8 {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.addon8 {
+  height: 1.25em;
+  justify-content: flex-start;
+  padding: 0.25em 0.38em;
+  box-sizing: border-box;
+  gap: 0.31em;
+}
+.auto-added-frame8 {
+  align-self: stretch;
+  width: 2.34em;
+  flex-shrink: 0;
+  justify-content: center;
+}
+.type-here8 {
+  position: relative;
+  font-size: 0.75em;
+  line-height: 150%;
+}
+.password-text-icon8 {
+  position: relative;
+  width: 2.19em;
+  height: 0.22em;
+  display: none;
+}
+.content8 {
+  position: relative;
+  width: 0;
+  height: 0;
+}
+.inputfieldtext8,
+.minwidth8 {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+.minwidth8 {
+  flex-direction: row;
+  align-items: center;
+  padding: 0 4.63em;
+}
+.inputfieldtext8 {
+  flex-direction: column;
+  align-items: flex-start;
+  color: #fff;
+  font-family: Lato;
+}
+.inputwithaddons8 {
+  position: absolute;
+  height: 100%;
+  width: 59.4%;
+  top: 0;
+  right: 40.6%;
+  bottom: 0;
+  left: 0;
+  border-radius: 15px;
+  background-color: rgba(41, 63, 177, 0.74);
+  border: 0.5px solid rgba(41, 63, 177, 0.3);
+  box-sizing: border-box;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.ioniconppersondefault14 {
+  position: relative;
+  width: 0.75em;
+  height: 0.75em;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.listitemdefault8 {
+  position: absolute;
+  top: 0.72em;
+  left: 13.56em;
+  width: 3.63em;
+  height: 1em;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.25em;
+  color: #fff;
+  font-family: Lato;
+}
+.ioniconnnotificationsdefaul8,
+.ioniconssettingssharp8 {
+  position: absolute;
+  top: 0.88em;
+  left: 18.38em;
+  width: 0.75em;
+  height: 0.75em;
+  overflow: hidden;
+}
+.ioniconnnotificationsdefaul8 {
+  left: 20.19em;
+}
+.menu12 {
+  position: absolute;
+  top: 0;
+  left: 77.75em;
+  width: 20.94em;
+  height: 2.47em;
+}
+.admin-page12 {
+  font-weight: 500;
+}
+.admin-page11 {
+  color: #fff;
+}
+.breadcrumb12 {
+  top: 0;
+  left: 0;
+  font-size: 0.75em;
+  line-height: 100%;
+}
+.breadcrumb12,
+.navbar8,
+.path5 {
+  position: absolute;
+}
+.path5 {
+  height: 30.38%;
+  width: 7.03%;
+  top: 15.19%;
+  right: 92.97%;
+  bottom: 54.43%;
+  left: 0;
+  color: #a0aec0;
+  font-family: Lato;
+}
+.navbar8 {
+  top: 2.06em;
+  left: 18.19em;
+  width: 98.69em;
+  height: 2.47em;
+}
+.admin-page10 {
+  position: relative;
+  background-color: #060b26;
+  width: 100%;
+  height: 68.94em;
+  text-align: left;
+  color: #000;
+  font-family: Helvetica;
+}

@@ -1,0 +1,750 @@
+.text2 {
+  position: relative;
+  font-size: 0.63em;
+  line-height: 150%;
+}
+.back-button,
+.rectangle-div {
+  position: absolute;
+  backdrop-filter: blur(120px);
+}
+.back-button {
+  height: 2.51%;
+  width: 3.59%;
+  top: 68.8%;
+  right: 1.93%;
+  bottom: 28.69%;
+  left: 94.48%;
+  border-radius: 12px;
+  background-color: #b50101;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0.5em;
+  box-sizing: border-box;
+  cursor: pointer;
+  text-align: center;
+  font-family: "Open Sans";
+}
+.rectangle-div {
+  top: 0;
+  left: 0;
+  border-radius: 20px;
+  background: linear-gradient(
+    127.09deg,
+    rgba(41, 63, 177, 0.94),
+    rgba(9, 14, 35, 0.49)
+  );
+  width: 99.88em;
+  height: 8.06em;
+}
+.richard-horvath-nwaetf6qo0-un-icon1 {
+  position: absolute;
+  top: -20.25em;
+  left: 16.63em;
+  width: 103.06em;
+  height: 57.81em;
+  object-fit: cover;
+  display: none;
+}
+.background-child1 {
+  border-radius: 15px;
+  background: linear-gradient(
+    90.06deg,
+    rgba(6, 11, 40, 0.94),
+    rgba(10, 14, 35, 0)
+  );
+  display: none;
+}
+.background-child1,
+.background2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 99.88em;
+  height: 8.06em;
+}
+.ivanivanovgmailcom1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 0.88em;
+  line-height: 150%;
+}
+.email1 {
+  position: absolute;
+  top: 1.59em;
+  left: 0;
+  width: 8.69em;
+  height: 1.31em;
+}
+.full-name1,
+.ivan-ivanov1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.ivan-ivanov1 {
+  font-size: 1.13em;
+  line-height: 140%;
+}
+.full-name1 {
+  width: 6.5em;
+  height: 1.56em;
+  color: #fff;
+  font-family: "Open Sans";
+}
+.image-icon1,
+.name-and-email1 {
+  position: absolute;
+  top: 1.09em;
+  left: 6.38em;
+  width: 8.69em;
+  height: 2.91em;
+}
+.image-icon1 {
+  top: 0;
+  left: 0;
+  width: 5em;
+  height: 5em;
+  object-fit: cover;
+}
+.avatar1,
+.icon4 {
+  position: absolute;
+  top: 3.69em;
+  left: 3.69em;
+  width: 1.63em;
+  height: 1.63em;
+}
+.avatar1 {
+  top: 1.38em;
+  left: 1.41em;
+  width: 15.06em;
+  height: 5.31em;
+}
+.icon5 {
+  position: relative;
+  width: 0.69em;
+  height: 0.69em;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.overview2 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 12px;
+  background-color: #05cd99;
+  backdrop-filter: blur(120px);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0.5em;
+  box-sizing: border-box;
+}
+.buttons1,
+.profile-button1,
+.settings-button1 {
+  position: absolute;
+  height: 100%;
+  width: 46.46%;
+  top: 0;
+  right: 53.54%;
+  bottom: 0;
+  left: 0;
+}
+.buttons1,
+.settings-button1 {
+  right: 0;
+  left: 53.54%;
+}
+.buttons1 {
+  height: 24.88%;
+  width: 18.12%;
+  top: 28.53%;
+  right: 2.1%;
+  bottom: 46.59%;
+  left: 79.79%;
+  text-align: center;
+  color: #fff;
+  font-family: "Open Sans";
+}
+.user1 {
+  position: absolute;
+  top: 6.19em;
+  left: 18.31em;
+  width: 99.88em;
+  height: 8.06em;
+  color: #a0aec0;
+}
+.addons1,
+.icon7 {
+  position: relative;
+  flex-shrink: 0;
+}
+.icon7 {
+  width: 0.94em;
+  height: 0.94em;
+  overflow: hidden;
+}
+.addons1 {
+  font-size: 0.44em;
+  line-height: 150%;
+  display: none;
+  align-items: center;
+  width: 3.43em;
+  height: 1.5em;
+}
+.addon1,
+.auto-added-frame1 {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.addon1 {
+  height: 1.25em;
+  justify-content: flex-start;
+  padding: 0.25em 0.38em;
+  box-sizing: border-box;
+  gap: 0.31em;
+}
+.auto-added-frame1 {
+  align-self: stretch;
+  width: 2.34em;
+  flex-shrink: 0;
+  justify-content: center;
+}
+.type-here1 {
+  position: relative;
+  font-size: 0.75em;
+  line-height: 150%;
+}
+.password-text-icon1 {
+  position: relative;
+  width: 2.19em;
+  height: 0.22em;
+  display: none;
+}
+.content1 {
+  position: relative;
+  width: 0;
+  height: 0;
+}
+.inputfieldtext1,
+.minwidth1 {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+.minwidth1 {
+  flex-direction: row;
+  align-items: center;
+  padding: 0 4.63em;
+}
+.inputfieldtext1 {
+  flex-direction: column;
+  align-items: flex-start;
+  color: #fff;
+  font-family: Lato;
+}
+.inputwithaddons1 {
+  position: absolute;
+  height: 100%;
+  width: 59.4%;
+  top: 0;
+  right: 40.6%;
+  bottom: 0;
+  left: 0;
+  border-radius: 15px;
+  background-color: rgba(41, 63, 177, 0.74);
+  border: 0.5px solid rgba(41, 63, 177, 0.3);
+  box-sizing: border-box;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.ioniconppersondefault1 {
+  position: relative;
+  width: 0.75em;
+  height: 0.75em;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.listitemdefault1 {
+  position: absolute;
+  top: 0.83em;
+  left: 13.56em;
+  width: 3.63em;
+  height: 1em;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.25em;
+  color: #fff;
+  font-family: Lato;
+}
+.ioniconnnotificationsdefaul1,
+.ioniconssettingssharp1 {
+  position: absolute;
+  top: 0.99em;
+  left: 18.38em;
+  width: 0.75em;
+  height: 0.75em;
+  overflow: hidden;
+}
+.ioniconnnotificationsdefaul1 {
+  left: 20.19em;
+}
+.breadcrumb3,
+.menu2 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.breadcrumb3 {
+  height: 75.94%;
+  width: 21.22%;
+  bottom: 24.06%;
+  left: 78.78%;
+}
+.clients-page3 {
+  font-weight: 500;
+}
+.clients-page2 {
+  color: #fff;
+}
+.breadcrumb4 {
+  position: relative;
+  font-size: 0.75em;
+  line-height: 100%;
+}
+.breadcrumbitemprevious2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 7.06em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.navbar1,
+.pages-navigation1 {
+  position: absolute;
+  top: 0.49em;
+  left: 0;
+  width: 7.06em;
+  height: 2.5em;
+  color: #a0aec0;
+  font-family: Lato;
+}
+.navbar1 {
+  height: 4.33%;
+  width: 82.24%;
+  top: 1.83%;
+  right: 2.5%;
+  bottom: 93.83%;
+  left: 15.26%;
+  color: #000;
+  font-family: Helvetica;
+}
+.log-out-child,
+.sidebar-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.sidebar-item {
+  border-radius: 20px;
+  background: linear-gradient(
+    111.84deg,
+    rgba(41, 63, 177, 0.3) 99.99%,
+    rgba(26, 31, 55, 0)
+  );
+  backdrop-filter: blur(120px);
+  width: 16.5em;
+  height: 68.94em;
+}
+.log-out-child {
+  border-radius: 12px;
+  background-color: #1a1f37;
+  box-shadow: 0 3.5px 5.5px rgba(0, 0, 0, 0.02);
+  width: 1.88em;
+  height: 1.83em;
+}
+.ioniconrrocketsharp {
+  position: absolute;
+  top: 0.46em;
+  left: 0.47em;
+  width: 0.94em;
+  height: 0.91em;
+  overflow: hidden;
+}
+.log-out3 {
+  position: absolute;
+  top: 0.56em;
+  left: 3.25em;
+  font-size: 0.88em;
+  line-height: 100%;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  width: 3.36em;
+  height: 0.97em;
+}
+.log-out2 {
+  position: absolute;
+  top: 19.86em;
+  left: 0.94em;
+  width: 5.78em;
+  height: 1.83em;
+  cursor: pointer;
+}
+.contact2 {
+  position: absolute;
+  top: 0.56em;
+  left: 3.25em;
+  font-size: 0.88em;
+  line-height: 100%;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  width: 3.5em;
+  height: 0.97em;
+}
+.contact1,
+.profile2 {
+  position: absolute;
+  top: 16.58em;
+  left: 0.94em;
+  width: 5.91em;
+  height: 1.83em;
+}
+.profile2 {
+  top: 0.56em;
+  left: 3.25em;
+  font-size: 0.88em;
+  line-height: 100%;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  width: 2.86em;
+  height: 0.97em;
+}
+.profile1 {
+  position: absolute;
+  top: 13.3em;
+  left: 0.94em;
+  width: 5.34em;
+  height: 1.83em;
+  cursor: pointer;
+}
+.account-pages1,
+.settings2 {
+  position: absolute;
+  top: 14.33em;
+  left: 1.25em;
+  font-size: 0.75em;
+  line-height: 150%;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  width: 8.75em;
+  height: 1.46em;
+}
+.settings2 {
+  top: 0.56em;
+  left: 3.25em;
+  font-size: 0.88em;
+  line-height: 100%;
+  width: 3.57em;
+  height: 0.97em;
+}
+.payment2,
+.settings1 {
+  position: absolute;
+  top: 7.47em;
+  left: 0.94em;
+  width: 5.97em;
+  height: 1.83em;
+}
+.payment2 {
+  top: 0.56em;
+  left: 3.25em;
+  font-size: 0.88em;
+  line-height: 100%;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  width: 3.93em;
+  height: 0.97em;
+}
+.payment1 {
+  position: absolute;
+  top: 4.19em;
+  left: 0.94em;
+  width: 6.28em;
+  height: 1.83em;
+  cursor: pointer;
+}
+.dashboard-child {
+  position: absolute;
+  top: 25.02em;
+  left: 0;
+  border-radius: 15px;
+  background-color: #1a1f37;
+  box-shadow: 0 3.5px 5.5px rgba(0, 0, 0, 0.02);
+  width: 13.72em;
+  height: 3.28em;
+}
+.dashboard-item {
+  position: absolute;
+  top: 0;
+  left: 0.94em;
+  border-radius: 12px;
+  width: 1.88em;
+  height: 1.83em;
+}
+.ioniconhhomedefault {
+  position: absolute;
+  top: 0.46em;
+  left: 1.41em;
+  width: 0.94em;
+  height: 0.91em;
+  overflow: hidden;
+}
+.dashboard2 {
+  position: absolute;
+  top: 0.56em;
+  left: 4.29em;
+  font-size: 0.88em;
+  line-height: 100%;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  width: 4.79em;
+  height: 0.97em;
+}
+.accounting2,
+.dashboard1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 13.72em;
+  height: 28.3em;
+}
+.accounting2 {
+  top: 0.56em;
+  left: 3.25em;
+  font-size: 0.88em;
+  line-height: 100%;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  width: 5em;
+  height: 0.97em;
+}
+.accounting1,
+.canteen2 {
+  position: absolute;
+  top: 32.13em;
+  left: 1em;
+  width: 7.22em;
+  height: 1.83em;
+}
+.canteen2 {
+  top: 0.56em;
+  left: 3.25em;
+  font-size: 0.88em;
+  line-height: 100%;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  width: 3.71em;
+  height: 0.97em;
+}
+.canteen1,
+.clients-child {
+  position: absolute;
+  top: 28.85em;
+  left: 1em;
+  width: 6.09em;
+  height: 1.83em;
+}
+.clients-child {
+  top: 0;
+  left: 0;
+  border-radius: 12px;
+  background-color: #05cd99;
+  box-shadow: 0 3.5px 5.5px rgba(0, 0, 0, 0.02);
+  width: 1.88em;
+}
+.clients2 {
+  position: absolute;
+  top: 0.56em;
+  left: 3.25em;
+  font-size: 0.88em;
+  line-height: 100%;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  width: 3.07em;
+  height: 0.97em;
+}
+.cash2,
+.clients1 {
+  position: absolute;
+  top: 25.57em;
+  left: 1em;
+  width: 5.53em;
+  height: 1.83em;
+}
+.cash2 {
+  top: 0.56em;
+  left: 3.25em;
+  font-size: 0.88em;
+  line-height: 100%;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  width: 2.21em;
+  height: 0.97em;
+}
+.cash1 {
+  top: 41.97em;
+  left: 1em;
+  width: 4.78em;
+  height: 1.83em;
+}
+.admin1,
+.admin2,
+.cash1 {
+  position: absolute;
+}
+.admin2 {
+  top: 0.56em;
+  left: 3.25em;
+  font-size: 0.88em;
+  line-height: 100%;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  width: 2.93em;
+  height: 0.97em;
+}
+.admin1 {
+  top: 38.69em;
+  left: 1em;
+  width: 5.41em;
+  height: 1.83em;
+  cursor: pointer;
+}
+.reception2 {
+  position: absolute;
+  top: 0.56em;
+  left: 3.25em;
+  font-size: 0.88em;
+  line-height: 100%;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  width: 4.5em;
+  height: 0.97em;
+}
+.admin-pages1,
+.reception1 {
+  position: absolute;
+  top: 35.41em;
+  left: 1em;
+  width: 6.78em;
+  height: 1.83em;
+}
+.admin-pages1 {
+  top: 30.69em;
+  left: 1.33em;
+  font-size: 0.75em;
+  line-height: 150%;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  width: 8.75em;
+  height: 1.46em;
+}
+.menu3,
+.uca-canteen1 {
+  position: absolute;
+  top: 7.17em;
+  left: 1.44em;
+  width: 13.72em;
+  height: 43.79em;
+}
+.uca-canteen1 {
+  top: 1.25em;
+  left: 2.79em;
+  font-size: 0.88em;
+  letter-spacing: 0.18em;
+  line-height: 100%;
+  font-weight: 500;
+  background: linear-gradient(97.89deg, #fff, rgba(117, 122, 140, 0));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  width: 9.5em;
+  height: 1.04em;
+}
+.removebg-preview-1-icon1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2.83em;
+  height: 2.86em;
+  object-fit: cover;
+}
+.logo1 {
+  position: absolute;
+  top: 0.97em;
+  left: 2.88em;
+  width: 10.75em;
+  height: 2.86em;
+  text-align: center;
+}
+.sidebar-inner,
+.sidebar1 {
+  position: absolute;
+  top: 4.61em;
+  left: 0.94em;
+  width: 14.58em;
+  height: 0.06em;
+}
+.sidebar1 {
+  top: 0;
+  left: 0.13em;
+  width: 16.5em;
+  height: 68.94em;
+  overflow: hidden;
+}
+.change-department-clients-pag {
+  position: relative;
+  background-color: #060b26;
+  width: 100%;
+  height: 68.94em;
+  text-align: left;
+  color: #fff;
+  font-family: Lato;
+}

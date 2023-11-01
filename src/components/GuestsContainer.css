@@ -1,0 +1,266 @@
+.cashiers-users-table-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 20px;
+  background: linear-gradient(
+    126.97deg,
+    rgba(41, 63, 177, 0.74),
+    rgba(9, 14, 35, 0.71)
+  );
+  backdrop-filter: blur(120px);
+  width: 100em;
+  height: 27.5em;
+}
+.cashiers-users-table-inner,
+.cashiers-users-table-item {
+  position: absolute;
+  top: 25.16em;
+  left: 0.84em;
+  width: 97.25em;
+  height: 0.06em;
+}
+.cashiers-users-table-inner {
+  top: 20.66em;
+}
+.cashiers-users-table-child1,
+.cashiers-users-table-child2 {
+  position: absolute;
+  top: 16.28em;
+  left: 0.84em;
+  width: 97.25em;
+  height: 0.06em;
+}
+.cashiers-users-table-child2 {
+  top: 11.72em;
+  left: 0.97em;
+}
+.admins-edit-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 8px;
+  border: 1px solid #fff;
+  box-sizing: border-box;
+  width: 4.06em;
+  height: 1.69em;
+}
+.admins-deactivate-child,
+.admins-edit {
+  position: absolute;
+  top: 0;
+  left: 12.81em;
+  width: 4.06em;
+  height: 1.69em;
+}
+.admins-deactivate-child {
+  left: 0.17em;
+  border-radius: 8px;
+  width: 5.01em;
+}
+.deactivate {
+  position: absolute;
+  top: 0.21em;
+  left: 0;
+  font-size: 0.88em;
+  line-height: 140%;
+  font-weight: 500;
+  display: inline-block;
+  width: 5.96em;
+  height: 1.5em;
+}
+.admins-deactivate,
+.admins-delete-child {
+  position: absolute;
+  top: 0;
+  left: 6.56em;
+  width: 5.22em;
+  height: 1.69em;
+}
+.admins-delete-child {
+  left: 0.33em;
+  border-radius: 8px;
+  background-color: #b50101;
+  width: 5.41em;
+}
+.delete {
+  position: absolute;
+  top: 0.14em;
+  left: 0;
+  font-size: 0.88em;
+  line-height: 140%;
+  font-weight: 500;
+  display: inline-block;
+  width: 6.75em;
+  height: 1.54em;
+}
+.admins-delete,
+.guests-actions-button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5.91em;
+  height: 1.69em;
+}
+.guests-actions-button {
+  top: 0.19em;
+  left: 64.5em;
+  width: 16.88em;
+  text-align: center;
+}
+.active {
+  position: absolute;
+  top: 0.14em;
+  left: 0.64em;
+  font-size: 0.88em;
+  line-height: 140%;
+  font-weight: 500;
+  display: inline-block;
+  width: 3.07em;
+  height: 1.54em;
+}
+.admin-active,
+.guests-status {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4.06em;
+  height: 1.69em;
+}
+.guests-status {
+  left: 42.44em;
+  text-align: center;
+}
+.odinabekova {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 0.88em;
+  line-height: 140%;
+  font-weight: 500;
+}
+.first,
+.guests-first-name,
+.guests-last-name {
+  position: absolute;
+  top: 0.31em;
+  left: 22.5em;
+  width: 5.31em;
+  height: 1.25em;
+}
+.first,
+.guests-first-name {
+  left: 10.94em;
+  width: 2.44em;
+}
+.first {
+  left: 0;
+  width: 0.56em;
+}
+.first-guest-user {
+  position: absolute;
+  top: 9em;
+  left: 1.75em;
+  width: 81.38em;
+  height: 1.88em;
+  color: #fff;
+}
+.cashiers-users-table-child3 {
+  position: absolute;
+  top: 7.78em;
+  left: 0.94em;
+  width: 97.25em;
+  height: 0.06em;
+}
+.actions2,
+.first-name,
+.last-name,
+.numeration,
+.status {
+  position: absolute;
+  top: 0.3em;
+  left: 115.9em;
+  font-size: 0.63em;
+  line-height: 150%;
+  font-weight: 500;
+}
+.first-name,
+.last-name,
+.numeration,
+.status {
+  top: 0;
+  left: 68.8em;
+}
+.first-name,
+.last-name,
+.numeration {
+  top: 0.3em;
+  left: 35.8em;
+}
+.first-name,
+.numeration {
+  left: 17.3em;
+}
+.numeration {
+  left: 0;
+}
+.titles4,
+.total-1 {
+  position: absolute;
+  top: 5.94em;
+  left: 1.88em;
+  width: 75.19em;
+  height: 1.13em;
+}
+.total-1 {
+  top: 0;
+  left: 1.39em;
+  font-size: 0.88em;
+  line-height: 140%;
+  display: inline-block;
+  width: 4.29em;
+  height: 1.41em;
+}
+.ioniconccheckmarkccircle2 {
+  position: absolute;
+  top: 0.16em;
+  left: 0;
+  width: 0.94em;
+  height: 0.93em;
+  overflow: hidden;
+}
+.guests-total,
+.guests3 {
+  position: absolute;
+  top: 1.88em;
+  left: 0;
+  width: 4.97em;
+  height: 1.24em;
+}
+.guests3 {
+  top: 0;
+  font-size: 1.13em;
+  line-height: 140%;
+  display: inline-block;
+  color: #fff;
+  width: 7em;
+  height: 1.39em;
+}
+.reception8 {
+  position: absolute;
+  top: 1.38em;
+  left: 0.81em;
+  width: 7.88em;
+  height: 3.11em;
+  font-family: "Open Sans";
+}
+.cashiers-users-table {
+  position: absolute;
+  top: 17.5em;
+  left: 18.19em;
+  width: 100em;
+  height: 27.5em;
+  text-align: left;
+  color: #a0aec0;
+  font-family: Lato;
+}

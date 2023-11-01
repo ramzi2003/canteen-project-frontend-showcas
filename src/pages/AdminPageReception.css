@@ -1,0 +1,321 @@
+.background-child8 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 20px;
+  background: linear-gradient(
+    127.09deg,
+    rgba(41, 63, 177, 0.94),
+    rgba(9, 14, 35, 0.49)
+  );
+  backdrop-filter: blur(120px);
+  width: 99.88em;
+  height: 8.06em;
+}
+.richard-horvath-nwaetf6qo0-un-icon4 {
+  position: absolute;
+  top: 26.44em;
+  left: 1.69em;
+  width: 103.06em;
+  height: 57.81em;
+  object-fit: cover;
+  display: none;
+}
+.background-child9 {
+  border-radius: 15px;
+  background: linear-gradient(
+    90.06deg,
+    rgba(6, 11, 40, 0.94),
+    rgba(10, 14, 35, 0)
+  );
+  display: none;
+}
+.background-child9,
+.background7 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 99.88em;
+  height: 8.06em;
+}
+.ivan-ivanov5,
+.ivanivanovgmailcom4 {
+  position: absolute;
+  top: 1.82em;
+  left: 0;
+  font-size: 0.88em;
+  line-height: 150%;
+}
+.ivan-ivanov5 {
+  top: 0;
+  font-size: 1.13em;
+  line-height: 140%;
+  font-family: "Open Sans";
+  color: #fff;
+}
+.image-icon4,
+.name-and-email4 {
+  position: absolute;
+  top: 1.09em;
+  left: 6.38em;
+  width: 8.69em;
+  height: 2.91em;
+}
+.image-icon4 {
+  top: 0;
+  left: 0;
+  width: 5em;
+  height: 5em;
+  object-fit: cover;
+}
+.avatar4,
+.icon16 {
+  position: absolute;
+  top: 3.69em;
+  left: 3.69em;
+  width: 1.63em;
+  height: 1.63em;
+}
+.avatar4 {
+  top: 1.38em;
+  left: 1.41em;
+  width: 15.06em;
+  height: 5.31em;
+}
+.icon17,
+.text10 {
+  position: relative;
+}
+.icon17 {
+  width: 0.69em;
+  height: 0.69em;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.text10 {
+  font-size: 0.63em;
+  line-height: 150%;
+}
+.overview8,
+.overview9 {
+  position: absolute;
+  height: 100%;
+  width: 46.46%;
+  top: 0;
+  right: 53.54%;
+  bottom: 0;
+  left: 0;
+  border-radius: 12px;
+  background-color: #05cd99;
+  backdrop-filter: blur(120px);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0.5em;
+  box-sizing: border-box;
+}
+.overview9 {
+  right: 0;
+  left: 53.54%;
+}
+.buttons4 {
+  position: absolute;
+  top: 3.06em;
+  left: 79.69em;
+  width: 18.09em;
+  height: 2.19em;
+  text-align: center;
+  color: #fff;
+  font-family: "Open Sans";
+}
+.user4 {
+  position: absolute;
+  top: 6.56em;
+  left: 18.19em;
+  width: 99.88em;
+  height: 8.06em;
+}
+.addons4,
+.icon19 {
+  position: relative;
+  flex-shrink: 0;
+}
+.icon19 {
+  width: 0.94em;
+  height: 0.94em;
+  overflow: hidden;
+}
+.addons4 {
+  font-size: 0.44em;
+  line-height: 150%;
+  display: none;
+  align-items: center;
+  width: 3.43em;
+  height: 1.5em;
+}
+.addon4,
+.auto-added-frame4 {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.addon4 {
+  height: 1.25em;
+  justify-content: flex-start;
+  padding: 0.25em 0.38em;
+  box-sizing: border-box;
+  gap: 0.31em;
+}
+.auto-added-frame4 {
+  align-self: stretch;
+  width: 2.34em;
+  flex-shrink: 0;
+  justify-content: center;
+}
+.type-here4 {
+  position: relative;
+  font-size: 0.75em;
+  line-height: 150%;
+}
+.password-text-icon4 {
+  position: relative;
+  width: 2.19em;
+  height: 0.22em;
+  display: none;
+}
+.content4 {
+  position: relative;
+  width: 0;
+  height: 0;
+}
+.inputfieldtext4,
+.minwidth4 {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+.minwidth4 {
+  flex-direction: row;
+  align-items: center;
+  padding: 0 4.63em;
+}
+.inputfieldtext4 {
+  flex-direction: column;
+  align-items: flex-start;
+  color: #fff;
+  font-family: Lato;
+}
+.inputwithaddons4 {
+  position: absolute;
+  height: 100%;
+  width: 59.4%;
+  top: 0;
+  right: 40.6%;
+  bottom: 0;
+  left: 0;
+  border-radius: 15px;
+  background-color: rgba(41, 63, 177, 0.74);
+  border: 0.5px solid rgba(41, 63, 177, 0.3);
+  box-sizing: border-box;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.ioniconppersondefault10 {
+  position: relative;
+  width: 0.75em;
+  height: 0.75em;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.listitemdefault4 {
+  position: absolute;
+  top: 0.72em;
+  left: 13.56em;
+  width: 3.63em;
+  height: 1em;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.25em;
+  color: #fff;
+  font-family: Lato;
+}
+.ioniconnnotificationsdefaul4,
+.ioniconssettingssharp4 {
+  position: absolute;
+  top: 0.88em;
+  left: 18.38em;
+  width: 0.75em;
+  height: 0.75em;
+  overflow: hidden;
+}
+.ioniconnnotificationsdefaul4 {
+  left: 20.19em;
+}
+.menu8 {
+  position: absolute;
+  top: 0;
+  left: 77.75em;
+  width: 20.94em;
+  height: 2.47em;
+}
+.reception6 {
+  position: absolute;
+  top: 64.71%;
+  left: 0;
+  font-size: 0.75em;
+  line-height: 100%;
+}
+.admin-page3,
+.reception6 {
+  font-weight: 500;
+}
+.admin-page2 {
+  color: #fff;
+}
+.breadcrumb8 {
+  top: 0;
+  left: 0;
+  font-size: 0.75em;
+  line-height: 100%;
+  color: #a0aec0;
+}
+.breadcrumb8,
+.navbar4,
+.path1 {
+  position: absolute;
+}
+.path1 {
+  height: 86.08%;
+  width: 7.03%;
+  top: 15.19%;
+  right: 92.97%;
+  bottom: -1.27%;
+  left: 0;
+  color: #fff;
+  font-family: Lato;
+}
+.navbar4 {
+  top: 2.06em;
+  left: 18.19em;
+  width: 98.69em;
+  height: 2.47em;
+  color: #000;
+  font-family: Helvetica;
+}
+.admin-page-reception {
+  position: relative;
+  background-color: #060b26;
+  width: 100%;
+  height: 68.94em;
+  text-align: left;
+  color: #a0aec0;
+  font-family: Lato;
+}

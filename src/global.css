@@ -1,48 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;500;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Font+Awesome+5+Free:wght@400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Helvetica:wght@400&display=swap");
 body {
   margin: 0;
   line-height: normal;
 }
-:root {
-  /* fonts */
-  --font-lato: Lato;
-  --regular-medium: Helvetica;
-  --font-open-sans: "Open Sans";
-
-  /* font sizes */
-  --font-size-sm: 14px;
-  --font-size-xs: 12px;
-  --font-size-6xs: 7px;
-  --font-size-lg: 18px;
-  --font-size-9xl: 28px;
-  --regular-medium-size: 16px;
-  --font-size-31xl: 50px;
-  --font-size-3xs: 10px;
-
-  /* Colors */
-  --secondary-primary-white: #fff;
-  --color-gray-100: #1a1f37;
-  --gray-gray-400: #a0aec0;
-  --color-slateblue: rgba(41, 63, 177, 0.74);
-  --color-aliceblue: rgba(226, 232, 240, 0.3);
-  --color-black: #000;
-  --color-mediumseagreen-100: #05cd99;
-  --primary-green-500-success-color: #01b574;
-
-  /* Gaps */
-  --gap-9xs: 4px;
-  --gap-8xs: 5px;
-
-  /* Paddings */
-  --padding-55xl: 74px;
-  --padding-9xs: 4px;
-  --padding-7xs: 6px;
-
-  /* Border radiuses */
-  --br-xs: 12px;
-  --br-mini: 15px;
-  --br-xl: 20px;
-  --br-7xs: 6px;
+input,
+button,
+textarea,
+select {
+  font: inherit;
 }

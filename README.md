@@ -1,4 +1,2 @@
 
-# UCA Canteen Management System
-
-
+  # UCA Canteen project
