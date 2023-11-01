@@ -12,6 +12,7 @@
 .b {
   font-family: "Open Sans";
   color: #fff;
+
 }
 .dont-have-an-container {
   position: absolute;
@@ -147,11 +148,102 @@
   color: #fff;
 }
 .inputs {
-  top: 22.88em;
-  left: 44.75em;
+  top: 2.88em;
+  left: 30.75em;
   width: 28.31em;
   height: 44.69em;
   text-align: center;
   color: #a0aec0;
   font-family: Lato;
+}
+
+@media (max-width: 1920px) and (min-width: 1201px) {
+  .inputs {
+    top: 2.88em;
+    left: 41.75em;
+    height: 44.69em;
+    text-align: center;
+    color: #a0aec0;
+    font-family: Lato;
+  }
+
+}
+
+@media (max-width: 1200px) and (min-width: 1024px) {
+  .inputs {
+    top: 2.88em;
+    left: 17.75em;
+    width: 28.31em;
+    height: 44.69em;
+    text-align: center;
+    color: #a0aec0;
+    font-family: Lato;
+  }
+
+}
+
+@media (max-width: 1024px) and (min-width: 992px) {
+  .inputs {
+    top: 2.88em;
+    left: 16.75em;
+    width: 28.31em;
+    height: 44.69em;
+    text-align: center;
+    color: #a0aec0;
+    font-family: Lato;
+  }
+
+}
+
+@media (max-width: 992px) and (min-width: 768px) {
+  .inputs {
+    top: 2.88em;
+    left: 10.75em;
+    width: 28.31em;
+    height: 44.69em;
+    text-align: center;
+    color: #a0aec0;
+    font-family: Lato;
+  }
+
+}
+
+@media (max-width: 768px) and (min-width: 640px) {
+  .inputs {
+    top: 2.88em;
+    left: 10.75em;
+    width: 28.31em;
+    height: 44.69em;
+    text-align: center;
+    color: #a0aec0;
+    font-family: Lato;
+  }
+
+}
+
+@media (max-width: 640px) and (min-width: 480px){
+  .inputs{
+    top: 2.88em;
+    left: 5%;
+    width: 28.31em;
+    height: 44.69em;
+    text-align: center;
+    color: #a0aec0;
+    font-family: Lato;
+  }
+
+
+}
+
+@media (max-width: 480px){
+  .inputs{
+    top: 2.88em;
+    left: 0.5%;
+    width: 28.31em;
+    height: 44.69em;
+    text-align: center;
+    color: #a0aec0;
+    font-family: Lato;
+  }
+
 }
