@@ -18,7 +18,8 @@ const FormContainer1 = memo(() => {
             <div className="stud">Stud</div>
           </div>
         </div>
-        <img className="clients-table-child" alt="" src="/vector-5.svg" />
+        {/* <img className="clients-table-child" alt="" src="/vector-5.svg" /> */}
+        <hr className="clients-table-child"></hr>
         <div className="guests1">
           <div className="guests-button">
             <div className="edit10">Edit</div>

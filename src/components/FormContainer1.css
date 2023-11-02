@@ -80,7 +80,16 @@
   width: 81.13em;
   height: 1.81em;
 }
-.clients-table-child,
+.clients-table-child
+{
+  position: absolute;
+  top: 16.9em;
+  width: 97.25em;
+  height: 0.06em;
+  background: gray;
+  border: none;
+  opacity: 0.2;
+}
 .guests-button {
   position: absolute;
   top: 17.19em;
@@ -141,9 +150,13 @@
   height: 1.69em;
 }
 .clients-table-item {
-  top: 13.31em;
+  position: absolute;
+  top: 12.9em;
   width: 97.25em;
   height: 0.06em;
+  background: gray;
+  border: none;
+  opacity: 0.2;
 }
 .b14 {
   top: 0.21em;
@@ -173,7 +186,7 @@
 .clients-table-inner
 {
   position: absolute;
-  top: 8.7em;
+  top: 8.9em;
   width: 97.25em;
   height: 0.06em;
   background: gray;
