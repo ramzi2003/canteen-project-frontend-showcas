@@ -1,6 +1,7 @@
 import { memo } from "react";
 import PasswordFormContainer from "./PasswordFormContainer";
 import "./ContainerInputs.css";
+import { Link } from "react-router-dom";
 
 const ContainerInputs = memo(() => {
   return (
@@ -13,7 +14,9 @@ const ContainerInputs = memo(() => {
             <b className="sign-in">{` `}</b>
           </span>
           <b className="sign-in">
-            <span>Sign in</span>
+            <Link className="sign-in" to="/">
+              Sign in
+            </Link>
           </b>
         </div>
       </div>

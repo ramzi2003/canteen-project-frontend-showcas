@@ -12,6 +12,7 @@
 .sign-in {
   font-family: "Open Sans";
   color: #fff;
+  text-decoration: none;
 }
 .already-have-an-container {
   position: absolute;
