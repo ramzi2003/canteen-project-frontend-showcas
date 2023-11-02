@@ -1,6 +1,7 @@
 import { memo } from "react";
 import PasswordFormContainer1 from "./PasswordFormContainer1";
 import "./FormContainer.css";
+import { Link } from "react-router-dom";
 
 const FormContainer = memo(() => {
   return (
@@ -13,7 +14,10 @@ const FormContainer = memo(() => {
             <b className="b">{` `}</b>
           </span>
           <b className="b">
-            <span>Sign up</span>
+            {/* <span><a href="">Sign up</a></span> */}
+            <span>
+              <Link to="/sign-up-screen">Sign up</Link>
+            </span>
           </b>
         </div>
       </div>

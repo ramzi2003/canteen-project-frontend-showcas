@@ -11,8 +11,11 @@
 }
 .b {
   font-family: "Open Sans";
-  color: #fff;
+}
 
+.b a {
+  color: #fff;
+  text-decoration: none;
 }
 .dont-have-an-container {
   position: absolute;
