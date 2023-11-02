@@ -88,6 +88,10 @@
 .icon42,
 .text26 {
   position: relative;
+  color: #fff;
+  text-decoration: none;
+  padding: 3px;
+  font-size: 25px;
 }
 .icon42 {
   width: 0.69em;
@@ -96,7 +100,7 @@
   flex-shrink: 0;
 }
 .text26 {
-  font-size: 0.63em;
+  font-size: 0.73em;
   line-height: 150%;
 }
 .buttons5,

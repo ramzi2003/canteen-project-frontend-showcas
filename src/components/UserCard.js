@@ -1,5 +1,6 @@
 import { memo } from "react";
 import "./UserCard.css";
+import { Link } from "react-router-dom";
 
 const UserCard = memo(() => {
   return (
@@ -24,11 +25,17 @@ const UserCard = memo(() => {
       <div className="buttons5">
         <div className="overview13">
           <img className="icon42" alt="" src="/icon16.svg" />
-          <b className="text26"> PROFILE</b>
+          {/* <b className="text26"> PROFILE</b> */}
+          <Link to="" className="text26">
+            PROFILE
+          </Link>
         </div>
         <div className="overview13">
           <img className="icon42" alt="" src="/icon17.svg" />
-          <b className="text26"> SETTINGS</b>
+          {/* <b className="text26"> SETTINGS</b> */}
+          <Link to="" className="text26">
+            SETTINGS
+          </Link>
         </div>
       </div>
     </div>

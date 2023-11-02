@@ -40,6 +40,8 @@
   position: relative;
   font-size: 0.75em;
   line-height: 150%;
+  color: #fff;
+  text-decoration: none;
 }
 .password-text-icon2 {
   position: relative;
@@ -139,6 +141,8 @@
 }
 .clients-page5 {
   font-weight: 500;
+  color: #fff;
+  text-decoration: none;
 }
 .clients-page4 {
   color: #fff;
@@ -240,6 +244,7 @@
 .ivan-ivanov2 {
   font-size: 1.13em;
   line-height: 140%;
+  width: 5.8em;
 }
 .full-name2 {
   width: 6.5em;
@@ -279,6 +284,9 @@
 .icon10,
 .text5 {
   position: relative;
+  padding: 3px;
+  text-decoration: none;
+  color: #fff;
 }
 .icon10 {
   width: 0.69em;
@@ -687,7 +695,7 @@
 .add-client-clients-page {
   position: relative;
   background-color: #060b26;
-  width: 100%;
+  width: 270%;
   height: 69.38em;
   text-align: left;
   color: #000;

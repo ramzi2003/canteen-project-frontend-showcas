@@ -1,6 +1,7 @@
 import AddNewClientFormContainer from "../components/AddNewClientFormContainer";
 import BreadcrumbItemPrevious from "../components/BreadcrumbItemPrevious";
 import "./AddClientClientsPage.css";
+import { Link } from "react-router-dom";
 
 const AddClientClientsPage = () => {
   return (
@@ -34,7 +35,10 @@ const AddClientClientsPage = () => {
                 alt=""
                 src="/ioniconppersondefault.svg"
               />
-              <div className="type-here2">Log out</div>
+              {/* <div className="type-here2">Log out</div> */}
+              <Link to="/" className="type-here2">
+                Log out
+              </Link>
             </div>
             <img
               className="ioniconssettingssharp2"
@@ -56,17 +60,20 @@ const AddClientClientsPage = () => {
               </span>
               <span className="clients-page4">
                 <span>{` `}</span>
-                <span className="clients-page5">/ Clients page</span>
+                {/* <span className="clients-page5">/ Clients page</span> */}
+                <Link to="/clients-page" className="clients-page5">
+                  / Clients page
+                </Link>
               </span>
             </div>
           </div>
           <BreadcrumbItemPrevious
             breadcrumb="Add a new client"
-            breadcrumbItemPreviousWidth="7.06em"
+            breadcrumbItemPreviousWidth="17.06em"
             breadcrumbItemPreviousPosition="absolute"
             breadcrumbItemPreviousTop="1.38em"
             breadcrumbItemPreviousLeft="0em"
-            breadcrumbFontSize="1.5em"
+            breadcrumbFontSize="0.9em"
             breadcrumbColor="#fff"
             breadcrumbLineHeight="150%"
             breadcrumbFontFamily="Helvetica"
@@ -99,13 +106,19 @@ const AddClientClientsPage = () => {
           <div className="profile-button2">
             <div className="overview4">
               <img className="icon10" alt="" src="/icon1.svg" />
-              <b className="text5"> PROFILE</b>
+              {/* <b className="text5"> PROFILE</b> */}
+              <Link to="" className="text5">
+                PROFILE
+              </Link>
             </div>
           </div>
           <div className="settings-button2">
             <div className="overview4">
               <img className="icon10" alt="" src="/icon2.svg" />
-              <b className="text5"> SETTINGS</b>
+              {/* <b className="text5"> SETTINGS</b> */}
+              <Link to="" className="text5">
+                SETTINGS
+              </Link>
             </div>
           </div>
         </div>
