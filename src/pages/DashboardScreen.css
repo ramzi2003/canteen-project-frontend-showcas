@@ -12,8 +12,8 @@
   left: -20.69em;
   background-color: rgba(0, 0, 0, 0.3);
   filter: blur(272px);
-  width: 157.88em;
-  height: 123.78em;
+  width: 15.88em;
+  height: 12.78em;
 }
 .analytics-cards,
 .background-icon,
@@ -313,8 +313,8 @@
   height: 0.06em;
 }
 .sidebar3 {
-  top: 0.94em;
-  left: 0.63em;
+  top: 0em;
+  left: 0em;
   width: 16.5em;
   height: 70.94em;
 }
@@ -326,3 +326,33 @@
   color: #fff;
   font-family: Lato;
 }
+
+@media (max-width: 1920px) and (min-width: 1201px) {
+  
+}
+
+@media (max-width: 1200px) and (min-width: 1024px) {
+  
+}
+
+@media (max-width: 1024px) and (min-width: 992px) {
+  
+}
+
+@media (max-width: 992px) and (min-width: 768px) {
+  
+}
+
+@media (max-width: 768px) and (min-width: 640px) {
+  
+}
+
+@media (max-width: 640px) and (min-width: 480px) {
+  
+}
+
+@media (max-width: 480px) {
+
+}
+
+
