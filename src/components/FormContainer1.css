@@ -170,7 +170,16 @@
   width: 81.13em;
   height: 1.69em;
 }
-.clients-table-inner,
+.clients-table-inner
+{
+  position: absolute;
+  top: 8.7em;
+  width: 97.25em;
+  height: 0.06em;
+  background: gray;
+  border: none;
+  opacity: 0.2;
+}
 .student-button {
   position: absolute;
   top: 9.44em;
@@ -217,18 +226,23 @@
   height: 1.22em;
   overflow: hidden;
 }
-.clients-table-child1,
+
 .students {
   position: absolute;
   top: 6.75em;
   left: 0;
   width: 81.13em;
   height: 1.81em;
+
 }
 .clients-table-child1 {
-  top: 5.56em;
+  position: absolute;
+  top: 5.06em;
   width: 97.25em;
   height: 0.06em;
+  background: gray;
+  border: none;
+  opacity: 0.2;
 }
 .adm1,
 .b19,
@@ -290,7 +304,10 @@
   top: 1.69em;
   left: 0;
   width: 97.25em;
-  height: 0.06em;
+  background: gray;
+  height: 0.02em;
+  border: none;
+  opacity: 0.5;
 }
 .actions1,
 .departments,

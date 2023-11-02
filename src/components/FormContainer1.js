@@ -31,7 +31,8 @@ const FormContainer1 = memo(() => {
             <div className="stud">Adm</div>
           </div>
         </div>
-        <img className="clients-table-item" alt="" src="/vector-5.svg" />
+        {/* <img className="clients-table-item" alt="" src="/vector-5.svg" /> */}
+        <hr className="clients-table-item"></hr>
         <div className="faculty">
           <div className="guests-button">
             <div className="edit10">Edit</div>
@@ -44,7 +45,8 @@ const FormContainer1 = memo(() => {
             <div className="stud">Facu</div>
           </div>
         </div>
-        <img className="clients-table-inner" alt="" src="/vector-5.svg" />
+        {/* <img className="clients-table-inner" alt="" src="/vector-5.svg" /> */}
+        <hr className="clients-table-inner"></hr>
         <div className="students">
           <div className="student-button">
             <div className="edit10">Edit</div>
@@ -57,7 +59,8 @@ const FormContainer1 = memo(() => {
             <div className="stud">Stud</div>
           </div>
         </div>
-        <img className="clients-table-child1" alt="" src="/vector-5.svg" />
+        {/* <img className="clients-table-child1" alt="" src="/vector-5.svg" /> */}
+        <hr className="clients-table-child1"></hr>
         <div className="contractors2">
           <b className="b16">1200</b>
           <b className="b19">5</b>
@@ -70,7 +73,8 @@ const FormContainer1 = memo(() => {
             <div className="edit10">Edit</div>
           </div>
         </div>
-        <img className="clients-table-child2" alt="" src="/vector-5.svg" />
+        {/* <img className="clients-table-child2" alt="" src="/vector-5.svg" /> */}
+        <hr className="clients-table-child2"></hr>
         <div className="clients-page-table-titles">
           <div className="actions1">ACTIONS</div>
           <div className="total-balance">TOTAL BALANCE</div>
