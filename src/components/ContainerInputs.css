@@ -216,10 +216,10 @@
   width: 15.94em;
   font-family: "Open Sans";
 }
-.use-these-awesome {
+/* .use-these-awesome {
   margin: 0;
-}
-.use-these-awesome-container {
+} */
+/* .use-these-awesome-container {
   position: absolute;
   top: 3.61em;
   left: 0;
@@ -229,8 +229,8 @@
   display: inline-block;
   width: 23.79em;
   height: 3.21em;
-}
-.welcome {
+} */
+/* .welcome {
   position: absolute;
   top: 0;
   left: 3.15em;
@@ -238,7 +238,7 @@
   line-height: 130%;
   font-family: "Open Sans";
   text-align: left;
-}
+} */
 .inputs1,
 .title13 {
   position: absolute;
@@ -249,11 +249,100 @@
   color: #fff;
 }
 .inputs1 {
-  top: 13.63em;
-  left: 44.75em;
+  top: -6.2em;
+  left: 32.75em;
   width: 28.28em;
   height: 53.97em;
   text-align: center;
   color: #a0aec0;
   font-family: Lato;
 }
+
+@media (max-width: 1920px) and (min-width: 1201px) {
+  .inputs1 {
+    top: -6.2em;
+    left: 27.75em;
+    width: 28.28em;
+    height: 53.97em;
+    text-align: center;
+    color: #a0aec0;
+    font-family: Lato;
+  }
+}
+
+@media (max-width: 1200px) and (min-width: 1024px) {
+  .inputs1 {
+    top: -6.2em;
+    left: 27.75em;
+    width: 28.28em;
+    height: 53.97em;
+    text-align: center;
+    color: #a0aec0;
+    font-family: Lato;
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 992px) {
+  .inputs1 {
+    top: -6.2em;
+    left: 22.75em;
+    width: 28.28em;
+    height: 53.97em;
+    text-align: center;
+    color: #a0aec0;
+    font-family: Lato;
+  }
+}
+
+@media (max-width: 992px) and (min-width: 768px) {
+  .inputs1 {
+    top: -6.2em;
+    left: 15.75em;
+    width: 28.28em;
+    height: 53.97em;
+    text-align: center;
+    color: #a0aec0;
+    font-family: Lato;
+  }
+}
+
+
+@media (max-width: 768px) and (min-width: 640px) {
+  .inputs1 {
+    top: -6.2em;
+    left: 8.75em;
+    width: 28.28em;
+    height: 53.97em;
+    text-align: center;
+    color: #a0aec0;
+    font-family: Lato;
+  }
+}
+
+
+@media (max-width: 640px) and (min-width: 480px) {
+  .inputs1 {
+    top: -6.2em;
+    left: 5.75em;
+    width: 28.28em;
+    height: 53.97em;
+    text-align: center;
+    color: #a0aec0;
+    font-family: Lato;
+  }
+}
+
+@media (max-width: 480px) {
+  .inputs1 {
+    top: -6.2em;
+    left: 0.75em;
+    width: 28.28em;
+    height: 53.97em;
+    text-align: center;
+    color: #a0aec0;
+    font-family: Lato;
+  }
+}
+
+
+

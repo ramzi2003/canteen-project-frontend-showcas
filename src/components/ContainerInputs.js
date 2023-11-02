@@ -73,7 +73,7 @@ const ContainerInputs = memo(() => {
           <b className="register-with1">Register with</b>
         </div>
       </div>
-      <div className="title13">
+      {/* <div className="title13">
         <div className="use-these-awesome-container">
           <p className="use-these-awesome">
             Use these awesome forms to login or create new account in your
@@ -82,7 +82,7 @@ const ContainerInputs = memo(() => {
           <p className="use-these-awesome">&nbsp;</p>
         </div>
         <b className="welcome">Welcome!</b>
-      </div>
+      </div> */}
     </div>
   );
 });
