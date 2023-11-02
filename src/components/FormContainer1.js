@@ -9,7 +9,10 @@ const FormContainer1 = memo(() => {
       <div className="clients-table">
         <div className="students-2021-2025">
           <div className="student-button">
-            <div className="edit10">Edit</div>
+            {/* <div className="edit10">Edit</div> */}
+            <Link to="" className="edit10">
+              Edit
+            </Link>
           </div>
           <b className="b10">12412</b>
           <b className="b11">120</b>
@@ -23,7 +26,10 @@ const FormContainer1 = memo(() => {
         <hr className="clients-table-child"></hr>
         <div className="guests1">
           <div className="guests-button">
-            <div className="edit10">Edit</div>
+            {/* <div className="edit10">Edit</div> */}
+            <Link to="" className="edit10">
+              Edit
+            </Link>
           </div>
           <b className="b12">32145</b>
           <b className="b13">20</b>
@@ -37,7 +43,10 @@ const FormContainer1 = memo(() => {
         <hr className="clients-table-item"></hr>
         <div className="faculty">
           <div className="guests-button">
-            <div className="edit10">Edit</div>
+            {/* <div className="edit10">Edit</div> */}
+            <Link to="" className="edit10">
+              Edit
+            </Link>
           </div>
           <b className="b14">1243</b>
           <b className="b15">15</b>
@@ -51,7 +60,10 @@ const FormContainer1 = memo(() => {
         <hr className="clients-table-inner"></hr>
         <div className="students">
           <div className="student-button">
-            <div className="edit10">Edit</div>
+            {/* <div className="edit10">Edit</div> */}
+            <Link to="" className="edit10">
+              Edit
+            </Link>
           </div>
           <b className="b16">20000</b>
           <b className="b15">200</b>
@@ -72,7 +84,10 @@ const FormContainer1 = memo(() => {
             <div className="adm1">Adm</div>
           </div>
           <div className="contractor-button">
-            <div className="edit10">Edit</div>
+            {/* <div className="edit10">Edit</div> */}
+            <Link to="" className="edit10">
+              Edit
+            </Link>
           </div>
         </div>
         {/* <img className="clients-table-child2" alt="" src="/vector-5.svg" /> */}
