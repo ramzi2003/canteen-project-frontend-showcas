@@ -2,6 +2,9 @@
   position: relative;
   font-size: 0.63em;
   line-height: 150%;
+  color: #fff;
+  text-decoration: none;
+  padding: 3px;
 }
 .back-button,
 .rectangle-div {
@@ -84,6 +87,7 @@
   position: absolute;
   top: 0;
   left: 0;
+  width: 5.8em;
 }
 .ivan-ivanov1 {
   font-size: 1.13em;
@@ -226,6 +230,8 @@
   position: relative;
   font-size: 0.75em;
   line-height: 150%;
+  color: #fff;
+  text-decoration: none;
 }
 .password-text-icon1 {
   position: relative;
@@ -742,7 +748,7 @@
 .change-department-clients-pag {
   position: relative;
   background-color: #060b26;
-  width: 100%;
+  width: 275%;
   height: 68.94em;
   text-align: left;
   color: #fff;

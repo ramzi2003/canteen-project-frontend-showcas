@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import DepartmentSelectionContainer from "../components/DepartmentSelectionContainer";
 import BreadcrumbItemPrevious from "../components/BreadcrumbItemPrevious";
 import "./ChangeDepartmentClientsPag.css";
+import { Link } from "react-router-dom";
 
 const ChangeDepartmentClientsPag = () => {
   const navigate = useNavigate();
@@ -43,6 +44,7 @@ const ChangeDepartmentClientsPag = () => {
           />
           <div className="background-child1" />
         </div>
+        
         <div className="avatar1">
           <div className="name-and-email1">
             <div className="email1">
@@ -59,17 +61,24 @@ const ChangeDepartmentClientsPag = () => {
           <div className="profile-button1">
             <div className="overview2">
               <img className="icon5" alt="" src="/icon4.svg" />
-              <b className="text2"> PROFILE</b>
+              
+              <Link to="" className="text2">
+                PROFILE
+              </Link>
             </div>
           </div>
           <div className="settings-button1">
             <div className="overview2">
               <img className="icon5" alt="" src="/icon5.svg" />
-              <b className="text2"> SETTINGS</b>
+              
+              <Link to="" className="text2">
+                SETTINGS
+              </Link>
             </div>
           </div>
         </div>
       </div>
+      
       <div className="navbar1">
         <div className="breadcrumb3">
           <div className="menu2">
@@ -98,7 +107,10 @@ const ChangeDepartmentClientsPag = () => {
                 alt=""
                 src="/ioniconppersondefault.svg"
               />
-              <div className="type-here1">Log out</div>
+              {/* <div className="type-here1">Log out</div> */}
+              <Link to="/" className="type-here1">
+                Log out
+              </Link>
             </div>
             <img
               className="ioniconssettingssharp1"
@@ -126,11 +138,11 @@ const ChangeDepartmentClientsPag = () => {
           </div>
           <BreadcrumbItemPrevious
             breadcrumb="Choose department for a new client"
-            breadcrumbItemPreviousWidth="7.06em"
+            breadcrumbItemPreviousWidth="17.06em"
             breadcrumbItemPreviousPosition="absolute"
             breadcrumbItemPreviousTop="1.38em"
             breadcrumbItemPreviousLeft="0em"
-            breadcrumbFontSize="1.5em"
+            breadcrumbFontSize="0.9em"
             breadcrumbColor="#fff"
             breadcrumbLineHeight="150%"
             breadcrumbFontFamily="Helvetica"
