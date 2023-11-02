@@ -1,5 +1,6 @@
 import { memo } from "react";
 import "./FormContainer1.css";
+import { Link } from "react-router-dom";
 
 const FormContainer1 = memo(() => {
   return (
@@ -94,11 +95,17 @@ const FormContainer1 = memo(() => {
       </div>
       <div className="clients-page-button">
         <div className="add-department-button">
-          <div className="add-department-button-child" />
-          <div className="add-department">{`Add department `}</div>
+          {/* <div className="add-department-button-child" /> */}
+          {/* <div className="add-department">{`Add department `}</div> */}
+          <Link to="/add-client-clients-page" className="add-department-button-child">
+            <div className="add-department">{`Add department `}</div>
+          </Link>
         </div>
         <div className="change-department-button">
-          <div className="change-department">Change department</div>
+          {/* <div className="change-department">Change department</div> */}
+          <Link to="/change-department-clients-page" className="change-department">
+            Change department
+          </Link>
         </div>
         <div className="add-department-button">
           <div className="clients-export-child" />

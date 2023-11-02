@@ -405,10 +405,11 @@
   line-height: 140%;
   font-weight: 500;
   display: inline-block;
-  width: 9.07em;
-  height: 1.5em;
+  width: 8.07em;
+  height: 1.4em;
   flex-shrink: 0;
   margin-top: -1.71em;
+  color: #fff;
 }
 .add-department-button {
   flex: 1;
@@ -427,6 +428,8 @@
   font-weight: 500;
   display: inline-block;
   width: 10.86em;
+  color: #fff;
+  text-decoration: none;
 }
 .change-department-button {
   flex: 1;
