@@ -46,15 +46,15 @@ function App() {
         title = "";
         metaDescription = "";
         break;
-      case "/dashboard-screen":
+      case "/dashboard":
         title = "";
         metaDescription = "";
         break;
-      case "/clients-page":
+      case "/clients":
         title = "";
         metaDescription = "";
         break;
-      case "/sign-up-screen":
+      case "/sign-up":
         title = "";
         metaDescription = "";
         break;
@@ -74,11 +74,11 @@ function App() {
         title = "";
         metaDescription = "";
         break;
-      case "/admin-page-admins":
+      case "/admin/admins":
         title = "";
         metaDescription = "";
         break;
-      case "/admin-page":
+      case "/admin":
         title = "";
         metaDescription = "";
         break;
@@ -101,23 +101,17 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<SignInScreen />} />
-      <Route
-        path="/change-department-clients-page"
-        element={<ChangeDepartmentClientsPag />}
-      />
-      <Route
-        path="/add-client-clients-page"
-        element={<AddClientClientsPage />}
-      />
-      <Route path="/dashboard-screen" element={<DashboardScreen />} />
+      <Route path="/change-department-clients-page" element={<ChangeDepartmentClientsPag />}/>
+      <Route path="/add-client-clients-page" element={<AddClientClientsPage />}/>
+      <Route path="/dashboard" element={<DashboardScreen />} />
       <Route path="/clients-page" element={<ClientsPage />} />
-      <Route path="/sign-up-screen" element={<SignUpScreen />} />
-      <Route path="/admin-page-guests" element={<AdminPageGuests />} />
-      <Route path="/admin-page-reception" element={<AdminPageReception />} />
-      <Route path="/admin-page-cashiers" element={<AdminPageCashiers />} />
-      <Route path="/admin-page-bookers" element={<AdminPageBookers />} />
-      <Route path="/admin-page-admins" element={<AdminPageAdmins />} />
-      <Route path="/admin-page" element={<AdminPage />} />
+      <Route path="/sign-up" element={<SignUpScreen />} />
+      <Route path="/admin/guests" element={<AdminPageGuests />} />
+      <Route path="/admin/reception" element={<AdminPageReception />} />
+      <Route path="/admin/cashiers" element={<AdminPageCashiers />} />
+      <Route path="/admin/bookers" element={<AdminPageBookers />} />
+      <Route path="/admin/admins" element={<AdminPageAdmins />} />
+      <Route path="/admin" element={<AdminPage />} />
     </Routes>
   );
 }
