@@ -2,7 +2,8 @@ import AdminTableContainer from "../components/AdminTableContainer";
 import UserCard1 from "../components/UserCard1";
 import ContainerSidebar1 from "../components/ContainerSidebar1";
 import "./AdminPage.css";
-import UserCard from "../components/UserCard";
+import UserCard from "../components/UserCard2";
+
 
 const AdminPage = () => {
   return (
