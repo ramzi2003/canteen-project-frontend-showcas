@@ -14,11 +14,11 @@ const DashboardScreen = () => {
   const navigate = useNavigate();
 
   const onProfileContainerClick = useCallback(() => {
-    // Please sync "Profile" to the project
+    
   }, []);
 
   const onPaymentContainerClick = useCallback(() => {
-    // Please sync "Payment" to the project
+
   }, []);
 
   const onClientsContainerClick = useCallback(() => {
