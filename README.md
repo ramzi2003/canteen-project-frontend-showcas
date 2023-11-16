@@ -1,4 +1,3 @@
-
-# UCA Canteen Management System
-
-
+<!-- 
+    Write README later
+ -->
