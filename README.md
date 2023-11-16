@@ -1,2 +1,3 @@
-
-  # UCA Canteen project
+<!-- 
+    Write README later
+ -->

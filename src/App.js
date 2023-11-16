@@ -1,118 +1,167 @@
-import { useEffect } from "react";
-import {
-  Routes,
-  Route,
-  useNavigationType,
-  useLocation,
-} from "react-router-dom";
-import SignInScreen from "./pages/SignInScreen";
-import ChangeDepartmentClientsPag from "./pages/ChangeDepartmentClientsPag";
-import AddClientClientsPage from "./pages/AddClientClientsPage";
-import DashboardScreen from "./pages/DashboardScreen";
-import ClientsPage from "./pages/ClientsPage";
-import SignUpScreen from "./pages/SignUpScreen";
-import AdminPageGuests from "./pages/AdminPageGuests";
-import AdminPageReception from "./pages/AdminPageReception";
-import AdminPageCashiers from "./pages/AdminPageCashiers";
-import AdminPageBookers from "./pages/AdminPageBookers";
-import AdminPageAdmins from "./pages/AdminPageAdmins";
-import AdminPage from "./pages/AdminPage";
+import { useState, useEffect, useMemo } from "react";
 
-function App() {
-  const action = useNavigationType();
-  const location = useLocation();
-  const pathname = location.pathname;
+// react-router components
+import { Route, Switch, Redirect, useLocation } from "react-router-dom";
 
+// @mui material components
+import { ThemeProvider } from "@mui/material/styles";
+import CssBaseline from "@mui/material/CssBaseline";
+import Icon from "@mui/material/Icon";
+
+// Vision UI Dashboard PRO React components
+import VuiBox from "components/VuiBox";
+
+// Vision UI Dashboard PRO React example components
+import Sidenav from "examples/Sidenav";
+import Configurator from "examples/Configurator";
+
+// Vision UI Dashboard PRO React themes
+import theme from "assets/theme";
+import themeRTL from "assets/theme/theme-rtl";
+
+// RTL plugins
+import rtlPlugin from "stylis-plugin-rtl";
+import { CacheProvider } from "@emotion/react";
+import createCache from "@emotion/cache";
+
+// Vision UI Dashboard PRO React routes
+import routes from "routes";
+
+// Vision UI Dashboard PRO React contexts
+import { useVisionUIController, setMiniSidenav, setOpenConfigurator } from "context";
+
+// Plugins custom css
+import "assets/theme/base/plugins.css";
+
+export default function App() {
+  const [controller, dispatch] = useVisionUIController();
+  const { miniSidenav, direction, layout, openConfigurator, sidenavColor } = controller;
+  const [onMouseEnter, setOnMouseEnter] = useState(false);
+  const [rtlCache, setRtlCache] = useState(null);
+  const { pathname } = useLocation();
+
+  // Cache for the rtl
+  useMemo(() => {
+    const cacheRtl = createCache({
+      key: "rtl",
+      stylisPlugins: [rtlPlugin],
+    });
+
+    setRtlCache(cacheRtl);
+  }, []);
+
+  // Open sidenav when mouse enter on mini sidenav
+  const handleOnMouseEnter = () => {
+    if (miniSidenav && !onMouseEnter) {
+      setMiniSidenav(dispatch, false);
+      setOnMouseEnter(true);
+    }
+  };
+
+  // Close sidenav when mouse leave mini sidenav
+  const handleOnMouseLeave = () => {
+    if (onMouseEnter) {
+      setMiniSidenav(dispatch, true);
+      setOnMouseEnter(false);
+    }
+  };
+
+  // Change the openConfigurator state
+  const handleConfiguratorOpen = () => setOpenConfigurator(dispatch, !openConfigurator);
+
+  // Setting the dir attribute for the body element
   useEffect(() => {
-    if (action !== "POP") {
-      window.scrollTo(0, 0);
-    }
-  }, [action, pathname]);
+    document.body.setAttribute("dir", direction);
+  }, [direction]);
 
+  // Setting page scroll to 0 when changing the route
   useEffect(() => {
-    let title = "";
-    let metaDescription = "";
-
-    switch (pathname) {
-      case "/":
-        title = "";
-        metaDescription = "";
-        break;
-      case "/change-department-clients-page":
-        title = "";
-        metaDescription = "";
-        break;
-      case "/add-client-clients-page":
-        title = "";
-        metaDescription = "";
-        break;
-      case "/dashboard":
-        title = "";
-        metaDescription = "";
-        break;
-      case "/clients":
-        title = "";
-        metaDescription = "";
-        break;
-      case "/sign-up":
-        title = "";
-        metaDescription = "";
-        break;
-      case "/admin-page-guests":
-        title = "";
-        metaDescription = "";
-        break;
-      case "/admin-page-reception":
-        title = "";
-        metaDescription = "";
-        break;
-      case "/admin-page-cashiers":
-        title = "";
-        metaDescription = "";
-        break;
-      case "/admin-page-bookers":
-        title = "";
-        metaDescription = "";
-        break;
-      case "/admin/admins":
-        title = "";
-        metaDescription = "";
-        break;
-      case "/admin":
-        title = "";
-        metaDescription = "";
-        break;
-    }
-
-    if (title) {
-      document.title = title;
-    }
-
-    if (metaDescription) {
-      const metaDescriptionTag = document.querySelector(
-        'head > meta[name="description"]'
-      );
-      if (metaDescriptionTag) {
-        metaDescriptionTag.content = metaDescription;
-      }
-    }
+    document.documentElement.scrollTop = 0;
+    document.scrollingElement.scrollTop = 0;
   }, [pathname]);
 
-  return (
-    <Routes>
-      <Route path="/" element={<SignInScreen />} />
-      <Route path="/change-department-clients-page" element={<ChangeDepartmentClientsPag />}/>
-      <Route path="/add-client-clients-page" element={<AddClientClientsPage />}/>
-      <Route path="/dashboard" element={<DashboardScreen />} />
-      <Route path="/clients-page" element={<ClientsPage />} />
-      <Route path="/sign-up" element={<SignUpScreen />} />
-      <Route path="/admin/guests" element={<AdminPageGuests />} />
-      <Route path="/admin/reception" element={<AdminPageReception />} />
-      <Route path="/admin/cashiers" element={<AdminPageCashiers />} />
-      <Route path="/admin/bookers" element={<AdminPageBookers />} />
-      <Route path="/admin/admins" element={<AdminPageAdmins />} />
-      <Route path="/admin" element={<AdminPage />} />
-    </Routes>
+  const getRoutes = (allRoutes) =>
+    allRoutes.map((route) => {
+      if (route.collapse) {
+        return getRoutes(route.collapse);
+      }
+
+      if (route.route) {
+        return <Route exact path={route.route} component={route.component} key={route.key} />;
+      }
+
+      return null;
+    });
+
+  const configsButton = (
+    <VuiBox
+      display="flex"
+      justifyContent="center"
+      alignItems="center"
+      width="3.5rem"
+      height="3.5rem"
+      bgColor="white"
+      shadow="sm"
+      borderRadius="50%"
+      position="fixed"
+      right="2rem"
+      bottom="2rem"
+      zIndex={99}
+      color="white"
+      sx={({ palette: { info } }) => ({ cursor: "pointer", backgroundColor: info.main })}
+      onClick={handleConfiguratorOpen}
+    >
+      <Icon fontSize="default" color="inherit">
+        settings
+      </Icon>
+    </VuiBox>
+  );
+
+  return direction === "rtl" ? (
+    <CacheProvider value={rtlCache}>
+      <ThemeProvider theme={themeRTL}>
+        <CssBaseline />
+        {layout === "dashboard" && (
+          <>
+            <Sidenav
+              color={sidenavColor}
+              brandName="VISION UI PRO"
+              routes={routes}
+              onMouseEnter={handleOnMouseEnter}
+              onMouseLeave={handleOnMouseLeave}
+            />
+            <Configurator />
+            {configsButton}
+          </>
+        )}
+        {layout === "vr" && <Configurator />}
+        <Switch>
+          {getRoutes(routes)}
+          <Redirect from="*" to="/dashboards/crm" />
+        </Switch>
+      </ThemeProvider>
+    </CacheProvider>
+  ) : (
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
+      {layout === "dashboard" && (
+        <>
+          <Sidenav
+            color={sidenavColor}
+            brandName="VISION UI PRO"
+            routes={routes}
+            onMouseEnter={handleOnMouseEnter}
+            onMouseLeave={handleOnMouseLeave}
+          />
+          <Configurator />
+          {configsButton}
+        </>
+      )}
+      {layout === "vr" && <Configurator />}
+      <Switch>
+        {getRoutes(routes)}
+        <Redirect from="*" to="/dashboards/crm" />
+      </Switch>
+    </ThemeProvider>
   );
 }
-export default App;
