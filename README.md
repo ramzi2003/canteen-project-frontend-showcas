@@ -1,3 +1,1 @@
-<!-- 
-    Write README later
- -->
+# UCA Canteen system
