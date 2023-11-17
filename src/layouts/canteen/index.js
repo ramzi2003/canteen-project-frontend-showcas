@@ -1,3 +1,4 @@
+
 // @mui material components
 import Grid from "@mui/material/Grid";
 import kalVisualsSquare from "assets/images/message-card-image.png";
@@ -20,7 +21,7 @@ import calendarEventsData from "layouts/dashboards/crm/data/calendarEventsData";
 // Data
 import invoicesListData from "layouts/dashboards/crm/data/invoicesListData";
 
-const ClientsLayout = () => {
+const CanteenLayout = () => {
   return (
     <>
       <DashboardNavbar />
@@ -29,4 +30,4 @@ const ClientsLayout = () => {
   );
 };
 
-export default ClientsLayout;
+export default CanteenLayout;

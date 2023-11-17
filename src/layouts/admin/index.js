@@ -20,7 +20,7 @@ import calendarEventsData from "layouts/dashboards/crm/data/calendarEventsData";
 // Data
 import invoicesListData from "layouts/dashboards/crm/data/invoicesListData";
 
-const ClientsLayout = () => {
+const AdminLayout = () => {
   return (
     <>
       <DashboardNavbar />
@@ -29,4 +29,4 @@ const ClientsLayout = () => {
   );
 };
 
-export default ClientsLayout;
+export default AdminLayout;

@@ -3,7 +3,13 @@ import CRM from "layouts/dashboards/crm";
 import Settings from "layouts/pages/account/settings";
 import SignInBasic from "layouts/authentication/sign-in/basic";
 
+import AccountingLayout from "layouts/accounting";
+import AdminLayout from "layouts/admin";
+import CanteenLayout from "layouts/canteen";
+import CashLayout from "layouts/cash";
 import ClientsLayout from "layouts/clients";
+import ReceptionLayout from "layouts/reception";
+
 
 
 // React icons
@@ -65,43 +71,47 @@ const routes = [
     route: "/clients",
     component: ClientsLayout,
     icon: <IoDocument size="15px" color="inherit" />,
-    // collapse: [{ name: "Clients", key: "clients", route: "#" }],
     collapse: [{ name: "Clients", key: "clients", route: "/clients", component: ClientsLayout }],
   },
   {
     type: "collapse",
     name: "Canteen",
     key: "canteen",
+    route: "/canteen",
     icon: <IoDocument size="15px" color="inherit" />,
-    collapse: [{ name: "Canteen", key: "canteen", route: "/dashboards/crm", component: CRM }],
+    collapse: [{ name: "Canteen", key: "canteen", route: "/canteen", component: CanteenLayout }],
   },
   {
     type: "collapse",
     name: "Accounting",
     key: "accounting",
+    route: "/accounting",
     icon: <IoDocument size="15px" color="inherit" />,
-    collapse: [{ name: "Accounting", key: "accounting", route: "#" }],
+    collapse: [{ name: "Accounting", key: "accounting", route: "/accounting", component: AccountingLayout }],
   },
   {
     type: "collapse",
     name: "Reception",
     key: "reception",
+    route: "/reception",
     icon: <IoDocument size="15px" color="inherit" />,
-    collapse: [{ name: "Reception", key: "reception", route: "#" }],
+    collapse: [{ name: "Reception", key: "reception", route: "/reception", component: ReceptionLayout }],
   },
   {
     type: "collapse",
     name: "Admin",
     key: "admin",
+    route: "/admin",
     icon: <IoDocument size="15px" color="inherit" />,
-    collapse: [{ name: "Admin", key: "admin", route: "#" }],
+    collapse: [{ name: "Admin", key: "admin", route: "/admin", component: AdminLayout }],
   },
   {
     type: "collapse",
     name: "Cashier",
     key: "cashier",
+    route: "/cashier",
     icon: <IoDocument size="15px" color="inherit" />,
-    collapse: [{ name: "Cashier", key: "cashier", route: "#" }],
+    collapse: [{ name: "Cashier", key: "cashier", route: "/cashier", component: CashLayout }],
   },
 ];
 
