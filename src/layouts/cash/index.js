@@ -20,6 +20,7 @@ import calendarEventsData from "layouts/dashboards/crm/data/calendarEventsData";
 // Data
 import invoicesListData from "layouts/dashboards/crm/data/invoicesListData";
 
+
 const CashLayout = () => {
   return (
     <>
