@@ -3,6 +3,8 @@ import CRM from "layouts/dashboards/crm";
 import Settings from "layouts/pages/account/settings";
 import SignInBasic from "layouts/authentication/sign-in/basic";
 
+import ClientsLayout from "layouts/clients";
+
 
 // React icons
 import { IoDocument } from "react-icons/io5";
@@ -60,15 +62,18 @@ const routes = [
     type: "collapse",
     name: "Clients",
     key: "clients",
+    route: "/clients",
+    component: ClientsLayout,
     icon: <IoDocument size="15px" color="inherit" />,
-    collapse: [{ name: "Clients", key: "clients", route: "#" }],
+    // collapse: [{ name: "Clients", key: "clients", route: "#" }],
+    collapse: [{ name: "Clients", key: "clients", route: "/clients", component: ClientsLayout }],
   },
   {
     type: "collapse",
     name: "Canteen",
     key: "canteen",
     icon: <IoDocument size="15px" color="inherit" />,
-    collapse: [{ name: "Canteen", key: "canteen", route: "#" }],
+    collapse: [{ name: "Canteen", key: "canteen", route: "/dashboards/crm", component: CRM }],
   },
   {
     type: "collapse",
