@@ -14,6 +14,9 @@ import team3 from "assets/images/team-3.jpg";
 import team4 from "assets/images/team-4.jpg";
 import VuiButton from "components/VuiButton";
 
+
+
+
 export default {
   columns: [
     // { Header: "ID", accessor: "id", 
@@ -65,7 +68,7 @@ export default {
   rows: [
     {
       id: "#10421",
-      date: "1 Nov, 10:20 AM",
+      date: "20 Feb, 2023",
       status: "paid",
       department: ["Contractors", { image: team2 }],
       total: "4",
@@ -73,7 +76,7 @@ export default {
     },
     {
       id: "#10422",
-      date: "1 Nov, 10:53 AM",
+      date: "10 Jan, 2023",
       status: "paid",
       department: ["Students", { image: team1 }],
       total: "5",
@@ -81,7 +84,7 @@ export default {
     },
     {
       id: "#10423",
-      date: "1 Nov, 11:13 AM",
+      date: "12 Nov, 2023",
       status: "refunded",
       department: ["Faculty", { image: "M", color: "info" }],
       total: "7",
@@ -90,7 +93,7 @@ export default {
     },
     {
       id: "#10424",
-      date: "1 Nov, 12:20 PM",
+      date: "1 Dec, 2023",
       status: "paid",
       department: ["Guests", { image: team3 }],
       total: "29",
@@ -98,7 +101,7 @@ export default {
     },
     {
       id: "#10425",
-      date: "1 Nov, 1:40 PM",
+      date: "20 Oct, 2023",
       status: "canceled",
       department: ["Students 2021 - 2025", { image: team4 }],
       total: "120",
