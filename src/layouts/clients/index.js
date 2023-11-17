@@ -307,9 +307,6 @@ const ClientsLayout = () => {
       </VuiBox>
 
 
-
-
-      {/* Example usage of the Table component */}
       <Table columns={tableColumns} rows={tableRows} />
 
       <Footer />
