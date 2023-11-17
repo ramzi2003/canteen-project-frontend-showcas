@@ -25,34 +25,36 @@ import VuiTypography from "components/VuiTypography";
 // Billing page components
 import Bill from "layouts/pages/account/billing/components/Bill";
 
-function BillingInformation() {
+function CommunicationCenter() {
   return (
     <Card id="delete-account">
       <VuiBox>
         <VuiTypography variant="lg" color="white" fontWeight="bold">
-          Billing Information
+          Communication Center
+        </VuiTypography><br/>
+        <VuiTypography variant="button" color="success" fontWeight="bold">
+          Last update: 10 September, 2023
         </VuiTypography>
       </VuiBox>
       <VuiBox>
         <VuiBox component="ul" display="flex" flexDirection="column" p={0} m={0}>
           <Bill
-            name="oliver liam"
-            company="viking burrito"
-            email="oliver@burrito.com"
-            vat="FRB1235476"
+            name="Independence Day"
+            date="5 September, 2023"
+            time="15:00 - 16:00"
+            message="Due to Independence day canteen will not be working"
           />
           <Bill
-            name="lucas harper"
-            company="stone tech zone"
-            email="lucas@stone-tech.com"
-            vat="FRB1235476"
+            name="Faculty and Staff Party"
+            date="20 September, 2023"
+            time="15:00 - 16:00"
+            message="Dear students, please find your food in a containers put on the first refrigerator "
           />
           <Bill
-            name="ethan james"
-            company="fiber notion"
-            email="ethan@fiber.com"
-            vat="FRB1235476"
-            noGutter
+            name="Faculty and Staff Party"
+            date="20 September, 2023"
+            time="15:00 - 16:00"
+            message="Dear students, please find your food in a containers put on the first refrigerator "
           />
         </VuiBox>
       </VuiBox>
@@ -60,4 +62,4 @@ function BillingInformation() {
   );
 }
 
-export default BillingInformation;
+export default CommunicationCenter;

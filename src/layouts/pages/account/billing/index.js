@@ -33,7 +33,7 @@ import Footer from "examples/Footer";
 // Billing page components
 import PaymentMethod from "layouts/pages/account/billing/components/PaymentMethod";
 import Invoices from "layouts/pages/account/billing/components/Invoices";
-import BillingInformation from "layouts/pages/account/billing/components//BillingInformation";
+import CommunicationCenter from "layouts/pages/account/billing/components//CommunicationCenter";
 import Transactions from "layouts/pages/account/billing/components//Transactions";
 import CreditBalance from "layouts/pages/account/billing/components/CreditBalance";
 
@@ -65,7 +65,7 @@ function Billing() {
         <VuiBox my={3}>
           <Grid container spacing={3}>
             <Grid item xs={12} md={7}>
-              <BillingInformation />
+              <CommunicationCenter />
             </Grid>
             <Grid item xs={12} md={5}>
               <Transactions />

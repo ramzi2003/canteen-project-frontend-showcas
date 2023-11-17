@@ -29,7 +29,7 @@ import VuiTypography from "components/VuiTypography";
 import VuiProgress from "components/VuiProgress";
 
 // LineChart apex-chart
-import BasicLineChart from "../BasicLineChart";
+
 
 function ProgressLineChart({ color, icon, title, count, progress, data, options }) {
   const [chartData, setChartData] = useState([...data]);
@@ -87,11 +87,7 @@ function ProgressLineChart({ color, icon, title, count, progress, data, options 
         </VuiBox>
       </VuiBox>
       <VuiBox sx={{maxHeight: "150px"}}>
-        {
-          useMemo(() => (
-            <BasicLineChart lineChartData={chartData} lineChartOptions={chartOptions}/>
-          ), [data, options])
-        }
+        
       </VuiBox>
     </Card>
   );

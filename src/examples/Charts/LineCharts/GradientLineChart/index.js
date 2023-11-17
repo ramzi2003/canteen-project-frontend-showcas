@@ -27,7 +27,6 @@ import Card from "@mui/material/Card";
 import VuiBox from "components/VuiBox";
 import VuiTypography from "components/VuiTypography";
 
-import BasicLineChart from "../BasicLineChart";
 
 function GradientLineChart({ title, description, height, data, options }) {
   const renderChart = (
@@ -50,12 +49,7 @@ function GradientLineChart({ title, description, height, data, options }) {
       ) : null}
       <VuiBox sx={{minHeight: "300px"}}>
 
-      {useMemo(
-        () => (
-          <BasicLineChart lineChartData={data} lineChartOptions={options}/>
-        ),
-        [data, options]
-      )}
+      
       </VuiBox>
     </VuiBox>
   );

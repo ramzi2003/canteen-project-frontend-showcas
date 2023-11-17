@@ -28,7 +28,7 @@ import VuiButton from "components/VuiButton";
 import linearGradient from "assets/theme/functions/linearGradient";
 import colors from "assets/theme/base/colors";
 
-function Bill({ name, company, email, vat, noGutter }) {
+function Bill({ name, date, time, message, noGutter }) {
   const { gradients } = colors;
   const { bill } = gradients;
 
@@ -41,7 +41,7 @@ function Bill({ name, company, email, vat, noGutter }) {
       sx={{ background: linearGradient(bill.main, bill.state, bill.deg) }}
       borderRadius="lg"
       p="24px"
-      mb={noGutter ? "0px" : "24px"}
+      mb={noGutter ? "0px" : "2px"}
       mt="20px"
     >
       <VuiBox width="100%" display="flex" flexDirection="column">
@@ -72,41 +72,34 @@ function Bill({ name, company, email, vat, noGutter }) {
               },
             })}
           >
-            <VuiBox mr={1}>
-              <VuiButton variant="text" color="error">
-                <Icon sx={{ mr: "4px" }}>delete</Icon>&nbsp;DELETE
-              </VuiButton>
-            </VuiBox>
-            <VuiButton variant="text" color="text">
-              <Icon sx={{ mr: "4px" }}>edit</Icon>&nbsp;EDIT
-            </VuiButton>
+            
           </VuiBox>
         </VuiBox>
         <VuiBox mb={1} lineHeight={0}>
           <VuiTypography variant="caption" color="text">
-            Company Name:&nbsp;&nbsp;&nbsp;
+            Date:&nbsp;&nbsp;&nbsp;
             <VuiTypography
               variant="caption"
               color="text"
               fontWeight="regular"
               textTransform="capitalize"
             >
-              {company}
+              {date}
             </VuiTypography>
           </VuiTypography>
         </VuiBox>
         <VuiBox mb={1} lineHeight={0}>
           <VuiTypography variant="caption" color="text">
-            Email Address:&nbsp;&nbsp;&nbsp;
+            Time:&nbsp;&nbsp;&nbsp;
             <VuiTypography variant="caption" fontWeight="regular" color="text">
-              {email}
+              {time}
             </VuiTypography>
           </VuiTypography>
         </VuiBox>
         <VuiTypography variant="caption" color="text">
-          VAT Number:&nbsp;&nbsp;&nbsp;
+          Message:&nbsp;&nbsp;&nbsp;
           <VuiTypography variant="caption" fontWeight="regular" color="text">
-            {vat}
+            {message}
           </VuiTypography>
         </VuiTypography>
       </VuiBox>

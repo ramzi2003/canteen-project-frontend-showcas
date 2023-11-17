@@ -70,6 +70,8 @@ function Sidenav({ color, brand, routes, ...rest }) {
     }
   }, []);
 
+
+  
   // Render all the nested collapse items from the routes.js
   const renderNestedCollapse = (collapse) => {
     const template = collapse.map(({ name, route, key, href }) =>

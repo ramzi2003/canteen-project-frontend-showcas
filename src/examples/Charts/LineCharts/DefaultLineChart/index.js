@@ -23,9 +23,6 @@ import PropTypes from "prop-types";
 // @mui material components
 import Card from "@mui/material/Card";
 
-// React-apex chart
-import BasicLineChart from "../BasicLineChart";
-
 // Vision UI Dashboard PRO React components
 import VuiBox from "components/VuiBox";
 import VuiTypography from "components/VuiTypography";
@@ -53,11 +50,7 @@ function DefaultLineChart({ title, description, data, options }) {
           </VuiTypography>
         </VuiBox>
         <VuiBox sx={{minHeight: "300px"}}>
-        {
-          useMemo(() => (
-            <BasicLineChart lineChartData={chartData} lineChartOptions={chartOptions}/>
-          ), [data, options])
-        }
+        
         </VuiBox>
       </VuiBox>
     </Card>
