@@ -16,8 +16,8 @@ import VuiButton from "components/VuiButton";
 
 
 
-
 export default {
+  
   columns: [
     // { Header: "ID", accessor: "id", 
     
@@ -72,7 +72,10 @@ export default {
       status: "paid",
       department: ["Contractors", { image: team2 }],
       total: "4",
-      action: <VuiButton color="primary" variant="contained" size="small">View</VuiButton>,
+      action: <VuiButton color="primary" variant="contained" size="small">View</VuiButton>
+      
+      
+   
     },
     {
       id: "#10422",
@@ -97,7 +100,9 @@ export default {
       status: "paid",
       department: ["Guests", { image: team3 }],
       total: "29",
-      action: <VuiButton color="primary" variant="contained" size="small">View</VuiButton>,
+      action: 
+      
+      <VuiButton color="primary" variant="contained" size="small">View</VuiButton>,
     },
     {
       id: "#10425",
@@ -105,7 +110,13 @@ export default {
       status: "canceled",
       department: ["Students 2021 - 2025", { image: team4 }],
       total: "120",
-      action: <VuiButton color="primary" variant="contained" size="small">View</VuiButton>,
+      action: 
+
+      
+      
+      
+      <VuiButton color="primary" variant="contained" size="small">View</VuiButton>,
     },
   ],
 };
+

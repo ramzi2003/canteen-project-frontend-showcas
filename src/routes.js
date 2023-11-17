@@ -12,6 +12,7 @@ import ReceptionLayout from "layouts/reception";
 
 
 
+
 // React icons
 import { IoDocument } from "react-icons/io5";
 import { IoDocuments } from "react-icons/io5";
@@ -113,6 +114,7 @@ const routes = [
     icon: <IoDocument size="15px" color="inherit" />,
     collapse: [{ name: "Cashier", key: "cashier", route: "/cashier", component: CashLayout }],
   },
+  
 ];
 
 export default routes;

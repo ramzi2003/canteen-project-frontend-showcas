@@ -125,7 +125,7 @@ export default function App() {
           <>
             <Sidenav
               color={sidenavColor}
-              brandName="VISION UI PRO"
+              brandName="UCA Canteen"
               routes={routes}
               onMouseEnter={handleOnMouseEnter}
               onMouseLeave={handleOnMouseLeave}
