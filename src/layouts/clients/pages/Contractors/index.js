@@ -21,9 +21,10 @@ import Footer from "examples/Footer";
 import DataTable from "examples/Tables/DataTable";
 
 // Data
-import dataTableData from "layouts/clients/data/dataTableData";
+import dataTableData from "layouts/clients/data/ContractorData";
+import getContractorsData from "layouts/clients/data/ContractorData";
 
-function OrderList() {
+function ContractorTable() {
   const [menu, setMenu] = useState(null);
 
   const openMenu = (event) => setMenu(event.currentTarget);
@@ -131,4 +132,4 @@ function OrderList() {
   );
 }
 
-export default OrderList;
+export default ContractorTable;

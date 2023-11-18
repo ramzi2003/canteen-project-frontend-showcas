@@ -87,7 +87,7 @@ export default {
       department: ["Students", { image: team1 }],
       total: "5",
       action:  (
-        <Link to="/clients/student-table">
+        <Link to="/clients/contractor-table">
          <VuiButton color="primary" variant="contained" size="small">View</VuiButton>
         </Link>
       ),
@@ -99,7 +99,7 @@ export default {
       department: ["Faculty", { image: "M", color: "info" }],
       total: "7",
       action:  (
-        <Link to="/clients/faculty-table">
+        <Link to="/clients/contractor-table">
          <VuiButton color="primary" variant="contained" size="small">View</VuiButton>
         </Link>
       ),
@@ -111,12 +111,23 @@ export default {
       department: ["Guests", { image: team3 }],
       total: "29",
       action:  (
-        <Link to="/clients/guest-table">
+        <Link to="/clients/contractor-table">
          <VuiButton color="primary" variant="contained" size="small">View</VuiButton>
         </Link>
       ),
     },
-    
+    {
+      id: "#10425",
+      date: "20 Oct, 2023",
+      status: "canceled",
+      department: ["Students 2021 - 2025", { image: team4 }],
+      total: "120",
+      action:  (
+        <Link to="/clients/contractor-table">
+         <VuiButton color="primary" variant="contained" size="small">View</VuiButton>
+        </Link>
+      ),
+    },
   ],
 };
 

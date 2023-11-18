@@ -17,6 +17,11 @@ import ReceptionLayout from "layouts/reception";
 import { IoDocument } from "react-icons/io5";
 import { IoDocuments } from "react-icons/io5";
 import { IoHome } from "react-icons/io5";
+import ContractorTable from "layouts/clients/pages/Contractors";
+import FacultyTable from "layouts/clients/pages/Faculty";
+import GuestTable from "layouts/clients/pages/Guests";
+import StudentTable from "layouts/clients/pages/Students";
+
 
 const routes = [
   {
@@ -72,7 +77,15 @@ const routes = [
     route: "/clients",
     component: ClientsLayout,
     icon: <IoDocument size="15px" color="inherit" />,
-    collapse: [{ name: "Clients", key: "clients", route: "/clients", component: ClientsLayout }],
+    collapse: [
+      { name: "Clients", key: "clients", route: "/clients", component: ClientsLayout },
+      { name: "Contractors", key: "contractor-table", route: "/clients/contractor-table", component: ContractorTable },
+      { name: "Faculty", key: "faculty-table", route: "/clients/faculty-table", component: FacultyTable },
+      { name: "Guests", key: "guest-table", route: "/clients/guest-table", component: GuestTable },
+      { name: "Students", key: "student-table", route: "/clients/student-table", component: StudentTable },
+      
+    ],
+    
   },
   {
     type: "collapse",

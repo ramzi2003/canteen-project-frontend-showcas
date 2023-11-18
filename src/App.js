@@ -33,6 +33,8 @@ import { useVisionUIController, setMiniSidenav, setOpenConfigurator } from "cont
 // Plugins custom css
 import "assets/theme/base/plugins.css";
 
+import ContractorTable from "layouts/clients/pages/Contractors";
+
 export default function App() {
   const [controller, dispatch] = useVisionUIController();
   const { miniSidenav, direction, layout, openConfigurator, sidenavColor } = controller;
@@ -162,6 +164,7 @@ export default function App() {
       <Switch>
         {getRoutes(routes)}
         <Redirect from="*" to="/dashboards/crm" />
+    
       </Switch>
     </ThemeProvider>
   );
