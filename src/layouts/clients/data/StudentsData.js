@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import VuiTypography from "components/VuiTypography/index";
 
-// totalsList page components
+// functionsList page components
 import IdCell from "layouts/clients/components/IdCell";
 import DefaultCell from "layouts/clients/components/DefaultCell";
 import StatusCell from "layouts/clients/components/StatusCell";
@@ -13,121 +13,401 @@ import team2 from "assets/images/team-2.jpg";
 import team3 from "assets/images/team-3.jpg";
 import team4 from "assets/images/team-4.jpg";
 import VuiButton from "components/VuiButton";
+import VuiBox from "components/VuiBox";
 
 import { Link } from "react-router-dom";
 
 
 
 export default {
-  
   columns: [
-    // { Header: "ID", accessor: "id", 
-    
-    //   Cell: ({ value }) => <IdCell id={value} /> 
-    
-    // },
-    { Header: "DEPARTMENTS", accessor: "department",
-
-    Cell: ({ value: [name, data] }) => (
-      <CustomerCell image={data.image} color={data.color || "dark"} name={name} />
-    ),
-  },
-    { Header: "DATE", accessor: "date", Cell: ({ value }) => <DefaultCell value={value} />},
-    // { Header: "STATUS", accessor: "status",
-
-    //   Cell: ({ value }) => {
-    //     let status;
-
-    //     if (value === "paid") {
-    //       status = <StatusCell icon="done" color="success" status="Paid" />;
-    //     } else if (value === "refunded") {
-    //       status = <StatusCell icon="replay" color="dark" status="Refunded" />;
-    //     } else {
-    //       status = <StatusCell icon="close" color="error" status="Canceled" />;
-    //     }
-
-    //     return status;
-    //   },
-    // },
-   
-    { Header: "TOTAL", accessor: "total",
-    
-    Cell: ({ value }) => {
-      const numericValue = parseInt(value);
-    
-      return (
-        <DefaultCell
-          value={numericValue}
-        />
-      );
+    { Header: "Name", accessor: "name",
+      Cell: ({ value: [name, data] }) => (
+        <CustomerCell image={data.image} color={data.color || "dark"} name={name} />
+      ),
     },
-    
-    
+    { Header: "Balance", accessor: "balance",
+      Cell: ({ value }) => (
+        <DefaultCell value={value} />
+      ),
     },
-    { Header: "ACTION", accessor: "action", Cell: ({ value }) => <DefaultCell value={value} /> },
+    { Header: "Gender", accessor: "gender",
+      Cell: ({ value }) => (
+        <DefaultCell value={value} />
+      ),
+    },
+    { Header: "Email", accessor: "email",
+      Cell: ({ value }) => (
+        <DefaultCell value={value} />
+      ),
+    },
+    { Header: "Action", accessor: "action", Cell: ({ value }) => <DefaultCell value={value} /> },
   ],
 
   rows: [
     {
-      id: "#10421",
-      date: "20 Feb, 2023",
-      status: "paid",
-      department: ["Contractors", { image: team2 }],
-      total: "4",
-      action:  (
-        <Link to="/clients/contractor-table">
-         <VuiButton color="primary" variant="contained" size="small">View</VuiButton>
-        </Link>
+      name: ["John Doe", { image: team2 }],
+      balance: "$500",
+      gender: "Male",
+      email: "john.doe@example.com",
+      action: (
+        <div>
+          <Link to="">
+            <VuiButton style={{ backgroundColor: 'red', color: 'white' }} variant="contained" size="small">
+              Delete
+            </VuiButton>
+          </Link>
+          <span style={{ margin: '0 8px' }}></span>
+          <Link to="">
+            <VuiButton style={{ backgroundColor: '#05CD99', color: 'white' }}  variant="contained" size="small">
+              Add
+            </VuiButton>
+          </Link>
+          <span style={{ margin: '0 8px' }}></span>
+          <Link to="">
+            <VuiButton color="primary" variant="contained" size="small">
+              Edit
+            </VuiButton>
+          </Link>
+        </div>
       ),
     },
     {
-      id: "#10422",
-      date: "10 Jan, 2023",
-      status: "paid",
-      department: ["Students", { image: team1 }],
-      total: "5",
-      action:  (
-        <Link to="/clients/contractor-table">
-         <VuiButton color="primary" variant="contained" size="small">View</VuiButton>
-        </Link>
+      name: ["John Doe", { image: team2 }],
+      balance: "$500",
+      gender: "Male",
+      email: "john.doe@example.com",
+      action: (
+        <div>
+          <Link to="">
+            <VuiButton style={{ backgroundColor: 'red', color: 'white' }} variant="contained" size="small">
+              Delete
+            </VuiButton>
+          </Link>
+          <span style={{ margin: '0 8px' }}></span>
+          <Link to="">
+            <VuiButton style={{ backgroundColor: '#05CD99', color: 'white' }}  variant="contained" size="small">
+              Add
+            </VuiButton>
+          </Link>
+          <span style={{ margin: '0 8px' }}></span>
+          <Link to="">
+            <VuiButton color="primary" variant="contained" size="small">
+              Edit
+            </VuiButton>
+          </Link>
+        </div>
       ),
     },
+
     {
-      id: "#10423",
-      date: "12 Nov, 2023",
-      status: "refunded",
-      department: ["Faculty", { image: "M", color: "info" }],
-      total: "7",
-      action:  (
-        <Link to="/clients/contractor-table">
-         <VuiButton color="primary" variant="contained" size="small">View</VuiButton>
-        </Link>
+      name: ["Jane Smith", { image: team1 }],
+      balance: "$700",
+      gender: "Female",
+      email: "jane.smith@example.com",
+      action: (
+        <div>
+          <Link to="">
+            <VuiButton style={{ backgroundColor: 'red', color: 'white' }} variant="contained" size="small">
+              Delete
+            </VuiButton>
+          </Link>
+          <span style={{ margin: '0 8px' }}></span>
+          <Link to="">
+            <VuiButton style={{ backgroundColor: '#05CD99', color: 'white' }}  variant="contained" size="small">
+              Add
+            </VuiButton>
+          </Link>
+          <span style={{ margin: '0 8px' }}></span>
+          <Link to="">
+            <VuiButton color="primary" variant="contained" size="small">
+              Edit
+            </VuiButton>
+          </Link>
+        </div>
       ),
     },
+
     {
-      id: "#10424",
-      date: "1 Dec, 2023",
-      status: "paid",
-      department: ["Guests", { image: team3 }],
-      total: "29",
-      action:  (
-        <Link to="/clients/contractor-table">
-         <VuiButton color="primary" variant="contained" size="small">View</VuiButton>
-        </Link>
+      name: ["John Doe", { image: team2 }],
+      balance: "$500",
+      gender: "Male",
+      email: "john.doe@example.com",
+      action: (
+        <div>
+          <Link to="">
+            <VuiButton style={{ backgroundColor: 'red', color: 'white' }} variant="contained" size="small">
+              Delete
+            </VuiButton>
+          </Link>
+          <span style={{ margin: '0 8px' }}></span>
+          <Link to="">
+            <VuiButton style={{ backgroundColor: '#05CD99', color: 'white' }}  variant="contained" size="small">
+              Add
+            </VuiButton>
+          </Link>
+          <span style={{ margin: '0 8px' }}></span>
+          <Link to="">
+            <VuiButton color="primary" variant="contained" size="small">
+              Edit
+            </VuiButton>
+          </Link>
+        </div>
       ),
     },
+    // Entry 2
     {
-      id: "#10425",
-      date: "20 Oct, 2023",
-      status: "canceled",
-      department: ["Students 2021 - 2025", { image: team4 }],
-      total: "120",
-      action:  (
-        <Link to="/clients/contractor-table">
-         <VuiButton color="primary" variant="contained" size="small">View</VuiButton>
-        </Link>
+      name: ["Jane Smith", { image: team1 }],
+      balance: "$700",
+      gender: "Female",
+      email: "jane.smith@example.com",
+      action: (
+        <div>
+          <Link to="">
+            <VuiButton style={{ backgroundColor: 'red', color: 'white' }} variant="contained" size="small">
+              Delete
+            </VuiButton>
+          </Link>
+          <span style={{ margin: '0 8px' }}></span>
+          <Link to="">
+            <VuiButton style={{ backgroundColor: '#05CD99', color: 'white' }}  variant="contained" size="small">
+              Add
+            </VuiButton>
+          </Link>
+          <span style={{ margin: '0 8px' }}></span>
+          <Link to="">
+            <VuiButton color="primary" variant="contained" size="small">
+              Edit
+            </VuiButton>
+          </Link>
+        </div>
       ),
     },
+    // Entry 3
+    {
+      name: ["Alex Johnson", { image: team3 }],
+      balance: "$600",
+      gender: "Male",
+      email: "alex.johnson@example.com",
+      action: (
+        <div>
+          <Link to="">
+            <VuiButton style={{ backgroundColor: 'red', color: 'white' }} variant="contained" size="small">
+              Delete
+            </VuiButton>
+          </Link>
+          <span style={{ margin: '0 8px' }}></span>
+          <Link to="">
+            <VuiButton style={{ backgroundColor: '#05CD99', color: 'white' }}  variant="contained" size="small">
+              Add
+            </VuiButton>
+          </Link>
+          <span style={{ margin: '0 8px' }}></span>
+          <Link to="">
+            <VuiButton color="primary" variant="contained" size="small">
+              Edit
+            </VuiButton>
+          </Link>
+        </div>
+      ),
+    },
+    // Entry 4
+    {
+      name: ["Emily Davis", { image: team4 }],
+      balance: "$800",
+      gender: "Female",
+      email: "emily.davis@example.com",
+      action: (
+        <div>
+          <Link to="">
+            <VuiButton style={{ backgroundColor: 'red', color: 'white' }} variant="contained" size="small">
+              Delete
+            </VuiButton>
+          </Link>
+          <span style={{ margin: '0 8px' }}></span>
+          <Link to="">
+            <VuiButton style={{ backgroundColor: '#05CD99', color: 'white' }}  variant="contained" size="small">
+              Add
+            </VuiButton>
+          </Link>
+          <span style={{ margin: '0 8px' }}></span>
+          <Link to="">
+            <VuiButton color="primary" variant="contained" size="small">
+              Edit
+            </VuiButton>
+          </Link>
+        </div>
+      ),
+    },
+    // Entry 5
+    {
+      name: ["Samuel Williams", { image: team2 }],
+      balance: "$550",
+      gender: "Male",
+      email: "samuel.williams@example.com",
+      action: (
+        <div>
+          <Link to="">
+            <VuiButton style={{ backgroundColor: 'red', color: 'white' }} variant="contained" size="small">
+              Delete
+            </VuiButton>
+          </Link>
+          <span style={{ margin: '0 8px' }}></span>
+          <Link to="">
+            <VuiButton style={{ backgroundColor: '#05CD99', color: 'white' }}  variant="contained" size="small">
+              Add
+            </VuiButton>
+          </Link>
+          <span style={{ margin: '0 8px' }}></span>
+          <Link to="">
+            <VuiButton color="primary" variant="contained" size="small">
+              Edit
+            </VuiButton>
+          </Link>
+        </div>
+      ),
+    },
+    // Entry 6
+    {
+      name: ["Olivia Brown", { image: team1 }],
+      balance: "$720",
+      gender: "Female",
+      email: "olivia.brown@example.com",
+      action: (
+        <div>
+          <Link to="">
+            <VuiButton style={{ backgroundColor: 'red', color: 'white' }} variant="contained" size="small">
+              Delete
+            </VuiButton>
+          </Link>
+          <span style={{ margin: '0 8px' }}></span>
+          <Link to="">
+            <VuiButton style={{ backgroundColor: '#05CD99', color: 'white' }}  variant="contained" size="small">
+              Add
+            </VuiButton>
+          </Link>
+          <span style={{ margin: '0 8px' }}></span>
+          <Link to="">
+            <VuiButton color="primary" variant="contained" size="small">
+              Edit
+            </VuiButton>
+          </Link>
+        </div>
+      ),
+    },
+    // Entry 7
+    {
+      name: ["Daniel Miller", { image: team3 }],
+      balance: "$630",
+      gender: "Male",
+      email: "daniel.miller@example.com",
+      action: (
+        <div>
+          <Link to="">
+            <VuiButton style={{ backgroundColor: 'red', color: 'white' }} variant="contained" size="small">
+              Delete
+            </VuiButton>
+          </Link>
+          <span style={{ margin: '0 8px' }}></span>
+          <Link to="">
+            <VuiButton style={{ backgroundColor: '#05CD99', color: 'white' }}  variant="contained" size="small">
+              Add
+            </VuiButton>
+          </Link>
+          <span style={{ margin: '0 8px' }}></span>
+          <Link to="">
+            <VuiButton color="primary" variant="contained" size="small">
+              Edit
+            </VuiButton>
+          </Link>
+        </div>
+      ),
+    },
+    // Entry 8
+    {
+      name: ["Sophia Wilson", { image: team4 }],
+      balance: "$900",
+      gender: "Female",
+      email: "sophia.wilson@example.com",
+      action: (
+        <div>
+          <Link to="">
+            <VuiButton style={{ backgroundColor: 'red', color: 'white' }} variant="contained" size="small">
+              Delete
+            </VuiButton>
+          </Link>
+          <span style={{ margin: '0 8px' }}></span>
+          <Link to="">
+            <VuiButton style={{ backgroundColor: '#05CD99', color: 'white' }}  variant="contained" size="small">
+              Add
+            </VuiButton>
+          </Link>
+          <span style={{ margin: '0 8px' }}></span>
+          <Link to="">
+            <VuiButton color="primary" variant="contained" size="small">
+              Edit
+            </VuiButton>
+          </Link>
+        </div>
+      ),
+    },
+    // Entry 9
+    {
+      name: ["Michael Taylor", { image: team2 }],
+      balance: "$480",
+      gender: "Male",
+      email: "michael.taylor@example.com",
+      action: (
+        <div>
+          <Link to="">
+            <VuiButton style={{ backgroundColor: 'red', color: 'white' }} variant="contained" size="small">
+              Delete
+            </VuiButton>
+          </Link>
+          <span style={{ margin: '0 8px' }}></span>
+          <Link to="">
+            <VuiButton style={{ backgroundColor: '#05CD99', color: 'white' }}  variant="contained" size="small">
+              Add
+            </VuiButton>
+          </Link>
+          <span style={{ margin: '0 8px' }}></span>
+          <Link to="">
+            <VuiButton color="primary" variant="contained" size="small">
+              Edit
+            </VuiButton>
+          </Link>
+        </div>
+      ),
+    },
+    // Entry 10
+    {
+      name: ["Ava Martinez", { image: team1 }],
+      balance: "$670",
+      gender: "Female",
+      email: "ava.martinez@example.com",
+      action: (
+        <div>
+          <Link to="">
+            <VuiButton style={{ backgroundColor: 'red', color: 'white' }} variant="contained" size="small">
+              Delete
+            </VuiButton>
+          </Link>
+          <span style={{ margin: '0 8px' }}></span>
+          <Link to="">
+            <VuiButton style={{ backgroundColor: '#05CD99', color: 'white' }}  variant="contained" size="small">
+              Add
+            </VuiButton>
+          </Link>
+          <span style={{ margin: '0 8px' }}></span>
+          <Link to="">
+            <VuiButton color="primary" variant="contained" size="small">
+              Edit
+            </VuiButton>
+          </Link>
+        </div>
+      ),
+    },
+
+    
   ],
 };
-

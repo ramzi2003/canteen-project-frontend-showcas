@@ -79,11 +79,11 @@ function ContractorTable() {
                 },
               })}
             >
-              add department
+              add client
             </VuiButton>
           </VuiBox>
 
-          <VuiBox>
+          {/* <VuiBox>
             <VuiButton
               color="info"
               mb={2}
@@ -97,7 +97,7 @@ function ContractorTable() {
               >
                 change department
             </VuiButton>
-          </VuiBox>
+          </VuiBox> */}
 
           
 
@@ -124,6 +124,7 @@ function ContractorTable() {
           </VuiBox>
         </VuiBox>
         <Card>
+     
           <DataTable table={dataTableData} entriesPerPage={false} canSearch />
         </Card>
       </VuiBox>

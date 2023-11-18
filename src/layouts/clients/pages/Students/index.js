@@ -78,11 +78,11 @@ function StudentsTable() {
                 },
               })}
             >
-              add department
+              add client
             </VuiButton>
           </VuiBox>
 
-          <VuiBox>
+          {/* <VuiBox>
             <VuiButton
               color="info"
               mb={2}
@@ -96,7 +96,7 @@ function StudentsTable() {
               >
                 change department
             </VuiButton>
-          </VuiBox>
+          </VuiBox> */}
 
           
 
