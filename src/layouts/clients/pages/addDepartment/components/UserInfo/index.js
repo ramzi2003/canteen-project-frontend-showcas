@@ -11,98 +11,61 @@ import VuiTypography from "components/VuiTypography";
 // NewUser page components
 import FormField from "layouts/clients/pages/addDepartment/components/FormField";
 
+// ... (existing imports)
+
 function UserInfo({ formData }) {
   const { formField, values, errors, touched } = formData;
-  const { firstName, lastName, company, email, password, repeatPassword } = formField;
+  const { departmentName, dateAdded, total } = formField;
   const {
-    firstName: firstNameV,
-    lastName: lastNameV,
-    company: companyV,
-    email: emailV,
-    password: passwordV,
-    repeatPassword: repeatPasswordV,
+    departmentName: departmentNameV,
+    dateAdded: dateAddedV,
+    total: totalV,
   } = values;
 
   return (
     <VuiBox>
       <VuiBox lineHeight={0} display="flex" flexDirection="column">
         <VuiTypography variant="lg" color="white" fontWeight="bold">
-          About me
+          Department Information
         </VuiTypography>
         <VuiTypography variant="button" fontWeight="regular" color="text">
-          Mandatory informations
+          Mandatory information
         </VuiTypography>
       </VuiBox>
       <VuiBox mt={3}>
         <Grid container spacing={3}>
           <Grid item xs={12} sm={6}>
             <FormField
-              label={firstName.label}
-              name={firstName.name}
-              type={firstName.type}
-              value={firstNameV}
-              placeholder={firstName.placeholder}
-              error={errors.firstName && touched.firstName}
-              success={firstNameV.length > 0 && !errors.firstName}
+              label={departmentName.label}
+              name={departmentName.name}
+              type={departmentName.type}
+              value={departmentNameV}
+              placeholder={departmentName.placeholder}
+              error={errors.departmentName && touched.departmentName}
+              success={departmentNameV.length > 0 && !errors.departmentName}
             />
           </Grid>
           <Grid item xs={12} sm={6}>
             <FormField
-              label={lastName.label}
-              name={lastName.name}
-              value={lastNameV}
-              type={lastName.type}
-              placeholder={lastName.placeholder}
-              error={errors.lastName && touched.lastName}
-              success={lastNameV.length > 0 && !errors.lastName}
-            />
-          </Grid>
-        </Grid>
-        <Grid container spacing={3}>
-          <Grid item xs={12} sm={6}>
-            <FormField
-              label={company.label}
-              name={company.name}
-              type={company.type}
-              value={companyV}
-              placeholder={company.placeholder}
-            />
-          </Grid>
-          <Grid item xs={12} sm={6}>
-            <FormField
-              label={email.label}
-              name={email.name}
-              type={email.type}
-              value={emailV}
-              placeholder={email.placeholder}
-              error={errors.email && touched.email}
-              success={emailV.length > 0 && !errors.email}
+              label={dateAdded.label}
+              name={dateAdded.name}
+              type={dateAdded.type}
+              value={dateAddedV}
+              error={errors.dateAdded && touched.dateAdded}
+              success={dateAddedV && !errors.dateAdded}
             />
           </Grid>
         </Grid>
         <Grid container spacing={3}>
           <Grid item xs={12} sm={6}>
             <FormField
-              label={password.label}
-              name={password.name}
-              type={password.type}
-              value={passwordV}
-              placeholder={password.placeholder}
-              error={errors.password && touched.password}
-              success={passwordV.length > 0 && !errors.password}
-              inputProps={{ autoComplete: "" }}
-            />
-          </Grid>
-          <Grid item xs={12} sm={6}>
-            <FormField
-              label={repeatPassword.label}
-              name={repeatPassword.name}
-              type={repeatPassword.type}
-              value={repeatPasswordV}
-              placeholder={repeatPassword.placeholder}
-              error={errors.repeatPassword && touched.repeatPassword}
-              success={repeatPasswordV.length > 0 && !errors.repeatPassword}
-              inputProps={{ autoComplete: "" }}
+              label={total.label}
+              name={total.name}
+              type={total.type}
+              value={totalV}
+              placeholder={total.placeholder}
+              error={errors.total && touched.total}
+              success={totalV && !errors.total}
             />
           </Grid>
         </Grid>
@@ -110,6 +73,9 @@ function UserInfo({ formData }) {
     </VuiBox>
   );
 }
+
+// ... (remaining code)
+
 
 // typechecking props for UserInfo
 UserInfo.propTypes = {

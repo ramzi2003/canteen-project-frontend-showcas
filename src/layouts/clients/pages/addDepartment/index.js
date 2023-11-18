@@ -14,39 +14,21 @@ import StepLabel from "@mui/material/StepLabel";
 import VuiBox from "components/VuiBox";
 import VuiButton from "components/VuiButton";
 
-// Vision UI Dashboard PRO React example components
-import DashboardLayout from "examples/LayoutContainers/DashboardLayout";
-import DashboardNavbar from "examples/Navbars/DashboardNavbar";
-import Footer from "examples/Footer";
-
 // NewUser page components
 import UserInfo from "layouts/clients/pages/addDepartment/components/UserInfo";
-import Address from "layouts/clients/pages/addDepartment/components/Address";
-import Socials from "layouts/clients/pages/addDepartment/components/Socials";
-import Profile from "layouts/clients/pages/addDepartment/components/Profile";
 
-// NewUser layout schemas for form and form feilds
+// NewUser layout schemas for form and form fields
 import validations from "layouts/clients/pages/addDepartment/schemas/validations";
 import form from "layouts/clients/pages/addDepartment/schemas/form";
 import initialValues from "layouts/clients/pages/addDepartment/schemas/initialValues";
 
-function getSteps() {
-  return ["User Info", "Address", "Social", "Profile"];
-}
+// NewUser layout components
+import DashboardLayout from "examples/LayoutContainers/DashboardLayout";
+import DashboardNavbar from "examples/Navbars/DashboardNavbar";
+import Footer from "examples/Footer";
 
-function getStepContent(stepIndex, formData) {
-  switch (stepIndex) {
-    case 0:
-      return <UserInfo formData={formData} />;
-    case 1:
-      return <Address formData={formData} />;
-    case 2:
-      return <Socials formData={formData} />;
-    case 3:
-      return <Profile formData={formData} />;
-    default:
-      return null;
-  }
+function getSteps() {
+  return ["User Info"];
 }
 
 function NewUser() {
@@ -101,37 +83,25 @@ function NewUser() {
             >
               {({ values, errors, touched, isSubmitting }) => (
                 <Form id={formId} autoComplete="off">
-                  <Card sx={{ height: "100%" }}>
-                    <VuiBox>
-                      <VuiBox>
-                        {getStepContent(activeStep, {
-                          values,
-                          touched,
-                          formField,
-                          errors,
-                        })}
-                        <VuiBox mt={2} width="100%" display="flex" justifyContent="space-between">
-                          {activeStep === 0 ? (
-                            <VuiBox />
-                          ) : (
-                            <VuiButton
-                              variant="gradient"
-                              sx={{ minWidth: "100px" }}
-                              color="light"
-                              onClick={handleBack}
-                            >
-                              prev
-                            </VuiButton>
-                          )}
-                          <VuiButton
-                            disabled={isSubmitting}
-                            type="submit"
-                            sx={{ minWidth: "100px" }}
-                            color="info"
-                          >
-                            {isLastStep ? "send" : "next"}
-                          </VuiButton>
-                        </VuiBox>
+                  <Card>
+                    <VuiBox >
+                      {getSteps().map((label, index) =>
+                        index === activeStep ? (
+                          <UserInfo key={label} formData={{ values, touched, formField, errors }} />
+                        ) : null
+                      )}
+                      <VuiBox mt={4} width="100%" display="flex" justifyContent="space-between">
+                        
+                        <VuiButton
+                          style={{ marginLeft: "70vh" }}
+                          disabled={isSubmitting}
+                          type="submit"
+                          sx={{ minWidth: "100px" }}
+                          color="info"
+
+                        >
+                          {isLastStep ? "send" : "next"}
+                        </VuiButton>
                       </VuiBox>
                     </VuiBox>
                   </Card>
