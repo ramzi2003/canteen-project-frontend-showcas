@@ -22,12 +22,20 @@ import DataTable from "examples/Tables/DataTable";
 
 // Data
 import dataTableData from "layouts/clients/data/dataTableData";
+import { useHistory } from 'react-router-dom';
 
 function ClientsTable() {
   const [menu, setMenu] = useState(null);
 
   const openMenu = (event) => setMenu(event.currentTarget);
   const closeMenu = () => setMenu(null);
+
+  const history = useHistory();
+
+  // Function to navigate to the specified path
+  const addDepartment = () => {
+    history.push('clients/pages/addDepartment');
+  };
 
   const renderMenu = (
     <Menu
@@ -68,6 +76,7 @@ function ClientsTable() {
         >
           <VuiBox >
             <VuiButton 
+              onClick={addDepartment}
               color="info"
               sx={({ breakpoints }) => ({
                 mb: "10px",

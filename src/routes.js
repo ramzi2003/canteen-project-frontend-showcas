@@ -8,8 +8,9 @@ import AdminLayout from "layouts/admin";
 import CanteenLayout from "layouts/canteen";
 import CashLayout from "layouts/cash";
 import ClientsLayout from "layouts/clients";
-import ReceptionLayout from "layouts/reception";
 
+import ReceptionLayout from "layouts/reception";
+import AddDepartment from "layouts/clients/pages/addDepartment";
 
 
 
@@ -83,6 +84,7 @@ const routes = [
       { name: "Faculty", key: "faculty-table", route: "/clients/faculty-table", component: FacultyTable },
       { name: "Guests", key: "guest-table", route: "/clients/guest-table", component: GuestTable },
       { name: "Students", key: "student-table", route: "/clients/student-table", component: StudentTable },
+      { name: "Add Department", key: "add-department", route: "/clients/add-department", component: AddDepartment },
       
     ],
     

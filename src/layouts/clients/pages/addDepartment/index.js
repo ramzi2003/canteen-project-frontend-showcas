@@ -1,20 +1,3 @@
-/** 
-
-=========================================================
-* Vision UI PRO React - v1.0.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/vision-ui-dashboard-pro-react
-* Copyright 2021 Creative Tim (https://www.creative-tim.com/)
-
-* Design and Coded by Simmmple & Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Visionware.
-
-*/
-
 import { useState } from "react";
 
 // formik components
@@ -37,15 +20,15 @@ import DashboardNavbar from "examples/Navbars/DashboardNavbar";
 import Footer from "examples/Footer";
 
 // NewUser page components
-import UserInfo from "layouts/pages/users/new-user/components/UserInfo";
-import Address from "layouts/pages/users/new-user/components/Address";
-import Socials from "layouts/pages/users/new-user/components/Socials";
-import Profile from "layouts/pages/users/new-user/components/Profile";
+import UserInfo from "layouts/clients/pages/addDepartment/components/UserInfo";
+import Address from "layouts/clients/pages/addDepartment/components/Address";
+import Socials from "layouts/clients/pages/addDepartment/components/Socials";
+import Profile from "layouts/clients/pages/addDepartment/components/Profile";
 
 // NewUser layout schemas for form and form feilds
-import validations from "layouts/pages/users/new-user/schemas/validations";
-import form from "layouts/pages/users/new-user/schemas/form";
-import initialValues from "layouts/pages/users/new-user/schemas/initialValues";
+import validations from "layouts/clients/pages/addDepartment/schemas/validations";
+import form from "layouts/clients/pages/addDepartment/schemas/form";
+import initialValues from "layouts/clients/pages/addDepartment/schemas/initialValues";
 
 function getSteps() {
   return ["User Info", "Address", "Social", "Profile"];
