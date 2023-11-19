@@ -26,7 +26,7 @@ export default {
     sm: 425,
     md: 768,
     lg: 1024,
-    xl: 1440,
+    xl: 1024,
     xxl: 1680,
   },
 };
