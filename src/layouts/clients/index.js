@@ -34,7 +34,7 @@ function ClientsTable() {
 
   // Function to navigate to the specified path
   const addDepartment = () => {
-    history.push('clients/pages/addDepartment');
+    history.push('clients/add-department');
   };
 
   const renderMenu = (

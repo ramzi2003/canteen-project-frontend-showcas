@@ -28,7 +28,7 @@ import DashboardNavbar from "examples/Navbars/DashboardNavbar";
 import Footer from "examples/Footer";
 
 function getSteps() {
-  return ["User Info"];
+  return ["Add new department"];
 }
 
 function NewUser() {
