@@ -25,9 +25,9 @@ import VuiTypography from "components/VuiTypography";
 import DataTable from "examples/Tables/DataTable";
 
 // Data
-import dataTableData from "layouts/pages/data-tables/data/dataTableData.js";
+import adminTableData from "./data/adminTableData";
 
-function DataTables() {
+function AdminTables() {
   return (
 
       <VuiBox pt={0} pb={0}>
@@ -35,10 +35,13 @@ function DataTables() {
           <Card>
             <VuiBox p={3} pl={0} lineHeight={1}>
               <VuiTypography variant="h5" fontWeight="medium" color="white">
-                Today's Menu
+                Admins
+              </VuiTypography>
+              <VuiTypography variant="text" fontWeight="regular">
+                Total admins: 4
               </VuiTypography>
             </VuiBox>
-            <DataTable table={dataTableData} canSearch />
+            <DataTable table={adminTableData} canSearch />
           </Card>
         </VuiBox>
       </VuiBox>
@@ -46,4 +49,4 @@ function DataTables() {
   );
 }
 
-export default DataTables;
+export default AdminTables;

@@ -17,40 +17,21 @@
 
 // @mui material components
 import Grid from "@mui/material/Grid";
-import kalVisualsSquare from "assets/images/message-card-image.png";
+
 // Vision UI Dashboard PRO React components
 import VuiBox from "components/VuiBox";
 import VuiTypography from "components/VuiTypography";
-import Calendar from "examples/Calendar";
-import MessageCard from "examples/Cards/MessageCard";
-import PlaceholderCard from "examples/Cards/PlaceholderCard";
 import MiniGradientLineChart from "examples/Charts/LineCharts/MiniGradientLineChart";
 import Footer from "examples/Footer";
 // Vision UI Dashboard PRO React example components
 import DashboardLayout from "examples/LayoutContainers/DashboardLayout";
-import InvoicesList from "examples/Lists/InvoicesList";
-import RankingsList from "examples/Lists/RankingsList";
 import DashboardNavbar from "examples/Navbars/DashboardNavbar";
 import Welcome from "layouts/dashboards/crm/components/Welcome";
-import calendarEventsData from "layouts/dashboards/crm/data/calendarEventsData";
 // Data
-import invoicesListData from "layouts/dashboards/crm/data/invoicesListData";
-import rankingsListData from "layouts/dashboards/crm/data/rankingsListData";
 import CommunicationCenter from "layouts/pages/account/billing/components/CommunicationCenter";
 import ActiveUsers from "./components/ActiveUsers";
-import NextEvents from "layouts/pages/NextEvents";
-import DataTables from "layouts/pages/data-tables";
-import { useMemo } from "react";
-import {
-  lineChartDataCRM1,
-  lineChartDataCRM2,
-  lineChartOptionsCRM1,
-  lineChartOptionsCRM2,
-} from "./data/lineChart";
 
 function CRM() {
-  const { transactionsData, revenueData } = rankingsListData;
-
   
   return (
     <DashboardLayout>
@@ -117,14 +98,6 @@ function CRM() {
             </Grid>
           </Grid>
         </VuiBox>
-        <Grid item xs={12} lg={5} xl={4}>
-          <Grid item xs={12}>
-            <DataTables />
-          </Grid>
-          <Grid item xs={12} md={6} lg={12}>
-           <NextEvents />
-          </Grid>
-        </Grid>
       </VuiBox>
       <Footer />
     </DashboardLayout>

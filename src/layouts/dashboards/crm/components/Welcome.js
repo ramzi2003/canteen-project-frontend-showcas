@@ -42,7 +42,7 @@ const WelcomeMark = () => {
           </VuiTypography>
           <VuiTypography color="text" variant="h6" fontWeight="regular" mb="auto">
             Glad to see you again!
-            <br />
+      
           </VuiTypography>
         </VuiBox>
       </VuiBox>

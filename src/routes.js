@@ -2,6 +2,7 @@
 import CRM from "layouts/dashboards/crm";
 import Settings from "layouts/pages/account/settings";
 import SignInBasic from "layouts/authentication/sign-in/basic";
+import AdminLayout from "layouts/admin";
 
 
 // React icons
@@ -58,13 +59,6 @@ const routes = [
   { type: "title", title: "ADMIN PAGES", key: "admin-pages" },
   {
     type: "collapse",
-    name: "Clients",
-    key: "clients",
-    icon: <IoDocument size="15px" color="inherit" />,
-    collapse: [{ name: "Clients", key: "clients", route: "#" }],
-  },
-  {
-    type: "collapse",
     name: "Canteen",
     key: "canteen",
     icon: <IoDocument size="15px" color="inherit" />,
@@ -88,8 +82,9 @@ const routes = [
     type: "collapse",
     name: "Admin",
     key: "admin",
+    route: "/admin",
     icon: <IoDocument size="15px" color="inherit" />,
-    collapse: [{ name: "Admin", key: "admin", route: "#" }],
+    collapse: [{ name: "Admin", key: "admin", route: "/admin", component: AdminLayout }],
   },
   {
     type: "collapse",
