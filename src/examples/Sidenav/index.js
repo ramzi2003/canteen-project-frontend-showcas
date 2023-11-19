@@ -49,7 +49,7 @@ function Sidenav({ color, brand, routes, ...rest }) {
   useEffect(() => {
     // A function that sets the mini state of the sidenav.
     function handleMiniSidenav() {
-      setMiniSidenav(dispatch, window.innerWidth < 1200);
+      setMiniSidenav(dispatch, window.innerWidth < 1500);
     }
 
     /** 
@@ -184,6 +184,7 @@ function Sidenav({ color, brand, routes, ...rest }) {
             ml={1}
           >
             {title}
+            
           </VuiTypography>
         );
       } else if (type === "divider") {
@@ -260,6 +261,7 @@ Sidenav.propTypes = {
   brand: PropTypes.string,
   brandName: PropTypes.string.isRequired,
   routes: PropTypes.arrayOf(PropTypes.object).isRequired,
+
 };
 
 export default Sidenav;
