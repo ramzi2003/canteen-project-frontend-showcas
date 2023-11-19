@@ -1,20 +1,3 @@
-/** 
-
-=========================================================
-* Vision UI PRO React - v1.0.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/vision-ui-dashboard-pro-react
-* Copyright 2021 Creative Tim (https://www.creative-tim.com/)
-
-* Design and Coded by Simmmple & Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Visionware.
-
-*/
-
 // @mui material components
 import Grid from "@mui/material/Grid";
 
@@ -45,9 +28,9 @@ function CRM() {
                   <MiniGradientLineChart
                     title="Current Balance"
                     description={
-                      <VuiTypography variant="lg" color="white" fontWeight="bold">
+                      <VuiTypography variant="lg" color="white" fontWeight="bold" fontSize="13px">
                         1500 KGS{" "}
-                        <VuiTypography variant="button" color="success" fontWeight="bold">
+                        <VuiTypography variant="button" color="success" fontWeight="bold" fontSize="13px">
                           +55%
                         </VuiTypography>
                       </VuiTypography>
@@ -58,9 +41,9 @@ function CRM() {
                   <MiniGradientLineChart
                     title="Total expenses"
                     description={
-                      <VuiTypography variant="lg" color="white" fontWeight="bold">
+                      <VuiTypography variant="lg" color="white" fontWeight="bold" fontSize="13px">
                         173,000 KGS{" "}
-                        <VuiTypography variant="button" color="success" fontWeight="bold">
+                        <VuiTypography variant="button" color="success" fontWeight="bold" fontSize="13px">
                           +8%
                         </VuiTypography>
                       </VuiTypography>
@@ -72,7 +55,7 @@ function CRM() {
                 <MiniGradientLineChart
                     title="Last Login"
                     description={
-                      <VuiTypography variant="lg" color="white" fontWeight="bold">
+                      <VuiTypography variant="lg" color="white" fontWeight="bold" fontSize="13px">
                         10 September, 2023{" "}
                       </VuiTypography>
                     }
