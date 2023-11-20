@@ -1,20 +1,3 @@
-/** 
-
-=========================================================
-* Vision UI PRO React - v1.0.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/vision-ui-dashboard-pro-react
-* Copyright 2021 Creative Tim (https://www.creative-tim.com/)
-
-* Design and Coded by Simmmple & Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Visionware.
-
-*/
-
 import { useState } from "react";
 
 // react-router-dom components
@@ -58,7 +41,7 @@ function Basic() {
   return (
     <BasicLayout
       title="Welcome!"
-      description="Use these awesome forms to login or create new account in your project for free."
+      // description="Use these awesome forms to login or create new account in your project for free."
       image={bgBasic}
     >
       <GradientBorder borderRadius={borders.borderRadius.form} minWidth="100%" maxWidth="100%">
@@ -187,7 +170,7 @@ function Basic() {
               minWidth="100%"
               padding="1px"
               borderRadius={borders.borderRadius.lg}
-              padding="1px"
+
               backgroundImage={radialGradient(
                 palette.gradients.borderLight.main,
                 palette.gradients.borderLight.state,
@@ -196,10 +179,12 @@ function Basic() {
             >
               <VuiInput
                 type="email"
+                col
                 placeholder="Your email..."
                 sx={({ typography: { size } }) => ({
                   fontSize: size.sm,
                 })}
+                color="white"
               />
             </GradientBorder>
           </VuiBox>

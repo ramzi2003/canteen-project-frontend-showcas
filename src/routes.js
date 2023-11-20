@@ -30,9 +30,9 @@ const routes = [
     name: "Dashboards",
     key: "dashboards",
     icon: <IoHome size="15px" color="inherit" />,
-    route: "/dashboards/crm",
+    route: "/dashboards/main-page",
     component: CRM,
-    collapse: [{ name: "CRM", key: "crm", route: "/dashboards/crm", component: CRM }],
+    collapse: [{ name: "CRM", key: "crm", route: "/dashboards/main-page", component: CRM }],
   },
   {
     type: "collapse",

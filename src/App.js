@@ -139,7 +139,7 @@ export default function App() {
         {layout === "vr" && <Configurator />}
         <Switch>
           {getRoutes(routes)}
-          <Redirect from="*" to="/dashboards/crm" />
+          <Redirect from="*" to="/dashboards/main-page" />
         </Switch>
       </ThemeProvider>
     </CacheProvider>
@@ -163,7 +163,7 @@ export default function App() {
       {layout === "vr" && <Configurator />}
       <Switch>
         {getRoutes(routes)}
-        <Redirect from="*" to="/dashboards/crm" />
+        <Redirect from="*" to="/dashboards/main-page" />
     
       </Switch>
     </ThemeProvider>
