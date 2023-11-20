@@ -22,6 +22,7 @@ import ContractorTable from "layouts/clients/pages/Contractors";
 import FacultyTable from "layouts/clients/pages/Faculty";
 import GuestTable from "layouts/clients/pages/Guests";
 import StudentTable from "layouts/clients/pages/Students";
+import addClient from "layouts/clients/pages/addClient";
 
 
 const routes = [
@@ -85,7 +86,7 @@ const routes = [
       { name: "Guests", key: "guest-table", route: "/clients/guest-table", component: GuestTable },
       { name: "Students", key: "student-table", route: "/clients/student-table", component: StudentTable },
       { name: "Add Department", key: "add-department", route: "/clients/add-department", component: AddDepartment },
-      
+      { name: "Add Client", key: "add-client", route: "/clients/add-client", component: addClient },
     ],
     
   },

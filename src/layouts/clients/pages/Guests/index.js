@@ -1,6 +1,7 @@
 
 
 import { useState } from "react";
+import { useHistory } from 'react-router-dom';
 
 // @mui material components
 import Card from "@mui/material/Card";
@@ -28,6 +29,13 @@ function GuestsTable() {
 
   const openMenu = (event) => setMenu(event.currentTarget);
   const closeMenu = () => setMenu(null);
+
+  const history = useHistory();
+
+  // Function to navigate to the specified path
+  const addClient = () => {
+    history.push('/clients/add-client');
+  };
 
   const renderMenu = (
     <Menu
@@ -69,6 +77,7 @@ function GuestsTable() {
           <VuiBox >
             <VuiButton 
               color="info"
+              onClick={addClient}
               sx={({ breakpoints }) => ({
                 mb: "10px",
     
