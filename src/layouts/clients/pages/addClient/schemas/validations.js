@@ -2,15 +2,17 @@ import * as Yup from "yup";
 import addDepartment from "layouts/clients/pages/addClient/schemas/form";
 
 const {
-  formField: { departmentName, dateAdded, total, name, balance, gender, email },
+  formField: { name, balance, gender, email },
 } = addDepartment;
 
 export default Yup.object().shape({
-  [departmentName.name]: Yup.string().required(departmentName.errorMsg),
-  [dateAdded.name]: Yup.date().required(dateAdded.errorMsg),
-  [total.name]: Yup.number().required(total.errorMsg),
-  [name.name]: Yup.string().required(name.errorMsg),
-  [balance.name]: Yup.number().required(balance.errorMsg),
+  [name.name]: Yup.string()
+    .required(name.errorMsg)
+    .matches(/^[a-zA-Z\s]*$/, "Invalid characters. Only letters and spaces are allowed."),
+  [balance.name]: Yup.number()
+    .required(balance.errorMsg)
+    .positive("Balance must be a positive number")
+    .integer("Balance must be an integer"),
   [gender.name]: Yup.string().required(gender.errorMsg),
   [email.name]: Yup.string().email(email.invalidMsg).required(email.errorMsg),
 });

@@ -13,24 +13,13 @@ import FormField from "layouts/clients/pages/addClient/components/FormField";
 
 function UserInfo({ formData }) {
   const { formField, values, errors, touched } = formData;
-  const {
-    departmentName,
-    dateAdded,
-    total,
-    name, // New field
-    balance, // New field
-    gender, // New field
-    email, // New field
-  } = formField;
+  const { name, balance, gender, email } = formField;
 
   const {
-    departmentName: departmentNameV,
-    dateAdded: dateAddedV,
-    total: totalV,
-    name: nameV, // New field
-    balance: balanceV, // New field
-    gender: genderV, // New field
-    email: emailV, // New field
+    name: nameV,
+    balance: balanceV,
+    gender: genderV,
+    email: emailV,
   } = values;
 
   return (
@@ -45,41 +34,6 @@ function UserInfo({ formData }) {
       </VuiBox>
       <VuiBox mt={3}>
         <Grid container spacing={3}>
-          <Grid item xs={12} sm={6}>
-            <FormField
-              label={departmentName.label}
-              name={departmentName.name}
-              type={departmentName.type}
-              value={departmentNameV}
-              placeholder={departmentName.placeholder}
-              error={errors.departmentName && touched.departmentName}
-              success={departmentNameV.length > 0 && !errors.departmentName}
-            />
-          </Grid>
-          <Grid item xs={12} sm={6}>
-            <FormField
-              label={dateAdded.label}
-              name={dateAdded.name}
-              type={dateAdded.type}
-              value={dateAddedV}
-              error={errors.dateAdded && touched.dateAdded}
-              success={dateAddedV && !errors.dateAdded}
-            />
-          </Grid>
-        </Grid>
-        <Grid container spacing={3}>
-          <Grid item xs={12} sm={6}>
-            <FormField
-              label={total.label}
-              name={total.name}
-              type={total.type}
-              value={totalV}
-              placeholder={total.placeholder}
-              error={errors.total && touched.total}
-              success={totalV && !errors.total}
-            />
-          </Grid>
-          {/* New Fields */}
           <Grid item xs={12} sm={6}>
             <FormField
               label={name.label}
@@ -102,11 +56,14 @@ function UserInfo({ formData }) {
               success={balanceV && !errors.balance}
             />
           </Grid>
+        </Grid>
+        <Grid container spacing={3}>
           <Grid item xs={12} sm={6}>
             <FormField
               label={gender.label}
               name={gender.name}
               type={gender.type}
+              options={gender.options} // Ensure this line is present
               value={genderV}
               error={errors.gender && touched.gender}
               success={genderV && !errors.gender}
