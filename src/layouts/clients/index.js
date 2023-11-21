@@ -106,7 +106,6 @@ function ClientsTable() {
           </VuiBox>
 
           
-
           <VuiBox display="flex">
             <VuiButton
               variant={menu ? "contained" : "outlined"}

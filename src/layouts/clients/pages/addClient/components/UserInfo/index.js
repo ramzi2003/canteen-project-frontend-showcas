@@ -1,14 +1,8 @@
-// prop-type is a library for typechecking of props
+// UserInfo.js
 import PropTypes from "prop-types";
-
-// @mui material components
 import Grid from "@mui/material/Grid";
-
-// Vision UI Dashboard PRO React components
 import VuiBox from "components/VuiBox";
 import VuiTypography from "components/VuiTypography";
-
-// NewUser page components
 import FormField from "layouts/clients/pages/addClient/components/FormField";
 
 function UserInfo({ formData }) {
@@ -86,7 +80,6 @@ function UserInfo({ formData }) {
   );
 }
 
-// typechecking props for UserInfo
 UserInfo.propTypes = {
   formData: PropTypes.oneOfType([PropTypes.object, PropTypes.func]).isRequired,
 };

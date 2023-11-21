@@ -1,42 +1,51 @@
-// prop-type is a library for typechecking of props
+// FormField.js
 import PropTypes from "prop-types";
-
-// formik components
 import { ErrorMessage, Field } from "formik";
-
-// Vision UI Dashboard PRO React components
 import VuiBox from "components/VuiBox";
 import VuiTypography from "components/VuiTypography";
 import VuiInput from "components/VuiInput";
-import VuiSelect from "components/VuiSelect"; 
-
 
 function FormField({ label, name, type, options, ...rest }) {
   return (
-    <VuiBox mb={1.5}>
-      <VuiBox mb={1} ml={0.5} lineHeight={0} display="inline-block">
-        <VuiTypography
-          component="label"
-          variant="caption"
-          color="white"
-          fontWeight="bold"
-          textTransform="capitalize"
-        >
-          {label}
-        </VuiTypography>
-      </VuiBox>
-      {type === "select" ? (
-        <Field {...rest} name={name} as={VuiSelect}>
+    <VuiBox mb={2}>
+      <VuiTypography
+        component="label"
+        variant="caption"
+        color="white"
+        fontWeight="bold"
+        textTransform="capitalize"
+      >
+        {label}
+      </VuiTypography>
+      {type === "radio" ? (
+        <VuiBox mt={1} display="flex" flexDirection="row">
           {options.map((option) => (
-            <option key={option} value={option}>
-              {option}
-            </option>
+            <VuiBox key={option} display="flex" alignItems="center" mr={2}>
+              <Field
+                {...rest}
+                type="radio"
+                id={`${name}-${option}`}
+                name={name}
+                value={option}
+              />
+              <VuiTypography
+                component="label"
+                variant="body1"
+                htmlFor={`${name}-${option}`}
+                ml={1}
+                color="white"
+                fontSize="14px"
+                opacity={0.8}
+              >
+                {option}
+              </VuiTypography>
+            </VuiBox>
           ))}
-        </Field>
+        </VuiBox>
       ) : (
         <Field {...rest} name={name} as={VuiInput} />
       )}
-      <VuiBox mt={0.75}>
+      <VuiBox mt={1}>
         <VuiTypography component="div" variant="caption" color="error">
           <ErrorMessage name={name} />
         </VuiTypography>
@@ -44,12 +53,12 @@ function FormField({ label, name, type, options, ...rest }) {
     </VuiBox>
   );
 }
-// typechecking props for FormField
+
 FormField.propTypes = {
   label: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   type: PropTypes.string,
-  options: PropTypes.arrayOf(PropTypes.string), // Add prop type for options
+  options: PropTypes.arrayOf(PropTypes.string),
 };
 
 export default FormField;

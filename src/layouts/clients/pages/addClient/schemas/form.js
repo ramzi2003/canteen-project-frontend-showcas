@@ -19,10 +19,11 @@ export default {
     gender: {
       name: "gender",
       label: "Gender",
-      type: "select", // You may want to use a select input for gender
-      options: ["Male", "Female", "Other"],
+      type: "radio", // Change the type to "radio"
+      options: ["Male", "Female"],
       errorMsg: "Gender is required.",
     },
+    
     email: {
       name: "email",
       label: "Email",
