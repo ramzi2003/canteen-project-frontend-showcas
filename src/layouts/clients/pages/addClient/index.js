@@ -86,7 +86,7 @@ function NewUser() {
                           sx={{ minWidth: "100px" }}
                           color="info"
                         >
-                          {isLastStep ? "send" : "next"}
+                          {isLastStep ? "add" : "next"}
                         </VuiButton>
                       </VuiBox>
                     </VuiBox>

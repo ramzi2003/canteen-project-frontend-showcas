@@ -11,8 +11,6 @@ import VuiTypography from "components/VuiTypography";
 // NewUser page components
 import FormField from "layouts/clients/pages/addDepartment/components/FormField";
 
-// ... (existing imports)
-
 function UserInfo({ formData }) {
   const { formField, values, errors, touched } = formData;
   const { departmentName, dateAdded, total } = formField;

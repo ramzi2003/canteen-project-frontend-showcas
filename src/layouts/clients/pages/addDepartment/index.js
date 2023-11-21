@@ -100,7 +100,7 @@ function NewUser() {
                           color="info"
 
                         >
-                          {isLastStep ? "send" : "next"}
+                          {isLastStep ? "add" : "next"}
                         </VuiButton>
                       </VuiBox>
                     </VuiBox>
