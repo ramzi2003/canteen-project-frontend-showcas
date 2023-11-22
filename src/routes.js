@@ -18,6 +18,9 @@ import AddDepartment from "layouts/clients/pages/addDepartment";
 import { IoDocument } from "react-icons/io5";
 import { IoDocuments } from "react-icons/io5";
 import { IoHome } from "react-icons/io5";
+import { IoWallet } from "react-icons/io5";
+import { IoPersonSharp } from "react-icons/io5";
+import { IoFastFoodSharp } from "react-icons/io5";
 import ContractorTable from "layouts/clients/pages/Contractors";
 import FacultyTable from "layouts/clients/pages/Faculty";
 import GuestTable from "layouts/clients/pages/Guests";
@@ -39,7 +42,8 @@ const routes = [
     type: "collapse",
     name: "Payment",
     key: "payment",
-    icon: <IoDocument size="15px" color="inherit" />,
+    // icon: <IoDocument size="15px" color="inherit" />,
+    icon: <IoWallet size="15px" color="inherit" />,
     collapse: [{ name: "Payments", key: "payments", route: "#" }],
   },
   { type: "title", title: "ACCOUNT PAGES", key: "account-pages" },
@@ -47,7 +51,8 @@ const routes = [
     type: "collapse",
     name: "Account",
     key: "account",
-    icon: <IoDocument size="15px" color="inherit" />,
+    // icon: <IoDocument size="15px" color="inherit" />,
+    icon: <IoPersonSharp size="15px" color="inherit" />,
     collapse: [
       {
         name: "Settings",
@@ -95,7 +100,8 @@ const routes = [
     name: "Canteen",
     key: "canteen",
     route: "/canteen",
-    icon: <IoDocument size="15px" color="inherit" />,
+    // icon: <IoDocument size="15px" color="inherit" />,
+    icon: <IoFastFoodSharp size="15px" color="inherit" />,
     collapse: [{ name: "Canteen", key: "canteen", route: "/canteen", component: CanteenLayout }],
   },
   {
