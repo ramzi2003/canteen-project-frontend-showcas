@@ -21,6 +21,8 @@ import { IoHome } from "react-icons/io5";
 import { IoWallet } from "react-icons/io5";
 import { IoPersonSharp } from "react-icons/io5";
 import { IoFastFoodSharp } from "react-icons/io5";
+import { IoPersonCircleSharp } from "react-icons/io5";
+import { IoDocumentText } from "react-icons/io5";
 import ContractorTable from "layouts/clients/pages/Contractors";
 import FacultyTable from "layouts/clients/pages/Faculty";
 import GuestTable from "layouts/clients/pages/Guests";
@@ -117,7 +119,8 @@ const routes = [
     name: "Reception",
     key: "reception",
     route: "/reception",
-    icon: <IoDocument size="15px" color="inherit" />,
+    // icon: <IoDocument size="15px" color="inherit" />,
+    icon: <IoDocumentText size="15px" color="inherit" />,
     collapse: [{ name: "Reception", key: "reception", route: "/reception", component: ReceptionLayout }],
   },
   {
@@ -125,7 +128,8 @@ const routes = [
     name: "Admin",
     key: "admin",
     route: "/admin",
-    icon: <IoDocument size="15px" color="inherit" />,
+    // icon: <IoDocument size="15px" color="inherit" />,
+    icon: <IoPersonCircleSharp size="15px" color="inherit" />,
     collapse: [{ name: "Admin", key: "admin", route: "/admin", component: AdminLayout }],
   },
   {
@@ -133,7 +137,8 @@ const routes = [
     name: "Cashier",
     key: "cashier",
     route: "/cashier",
-    icon: <IoDocument size="15px" color="inherit" />,
+    // icon: <IoDocument size="15px" color="inherit" />,
+    icon: <IoWallet size="15px" color="inherit" />,
     collapse: [{ name: "Cashier", key: "cashier", route: "/cashier", component: CashLayout }],
   },
   
