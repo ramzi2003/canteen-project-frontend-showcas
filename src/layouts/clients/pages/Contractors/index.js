@@ -92,7 +92,7 @@ function ContractorTable() {
             </VuiButton>
           </VuiBox>
 
-          {/* <VuiBox>
+          <VuiBox>
             <VuiButton
               color="info"
               mb={2}
@@ -106,7 +106,7 @@ function ContractorTable() {
               >
                 change department
             </VuiButton>
-          </VuiBox> */}
+          </VuiBox>
 
           
 

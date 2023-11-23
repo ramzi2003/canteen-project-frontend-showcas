@@ -91,7 +91,7 @@ function GuestsTable() {
             </VuiButton>
           </VuiBox>
 
-          {/* <VuiBox>
+          <VuiBox>
             <VuiButton
               color="info"
               mb={2}
@@ -105,7 +105,7 @@ function GuestsTable() {
               >
                 change department
             </VuiButton>
-          </VuiBox> */}
+          </VuiBox>
 
           
 
