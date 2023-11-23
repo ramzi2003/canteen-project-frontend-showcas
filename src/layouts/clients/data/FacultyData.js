@@ -62,7 +62,7 @@ export default {
         <div>
           <Link to="">
             <VuiButton style={{ backgroundColor: 'red', color: 'white' }} variant="contained" size="small">
-              Delete
+              Withdraw
             </VuiButton>
           </Link>
           <span style={{ margin: '0 8px' }}></span>
@@ -89,7 +89,7 @@ export default {
         <div>
           <Link to="">
             <VuiButton style={{ backgroundColor: 'red', color: 'white' }} variant="contained" size="small">
-              Delete
+              Withdraw
             </VuiButton>
           </Link>
           <span style={{ margin: '0 8px' }}></span>
@@ -117,7 +117,7 @@ export default {
         <div>
           <Link to="">
             <VuiButton style={{ backgroundColor: 'red', color: 'white' }} variant="contained" size="small">
-              Delete
+              Withdraw
             </VuiButton>
           </Link>
           <span style={{ margin: '0 8px' }}></span>
@@ -145,7 +145,7 @@ export default {
         <div>
           <Link to="">
             <VuiButton style={{ backgroundColor: 'red', color: 'white' }} variant="contained" size="small">
-              Delete
+              Withdraw
             </VuiButton>
           </Link>
           <span style={{ margin: '0 8px' }}></span>
@@ -173,7 +173,7 @@ export default {
         <div>
           <Link to="">
             <VuiButton style={{ backgroundColor: 'red', color: 'white' }} variant="contained" size="small">
-              Delete
+              Withdraw
             </VuiButton>
           </Link>
           <span style={{ margin: '0 8px' }}></span>
@@ -201,7 +201,7 @@ export default {
         <div>
           <Link to="">
             <VuiButton style={{ backgroundColor: 'red', color: 'white' }} variant="contained" size="small">
-              Delete
+              Withdraw
             </VuiButton>
           </Link>
           <span style={{ margin: '0 8px' }}></span>
@@ -229,7 +229,7 @@ export default {
         <div>
           <Link to="">
             <VuiButton style={{ backgroundColor: 'red', color: 'white' }} variant="contained" size="small">
-              Delete
+              Withdraw
             </VuiButton>
           </Link>
           <span style={{ margin: '0 8px' }}></span>
@@ -257,7 +257,7 @@ export default {
         <div>
           <Link to="">
             <VuiButton style={{ backgroundColor: 'red', color: 'white' }} variant="contained" size="small">
-              Delete
+              Withdraw
             </VuiButton>
           </Link>
           <span style={{ margin: '0 8px' }}></span>
@@ -285,7 +285,7 @@ export default {
         <div>
           <Link to="">
             <VuiButton style={{ backgroundColor: 'red', color: 'white' }} variant="contained" size="small">
-              Delete
+              Withdraw
             </VuiButton>
           </Link>
           <span style={{ margin: '0 8px' }}></span>
@@ -313,7 +313,7 @@ export default {
         <div>
           <Link to="">
             <VuiButton style={{ backgroundColor: 'red', color: 'white' }} variant="contained" size="small">
-              Delete
+              Withdraw
             </VuiButton>
           </Link>
           <span style={{ margin: '0 8px' }}></span>
@@ -341,7 +341,7 @@ export default {
         <div>
           <Link to="">
             <VuiButton style={{ backgroundColor: 'red', color: 'white' }} variant="contained" size="small">
-              Delete
+              Withdraw
             </VuiButton>
           </Link>
           <span style={{ margin: '0 8px' }}></span>
@@ -369,7 +369,7 @@ export default {
         <div>
           <Link to="">
             <VuiButton style={{ backgroundColor: 'red', color: 'white' }} variant="contained" size="small">
-              Delete
+              Withdraw
             </VuiButton>
           </Link>
           <span style={{ margin: '0 8px' }}></span>
@@ -397,7 +397,7 @@ export default {
         <div>
           <Link to="">
             <VuiButton style={{ backgroundColor: 'red', color: 'white' }} variant="contained" size="small">
-              Delete
+              Withdraw
             </VuiButton>
           </Link>
           <span style={{ margin: '0 8px' }}></span>
