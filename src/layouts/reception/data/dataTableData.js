@@ -15,6 +15,8 @@ import team4 from "assets/images/team-4.jpg";
 import VuiButton from "components/VuiButton";
 
 import { Link } from "react-router-dom";
+import { IoDesktop } from "react-icons/io5";
+import { IoCard } from "react-icons/io5";
 
 
 
@@ -50,20 +52,20 @@ export default {
     //   },
     // },
    
-    { Header: "TOTAL", accessor: "total",
+    // { Header: "TOTAL", accessor: "total",
     
-    Cell: ({ value }) => {
-      const numericValue = parseInt(value);
+    // Cell: ({ value }) => {
+    //   const numericValue = parseInt(value);
     
-      return (
-        <DefaultCell
-          value={numericValue}
-        />
-      );
-    },
+    //   return (
+    //     <DefaultCell
+    //       value={numericValue}
+    //     />
+    //   );
+    // },
     
     
-    },
+    // },
     { Header: "ACTION", accessor: "action", Cell: ({ value }) => <DefaultCell value={value} /> },
   ],
 
@@ -72,11 +74,11 @@ export default {
       id: "#10421",
       date: "20 Feb, 2023",
       status: "paid",
-      name: ["Contractors", { image: team2 }],
+      name: ["Carson Neil", { image: team2 }],
       total: "4",
       action:  (
-        <Link to="/clients/contractor-table">
-         <VuiButton color="primary" variant="contained" size="small">View</VuiButton>
+        <Link to="">
+          <VuiButton color="primary" variant="contained" size="small"> <IoCard style={{ marginRight: '8px' }} /> Issue Card</VuiButton>
         </Link>
       ),
     },
@@ -84,11 +86,11 @@ export default {
       id: "#10422",
       date: "10 Jan, 2023",
       status: "paid",
-      name: ["Students", { image: team1 }],
+      name: ["Sadyrov Maksat", { image: team1 }],
       total: "5",
       action:  (
-        <Link to="/clients/student-table">
-         <VuiButton color="primary" variant="contained" size="small">View</VuiButton>
+        <Link to="">
+          <VuiButton color="primary" variant="contained" size="small"> <IoCard style={{ marginRight: '8px' }} /> Issue Card</VuiButton>
         </Link>
       ),
     },
@@ -96,11 +98,11 @@ export default {
       id: "#10423",
       date: "12 Nov, 2023",
       status: "refunded",
-      name: ["Faculty", { image: "M", color: "info" }],
+      name: ["Ibraev Temirbek", { image: "M", color: "info" }],
       total: "7",
       action:  (
-        <Link to="/clients/faculty-table">
-         <VuiButton color="primary" variant="contained" size="small">View</VuiButton>
+        <Link to="">
+          <VuiButton color="primary" variant="contained" size="small"> <IoCard style={{ marginRight: '8px' }} /> Issue Card</VuiButton>
         </Link>
       ),
     },
@@ -108,11 +110,11 @@ export default {
       id: "#10424",
       date: "1 Dec, 2023",
       status: "paid",
-      name: ["Guests", { image: team3 }],
+      name: ["Kemirkulov Kurban", { image: team3 }],
       total: "29",
       action:  (
-        <Link to="/clients/guest-table">
-         <VuiButton color="primary" variant="contained" size="small">View</VuiButton>
+        <Link to="">
+          <VuiButton color="primary" variant="contained" size="small"> <IoCard style={{ marginRight: '8px' }} /> Issue Card</VuiButton>
         </Link>
       ),
     },
