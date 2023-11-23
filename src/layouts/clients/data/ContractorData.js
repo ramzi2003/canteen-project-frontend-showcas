@@ -80,7 +80,7 @@ export default {
       expireDate: "20 Feb, 2023",
       action: (
         <div>
-          <Link to="">
+          <Link to="/clients/withdraw-money">
             <VuiButton style={{ backgroundColor: 'red', color: 'white' }} variant="contained" size="small">
               Withdraw
             </VuiButton>
@@ -110,7 +110,7 @@ export default {
       expireDate: "26 Jan, 2023",
       action: (
         <div>
-          <Link to="">
+          <Link to="/clients/withdraw-money">
             <VuiButton style={{ backgroundColor: 'red', color: 'white' }} variant="contained" size="small">
               Withdraw
             </VuiButton>
@@ -140,7 +140,7 @@ export default {
       expireDate: "12 Sep, 2023",
       action: (
         <div>
-          <Link to="">
+          <Link to="/clients/withdraw-money">
             <VuiButton style={{ backgroundColor: 'red', color: 'white' }} variant="contained" size="small">
               Withdraw
             </VuiButton>
@@ -170,7 +170,7 @@ export default {
       expireDate: "4 Oct, 2023",
       action: (
         <div>
-          <Link to="">
+          <Link to="/clients/withdraw-money">
             <VuiButton style={{ backgroundColor: 'red', color: 'white' }} variant="contained" size="small">
               Withdraw
             </VuiButton>

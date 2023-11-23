@@ -60,7 +60,7 @@ export default {
       email: "john.doe@example.com",
       action: (
         <div>
-          <Link to="">
+          <Link to="/clients/withdraw-money">
             <VuiButton style={{ backgroundColor: 'red', color: 'white' }} variant="contained" size="small">
               Withdraw
             </VuiButton>
@@ -87,7 +87,7 @@ export default {
       email: "john.doe@example.com",
       action: (
         <div>
-          <Link to="">
+          <Link to="/clients/withdraw-money">
             <VuiButton style={{ backgroundColor: 'red', color: 'white' }} variant="contained" size="small">
               Withdraw
             </VuiButton>
@@ -115,7 +115,7 @@ export default {
       email: "jane.smith@example.com",
       action: (
         <div>
-          <Link to="">
+          <Link to="/clients/withdraw-money">
             <VuiButton style={{ backgroundColor: 'red', color: 'white' }} variant="contained" size="small">
               Withdraw
             </VuiButton>

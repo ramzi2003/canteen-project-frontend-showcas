@@ -14,6 +14,7 @@ import AddDepartment from "layouts/clients/pages/addDepartment";
 
 
 
+
 // React icons
 import { IoDocument } from "react-icons/io5";
 import { IoDocuments } from "react-icons/io5";
@@ -29,6 +30,8 @@ import GuestTable from "layouts/clients/pages/Guests";
 import StudentTable from "layouts/clients/pages/Students";
 import addClient from "layouts/clients/pages/addClient";
 import addMoney from "layouts/clients/pages/addMoney";
+import changeDepartment from "layouts/clients/pages/changeDepartment";
+import withdrawMoney from "layouts/clients/pages/withdrawMoney";
 
 
 const routes = [
@@ -93,7 +96,11 @@ const routes = [
       { name: "Students", key: "student-table", route: "/clients/student-table", component: StudentTable },
       { name: "Add Department", key: "add-department", route: "/clients/add-department", component: AddDepartment },
       { name: "Add Client", key: "add-client", route: "/clients/add-client", component: addClient },
-      { name: "Add Money", key: "add-money", route: "/clients/add-money", component: addMoney}
+      { name: "Add Money", key: "add-money", route: "/clients/add-money", component: addMoney},
+      { name: "Change Department", key: "change-department", route: "/clients/change-department", component: changeDepartment},
+      { name: "Withdraw Money", key: "withdraw-money", route: "/clients/withdraw-money", component: withdrawMoney},
+
+
 
     ],
     
