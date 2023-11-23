@@ -3,9 +3,9 @@ import VuiTypography from "components/VuiTypography/index";
 
 // totalsList page components
 import IdCell from "layouts/clients/components/IdCell";
-import DefaultCell from "layouts/clients/components/DefaultCell";
+import DefaultCell from "layouts/reception/components/DefaultCell";
 import StatusCell from "layouts/clients/components/StatusCell";
-import CustomerCell from "layouts/clients/components/CustomerCell";
+import CustomerCell from "layouts/reception/components/CustomerCell";
 
 // Images
 import team1 from "assets/images/team-1.jpg";
@@ -26,7 +26,7 @@ export default {
     //   Cell: ({ value }) => <IdCell id={value} /> 
     
     // },
-    { Header: "DEPARTMENTS", accessor: "department",
+    { Header: "NAME", accessor: "name",
 
     Cell: ({ value: [name, data] }) => (
       <CustomerCell image={data.image} color={data.color || "dark"} name={name} />
@@ -72,7 +72,7 @@ export default {
       id: "#10421",
       date: "20 Feb, 2023",
       status: "paid",
-      department: ["Contractors", { image: team2 }],
+      name: ["Contractors", { image: team2 }],
       total: "4",
       action:  (
         <Link to="/clients/contractor-table">
@@ -84,7 +84,7 @@ export default {
       id: "#10422",
       date: "10 Jan, 2023",
       status: "paid",
-      department: ["Students", { image: team1 }],
+      name: ["Students", { image: team1 }],
       total: "5",
       action:  (
         <Link to="/clients/student-table">
@@ -96,7 +96,7 @@ export default {
       id: "#10423",
       date: "12 Nov, 2023",
       status: "refunded",
-      department: ["Faculty", { image: "M", color: "info" }],
+      name: ["Faculty", { image: "M", color: "info" }],
       total: "7",
       action:  (
         <Link to="/clients/faculty-table">
@@ -108,7 +108,7 @@ export default {
       id: "#10424",
       date: "1 Dec, 2023",
       status: "paid",
-      department: ["Guests", { image: team3 }],
+      name: ["Guests", { image: team3 }],
       total: "29",
       action:  (
         <Link to="/clients/guest-table">
