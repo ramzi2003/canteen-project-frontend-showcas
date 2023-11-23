@@ -28,6 +28,7 @@ import FacultyTable from "layouts/clients/pages/Faculty";
 import GuestTable from "layouts/clients/pages/Guests";
 import StudentTable from "layouts/clients/pages/Students";
 import addClient from "layouts/clients/pages/addClient";
+import addMoney from "layouts/clients/pages/addMoney";
 
 
 const routes = [
@@ -92,6 +93,8 @@ const routes = [
       { name: "Students", key: "student-table", route: "/clients/student-table", component: StudentTable },
       { name: "Add Department", key: "add-department", route: "/clients/add-department", component: AddDepartment },
       { name: "Add Client", key: "add-client", route: "/clients/add-client", component: addClient },
+      { name: "Add Money", key: "add-money", route: "/clients/add-money", component: addMoney}
+
     ],
     
   },
