@@ -17,6 +17,15 @@ import VuiBox from "components/VuiBox";
 
 import { Link } from "react-router-dom";
 
+const BalanceCell = ({ value }) => {
+  const balanceValue = parseFloat(value);
+  const balanceStyle = {
+    color: balanceValue >= -2000 ? "green" : "red",
+    fontSize: "13px", 
+  };
+
+  return <div style={balanceStyle}>{value}</div>;
+};
 
 
 export default {
@@ -26,9 +35,9 @@ export default {
         <CustomerCell image={data.image} color={data.color || "dark"} name={name} />
       ),
     },
-    { Header: "Balance", accessor: "balance",
+    { Header: "Balance (som)", accessor: "balance",
       Cell: ({ value }) => (
-        <DefaultCell value={value} />
+        <BalanceCell value={value} />
       ),
     },
     { Header: "Gender", accessor: "gender",
@@ -47,7 +56,7 @@ export default {
   rows: [
     {
       name: ["John Doe", { image: team2 }],
-      balance: "$500",
+      balance: "500",
       gender: "Male",
       email: "john.doe@example.com",
       action: (
@@ -74,7 +83,7 @@ export default {
     },
     {
       name: ["John Doe", { image: team2 }],
-      balance: "$500",
+      balance: "-3300",
       gender: "Male",
       email: "john.doe@example.com",
       action: (
@@ -102,7 +111,7 @@ export default {
 
     {
       name: ["Jane Smith", { image: team1 }],
-      balance: "$700",
+      balance: "700",
       gender: "Female",
       email: "jane.smith@example.com",
       action: (
@@ -130,7 +139,7 @@ export default {
 
     {
       name: ["John Doe", { image: team2 }],
-      balance: "$500",
+      balance: "-3500",
       gender: "Male",
       email: "john.doe@example.com",
       action: (
@@ -155,10 +164,10 @@ export default {
         </div>
       ),
     },
-    // Entry 2
+
     {
       name: ["Jane Smith", { image: team1 }],
-      balance: "$700",
+      balance: "-3000",
       gender: "Female",
       email: "jane.smith@example.com",
       action: (
@@ -183,10 +192,10 @@ export default {
         </div>
       ),
     },
-    // Entry 3
+
     {
       name: ["Alex Johnson", { image: team3 }],
-      balance: "$600",
+      balance: "-2300",
       gender: "Male",
       email: "alex.johnson@example.com",
       action: (
@@ -211,10 +220,10 @@ export default {
         </div>
       ),
     },
-    // Entry 4
+
     {
       name: ["Emily Davis", { image: team4 }],
-      balance: "$800",
+      balance: "800",
       gender: "Female",
       email: "emily.davis@example.com",
       action: (
@@ -239,10 +248,10 @@ export default {
         </div>
       ),
     },
-    // Entry 5
+
     {
       name: ["Samuel Williams", { image: team2 }],
-      balance: "$550",
+      balance: "550",
       gender: "Male",
       email: "samuel.williams@example.com",
       action: (
@@ -267,10 +276,10 @@ export default {
         </div>
       ),
     },
-    // Entry 6
+
     {
       name: ["Olivia Brown", { image: team1 }],
-      balance: "$720",
+      balance: "-720",
       gender: "Female",
       email: "olivia.brown@example.com",
       action: (
@@ -295,10 +304,10 @@ export default {
         </div>
       ),
     },
-    // Entry 7
+ 
     {
       name: ["Daniel Miller", { image: team3 }],
-      balance: "$630",
+      balance: "630",
       gender: "Male",
       email: "daniel.miller@example.com",
       action: (
