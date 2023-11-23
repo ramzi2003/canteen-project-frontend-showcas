@@ -205,7 +205,7 @@ export default {
             </VuiButton>
           </Link>
           <span style={{ margin: '0 8px' }}></span>
-          <Link to="">
+          <Link to="/clients/add-money">
             <VuiButton style={{ backgroundColor: '#05CD99', color: 'white' }}  variant="contained" size="small">
               Add
             </VuiButton>
@@ -233,7 +233,7 @@ export default {
             </VuiButton>
           </Link>
           <span style={{ margin: '0 8px' }}></span>
-          <Link to="">
+          <Link to="/clients/add-money">
             <VuiButton style={{ backgroundColor: '#05CD99', color: 'white' }}  variant="contained" size="small">
               Add
             </VuiButton>
@@ -261,7 +261,7 @@ export default {
             </VuiButton>
           </Link>
           <span style={{ margin: '0 8px' }}></span>
-          <Link to="">
+          <Link to="/clients/add-money">
             <VuiButton style={{ backgroundColor: '#05CD99', color: 'white' }}  variant="contained" size="small">
               Add
             </VuiButton>
@@ -289,7 +289,7 @@ export default {
             </VuiButton>
           </Link>
           <span style={{ margin: '0 8px' }}></span>
-          <Link to="">
+          <Link to="/clients/add-money">
             <VuiButton style={{ backgroundColor: '#05CD99', color: 'white' }}  variant="contained" size="small">
               Add
             </VuiButton>
@@ -317,7 +317,7 @@ export default {
             </VuiButton>
           </Link>
           <span style={{ margin: '0 8px' }}></span>
-          <Link to="">
+          <Link to="/clients/add-money">
             <VuiButton style={{ backgroundColor: '#05CD99', color: 'white' }}  variant="contained" size="small">
               Add
             </VuiButton>
@@ -345,7 +345,7 @@ export default {
             </VuiButton>
           </Link>
           <span style={{ margin: '0 8px' }}></span>
-          <Link to="">
+          <Link to="/clients/add-money">
             <VuiButton style={{ backgroundColor: '#05CD99', color: 'white' }}  variant="contained" size="small">
               Add
             </VuiButton>
@@ -373,7 +373,7 @@ export default {
             </VuiButton>
           </Link>
           <span style={{ margin: '0 8px' }}></span>
-          <Link to="">
+          <Link to="/clients/add-money">
             <VuiButton style={{ backgroundColor: '#05CD99', color: 'white' }}  variant="contained" size="small">
               Add
             </VuiButton>
@@ -401,7 +401,7 @@ export default {
             </VuiButton>
           </Link>
           <span style={{ margin: '0 8px' }}></span>
-          <Link to="">
+          <Link to="/clients/add-money">
             <VuiButton style={{ backgroundColor: '#05CD99', color: 'white' }}  variant="contained" size="small">
               Add
             </VuiButton>
