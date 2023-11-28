@@ -1,4 +1,6 @@
 // FormField.js
+
+import React from "react";
 import PropTypes from "prop-types";
 import { ErrorMessage, Field } from "formik";
 import VuiBox from "components/VuiBox";
@@ -41,6 +43,30 @@ function FormField({ label, name, type, options, ...rest }) {
               </VuiTypography>
             </VuiBox>
           ))}
+        </VuiBox>
+      ) : type === "file" ? (
+        <VuiBox>
+          <Field
+            {...rest}
+            name={name}
+            type="file"
+            id={name}
+            style={{ display: "none" }}
+          />
+          <label htmlFor={name}>
+            <VuiTypography
+              component="div"
+              variant="body1"
+              color="white"
+              fontSize="14px"
+              opacity={0.8}
+              cursor="pointer"
+              borderBottom="1px solid white"
+              pb={1}
+            >
+              Upload {label}
+            </VuiTypography>
+          </label>
         </VuiBox>
       ) : (
         <Field {...rest} name={name} as={VuiInput} />

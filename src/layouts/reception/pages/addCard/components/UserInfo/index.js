@@ -1,26 +1,27 @@
-// UserInfo.js
+// addCardInfo.js
+
 import PropTypes from "prop-types";
 import Grid from "@mui/material/Grid";
 import VuiBox from "components/VuiBox";
 import VuiTypography from "components/VuiTypography";
-import FormField from "layouts/clients/pages/addClient/components/FormField";
+import FormField from "layouts/reception/pages/addCard/components/FormField";
 
-function UserInfo({ formData }) {
+function AddCardInfo({ formData }) {
   const { formField, values, errors, touched } = formData;
-  const { name, balance, gender, email } = formField;
+  const { avatar, name, cardNumber, type } = formField;
 
   const {
+    avatar: avatarV,
     name: nameV,
-    balance: balanceV,
-    gender: genderV,
-    email: emailV,
+    cardNumber: cardNumberV,
+    type: typeV,
   } = values;
 
   return (
     <VuiBox>
       <VuiBox lineHeight={0} display="flex" flexDirection="column">
         <VuiTypography variant="lg" color="white" fontWeight="bold">
-          Department Information
+          Add new card
         </VuiTypography>
         <VuiTypography variant="button" fontWeight="regular" color="text">
           Mandatory information
@@ -28,6 +29,16 @@ function UserInfo({ formData }) {
       </VuiBox>
       <VuiBox mt={3}>
         <Grid container spacing={3}>
+          <Grid item xs={12} sm={6}>
+            <FormField
+              label={avatar.label}
+              name={avatar.name}
+              type={avatar.type}
+              value={avatarV}
+              error={errors.avatar && touched.avatar}
+              success={avatarV && !errors.avatar}
+            />
+          </Grid>
           <Grid item xs={12} sm={6}>
             <FormField
               label={name.label}
@@ -39,39 +50,28 @@ function UserInfo({ formData }) {
               success={nameV.length > 0 && !errors.name}
             />
           </Grid>
-          <Grid item xs={12} sm={6}>
-            <FormField
-              label={balance.label}
-              name={balance.name}
-              type={balance.type}
-              value={balanceV}
-              placeholder={balance.placeholder}
-              error={errors.balance && touched.balance}
-              success={balanceV && !errors.balance}
-            />
-          </Grid>
         </Grid>
         <Grid container spacing={3}>
           <Grid item xs={12} sm={6}>
             <FormField
-              label={gender.label}
-              name={gender.name}
-              type={gender.type}
-              options={gender.options} // Ensure this line is present
-              value={genderV}
-              error={errors.gender && touched.gender}
-              success={genderV && !errors.gender}
+              label={cardNumber.label}
+              name={cardNumber.name}
+              type={cardNumber.type}
+              value={cardNumberV}
+              placeholder={cardNumber.placeholder}
+              error={errors.cardNumber && touched.cardNumber}
+              success={cardNumberV && !errors.cardNumber}
             />
           </Grid>
           <Grid item xs={12} sm={6}>
             <FormField
-              label={email.label}
-              name={email.name}
-              type={email.type}
-              value={emailV}
-              placeholder={email.placeholder}
-              error={errors.email && touched.email}
-              success={emailV && !errors.email}
+              label={type.label}
+              name={type.name}
+              type={type.type}
+              options={type.options} // Ensure this line is present
+              value={typeV}
+              error={errors.type && touched.type}
+              success={typeV && !errors.type}
             />
           </Grid>
         </Grid>
@@ -80,8 +80,8 @@ function UserInfo({ formData }) {
   );
 }
 
-UserInfo.propTypes = {
+AddCardInfo.propTypes = {
   formData: PropTypes.oneOfType([PropTypes.object, PropTypes.func]).isRequired,
 };
 
-export default UserInfo;
+export default AddCardInfo;

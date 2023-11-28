@@ -7,19 +7,19 @@ import Step from "@mui/material/Step";
 import StepLabel from "@mui/material/StepLabel";
 import VuiBox from "components/VuiBox";
 import VuiButton from "components/VuiButton";
-import UserInfo from "layouts/clients/pages/addClient/components/UserInfo";
-import validations from "layouts/clients/pages/addClient/schemas/validations";
-import form from "layouts/clients/pages/addClient/schemas/form";
-import initialValues from "layouts/clients/pages/addClient/schemas/initialValues";
+import UserInfo from "layouts/reception/pages/addCard/components/UserInfo";
+import validations from "layouts/reception/pages/addCard/schemas/validations";
+import form from "layouts/reception/pages/addCard/schemas/form";
+import initialValues from "layouts/reception/pages/addCard/schemas/initialValues";
 import DashboardLayout from "examples/LayoutContainers/DashboardLayout";
 import DashboardNavbar from "examples/Navbars/DashboardNavbar";
 import Footer from "examples/Footer";
 
 function getSteps() {
-  return ["Add new Client"];
+  return ["Add Card"];
 }
 
-function NewUser() {
+function addCard() {
   const [activeStep, setActiveStep] = useState(0);
   const steps = getSteps();
   const { formId, formField } = form;
@@ -102,4 +102,4 @@ function NewUser() {
   );
 }
 
-export default NewUser;
+export default addCard;

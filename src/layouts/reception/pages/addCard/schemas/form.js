@@ -1,6 +1,14 @@
+// form.js
+
 export default {
   formId: "add-department-form",
   formField: {
+    avatar: {
+      name: "avatar",
+      label: "Avatar",
+      type: "file", // Assuming it's an avatar image upload
+      errorMsg: "Avatar is required.",
+    },
     name: {
       name: "name",
       label: "Name",
@@ -8,29 +16,19 @@ export default {
       placeholder: "e.g. John Doe",
       errorMsg: "Name is required.",
     },
-    balance: {
-      name: "balance",
-      label: "Balance",
-      type: "number",
-      placeholder: "e.g. 1000",
-      errorMsg: "Balance is required.",
-      invalidMsg: "Balance should be a valid number.",
+    cardNumber: {
+      name: "cardNumber",
+      label: "Card Number",
+      type: "text",
+      placeholder: "e.g. 1234-5678-9012-3456",
+      errorMsg: "Card Number is required.",
     },
-    gender: {
-      name: "gender",
-      label: "Gender",
-      type: "radio", // Change the type to "radio"
-      options: ["Male", "Female"],
-      errorMsg: "Gender is required.",
-    },
-    
-    email: {
-      name: "email",
-      label: "Email",
-      type: "email",
-      placeholder: "e.g. john@example.com",
-      errorMsg: "Email is required.",
-      invalidMsg: "Please enter a valid email address.",
+    type: {
+      name: "type",
+      label: "Type",
+      type: "radio",
+      options: ["Guest", "Corporate", "Ordinary"],
+      errorMsg: "Type is required.",
     },
   },
 };
