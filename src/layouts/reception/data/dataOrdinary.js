@@ -42,27 +42,27 @@ export default {
     {
       name: ["Carson Neil", { image: team2 }],
       cardNumber: "1234 5678 9012 3456",
-      type: "Guest",
+      type: "Ordinary",
     },
     {
       name: ["Sadyrov Maksat", { image: team1 }],
       cardNumber: "9876 5432 1098 7654",
-      type: "Guest",
+      type: "Ordinary",
     },
     {
       name: ["Ibraev Temirbek", { image: "M", color: "info" }],
       cardNumber: "1111 2222 3333 4444",
-      type: "Guest",
+      type: "Ordinary",
     },
     {
       name: ["Kemirkulov Kurban", { image: team3 }],
       cardNumber: "5555 6666 7777 8888",
-      type: "Guest",
+      type: "Ordinary",
     },
     {
       name: ["Abdul Malik", { image: team1 }],
       cardNumber: "9999 8888 7777 6666",
-      type: "Guest",
+      type: "Ordinary",
     },
   ],
 };

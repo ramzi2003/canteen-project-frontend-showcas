@@ -35,7 +35,7 @@ import withdrawMoney from "layouts/clients/pages/withdrawMoney";
 import CorporateCard from "layouts/reception/pages/CorporateCard";
 import GuesrCard from "layouts/reception/pages/GuestCard";
 import OrdinaryCard from "layouts/reception/pages/OrdinaryCard";
-
+import addCard from "layouts/reception/pages/addCard";
 
 const routes = [
   {
@@ -135,6 +135,7 @@ const routes = [
       { name: "Corporate Card", key: "corporate-card", route: "/reception/corporate-card", component: CorporateCard },
       { name: "Guest Card", key: "guest-card", route: "/reception/guest-card", component: GuesrCard },
       { name: "Ordinary Card", key: "ordinary-card", route: "/reception/ordinary-card", component: OrdinaryCard },
+      { name: "Add Card", key: "add-card", route: "/reception/add-card", component: addCard },
     ],
   },
   {

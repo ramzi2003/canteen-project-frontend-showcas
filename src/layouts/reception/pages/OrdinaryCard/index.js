@@ -31,8 +31,20 @@ function OrdinaryCardTable() {
   const history = useHistory();
 
   // Function to navigate to the specified path
-  const addDepartment = () => {
-    history.push('clients/add-department');
+  const addCard = () => {
+    history.push('/reception/add-card');
+  };
+
+  const navigateToGuestCard = () => {
+    history.push('/reception/guest-card');
+  };
+
+  const navigateToCorporateCard = () => {
+    history.push('/reception/corporate-card');
+  };
+
+  const navigateToOrdinaryCard = () => {
+    history.push('/reception/ordinary-card');
   };
 
   const renderMenu = (
@@ -44,9 +56,9 @@ function OrdinaryCardTable() {
       onClose={closeMenu}
       keepMounted
     >
-      <MenuItem onClick={addDepartment}>Guest</MenuItem>
-      <MenuItem onClick={closeMenu}>Corporate</MenuItem>
-      <MenuItem onClick={closeMenu}>Ordinary</MenuItem>
+      <MenuItem onClick={navigateToGuestCard}>Guest</MenuItem>
+      <MenuItem onClick={navigateToCorporateCard}>Corporate</MenuItem>
+      <MenuItem onClick={navigateToOrdinaryCard}>Ordinary</MenuItem>
       <Divider sx={{ margin: "0.5rem 0" }} />
       {/* <MenuItem onClick={closeMenu}>
         <VuiTypography variant="button" color="error" fontWeight="regular">
@@ -72,9 +84,9 @@ function OrdinaryCardTable() {
             },
           })}
         >
-          {/* <VuiBox >
+          <VuiBox >
             <VuiButton 
-              onClick={addDepartment}
+              onClick={addCard}
               color="info"
               sx={({ breakpoints }) => ({
                 mb: "10px",
@@ -85,9 +97,9 @@ function OrdinaryCardTable() {
                 },
               })}
             >
-              add department
+              add card
             </VuiButton>
-          </VuiBox> */}
+          </VuiBox>
 
           {/* <VuiBox>
             <VuiButton
