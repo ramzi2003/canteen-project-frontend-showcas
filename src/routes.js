@@ -148,11 +148,11 @@ const routes = [
   },
   {
     type: "collapse",
-    name: "Cashier",
-    key: "cashier",
-    route: "/cashier",
+    name: "Cash",
+    key: "cash",
+    route: "/cash",
     icon: <IoWallet size="15px" color="inherit" />,
-    collapse: [{ name: "Cashier", key: "cashier", route: "/cashier", component: CashLayout }],
+    collapse: [{ name: "Cash", key: "cash", route: "/cash", component: CashLayout }],
   },
   
 ];
