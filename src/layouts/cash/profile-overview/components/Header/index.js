@@ -1,19 +1,3 @@
-/** 
-
-=========================================================
-* Vision UI PRO React - v1.0.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/vision-ui-dashboard-pro-react
-* Copyright 2021 Creative Tim (https://www.creative-tim.com/)
-
-* Design and Coded by Simmmple & Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Visionware.
-
-*/
 
 import AppBar from "@mui/material/AppBar";
 // @mui material components
@@ -139,10 +123,10 @@ function Header() {
               })}
             >
               <VuiTypography variant="lg" color="white" fontWeight="bold">
-                Mark Johnson
+                Ivan Ivanov
               </VuiTypography>
               <VuiTypography variant="button" color="text" fontWeight="regular">
-                mark@simmmple.com
+                ivanivanov@gmail.com
               </VuiTypography>
             </VuiBox>
           </Grid>

@@ -37,6 +37,13 @@ import GuesrCard from "layouts/reception/pages/GuestCard";
 import OrdinaryCard from "layouts/reception/pages/OrdinaryCard";
 import addCard from "layouts/reception/pages/addCard";
 
+import Breakfast from "layouts/cash/pages/breakfast";
+import Lunch from "layouts/cash/pages/lunch";
+import Dinner from "layouts/cash/pages/dinner";
+import CoffeeBreak from "layouts/cash/pages/coffeeBreak";
+
+import CoffeeBreak2 from "layouts/cash/pages/cofeeBreak2";
+
 const routes = [
   {
     type: "collapse",
@@ -152,7 +159,16 @@ const routes = [
     key: "cash",
     route: "/cash",
     icon: <IoWallet size="15px" color="inherit" />,
-    collapse: [{ name: "Cash", key: "cash", route: "/cash", component: CashLayout }],
+    collapse: [
+      { name: "Cash", key: "cash", route: "/cash", component: CashLayout },
+      { name: "Breakfast", key: "breakfast", route: "/cash/breakfast", component: Breakfast },
+      { name: "Lunch", key: "lunch", route: "/cash/lunch", component: Lunch },
+      { name: "Dinner", key: "dinner", route: "/cash/dinner", component: Dinner },
+      { name: "Coffee Break", key: "coffee-break", route: "/cash/coffeeBreak", component: CoffeeBreak },
+      { name: "Coffee Break 2", key: "coffee-break-2", route: "/cash/coffee Break 2", component: CoffeeBreak2 },
+
+
+    ],
   },
   
 ];

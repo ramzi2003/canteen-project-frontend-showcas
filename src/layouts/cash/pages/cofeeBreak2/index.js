@@ -14,7 +14,6 @@ import { FaBowlRice } from "react-icons/fa6";
 import { FaPizzaSlice, FaHamburger, FaCoffee, FaCookie, FaEgg } from "react-icons/fa";
 
 import { Link } from "react-router-dom";
-import styles from "components/VuiSelect/styles";
 
 const PlaceholderIcon = () => <span>Icon Placeholder</span>;
 
@@ -28,7 +27,7 @@ const cashProjects = [
   },
   {
     icon: <FaBowlRice color="white" size="33px" />,
-    title: "Lunch",
+    title: "Lunche",
     color: "info",
     description: "Enjoy a delicious lunch. Refuel and recharge for the afternoon.",
     dateTime: "22.11.21",
@@ -56,7 +55,7 @@ const cashProjects = [
   },
   {
     icon: <FaCookie color="white" size="33px"/>,
-    title: "Coffee Break 2",
+    title: "Coffee break 2",
     color: "info",
     description: "Another coffee break. Take a moment to relax and connect with your team.",
     dateTime: "Date for Coffee break 2",
@@ -91,7 +90,7 @@ function CashMain() {
           <Grid item xs={12}>
             <VuiBox mb={1}>
               <VuiTypography variant="lg" color="white" fontWeight="bold">
-                Some of Our Cash Projects
+                Coffee Break 2
               </VuiTypography>
             </VuiBox>
             <VuiBox mb="40px">
@@ -108,8 +107,8 @@ function CashMain() {
                 <ComplexProjectCard
                   icon={project.icon}
                   title={
-                  <Link to={`/cash/${project.title.toLowerCase()}`} style={{ color: 'white' }}>{project.title}</Link>
-                }
+                    <Link to={`/${project.title.toLowerCase()}`}>{project.title}</Link>
+                  }
                   color={project.color}
                   description={project.description}
                   // dateTime={project.dateTime}
