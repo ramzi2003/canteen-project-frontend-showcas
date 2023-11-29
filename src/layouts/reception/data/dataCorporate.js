@@ -67,19 +67,32 @@ export default {
   ],
 };
 
-// Define action handlers
 const handleEdit = (row) => {
-  console.log(`Edit action for row with ID ${row.id}`);
-
+  // Create a new paragraph element
+  var editParagraph = document.createElement('p');
+  // Set the content of the paragraph
+  editParagraph.textContent = `Edit action for row with ID ${row.id}`;
+  editParagraph.style.color = 'red';
+  // Append the paragraph to the document body (you can change this to another element if needed)
+  document.body.appendChild(editParagraph);
 };
 
 const handleDelete = (row) => {
-  console.log(`Delete action for row with ID ${row.id}`);
- 
+  // Create a new paragraph element
+  var deleteParagraph = document.createElement('p');
+  // Set the content of the paragraph
+  deleteParagraph.textContent = `Delete action for row with ID ${row.id}`;
+  deleteParagraph.style.color = 'red';
+  // Append the paragraph to the document body
+  document.body.appendChild(deleteParagraph);
 };
 
 const handleUnbind = (row) => {
-  
-  console.log(`Unbind action for row with ID ${row.id}`);
- 
+  // Create a new paragraph element
+  var unbindParagraph = document.createElement('p');
+  // Set the content of the paragraph
+  unbindParagraph.textContent = `Unbind action for row with ID ${row.id}`;
+  unbindParagraph.style.color = 'red';
+  // Append the paragraph to the navbar 
+  document.body.appendChild(unbindParagraph);
 };
