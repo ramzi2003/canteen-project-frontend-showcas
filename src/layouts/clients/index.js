@@ -17,6 +17,7 @@ import DashboardLayout from "examples/LayoutContainers/DashboardLayout";
 import DashboardNavbar from "examples/Navbars/DashboardNavbar";
 import Footer from "examples/Footer";
 import DataTable from "examples/Tables/DataTable";
+import Header from "layouts/cash/profile-overview/components/Header/index";
 
 // Data
 import dataTableData from "layouts/clients/data/dataTableData";

@@ -53,7 +53,7 @@ function Header() {
       <Card
         sx={{
           px: 3,
-          mt: 2,
+          mt: 5,
         }}
       >
         <Grid
@@ -131,7 +131,7 @@ function Header() {
             </VuiBox>
           </Grid>
           <Grid item xs={12} md={6} lg={6.5} xl={6} xxl={4} sx={{ ml: "auto" }}>
-            <AppBar position="static">
+            <AppBar position="static" >
               <Tabs
                 orientation={tabsOrientation}
                 value={tabValue}
@@ -139,15 +139,15 @@ function Header() {
                 sx={{ background: "transparent", display: "flex", justifyContent: "flex-end" }}
               >
                 <Tab
-                  label="OVERVIEW"
+                  label="DASHBOARD"
                   icon={<IoMdCube size="16px" color="white" fontWeight="bold" />}
                 />
                 <Tab
-                  label="TEAMS"
+                  label="PAYMENT"
                   icon={<IoDocument size="16px" color="white" fontWeight="bold" />}
                 />
                 <Tab
-                  label="PROJECTS"
+                  label="SETTINGS"
                   icon={<IoBuild size="16px" color="white" fontWeight="bold" />}
                 />
               </Tabs>

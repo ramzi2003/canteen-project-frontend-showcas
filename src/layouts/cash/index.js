@@ -89,15 +89,15 @@ function CashMain() {
       <VuiBox mt="30px" mb="24px">
         <Grid container>
           <Grid item xs={12}>
-            <VuiBox mb={1}>
+            <VuiBox mb={3} ml={60}>
               <VuiTypography variant="lg" color="white" fontWeight="bold">
-                Some of Our Cash Projects
+                Choose Order Type
               </VuiTypography>
             </VuiBox>
             <VuiBox mb="40px">
-              <VuiTypography fontSize={16} color="text" fontWeight="regular">
+              {/* <VuiTypography fontSize={16} color="text" fontWeight="regular">
                 This is the paragraph where you can write more details about your cash projects. Keep your user engaged by providing meaningful information.
-              </VuiTypography>
+              </VuiTypography> */}
             </VuiBox>
           </Grid>
         </Grid>
