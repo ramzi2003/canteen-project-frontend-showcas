@@ -1,130 +1,142 @@
 import { useState } from "react";
-import Grid from "@mui/material/Grid";
+
+// @mui material components
+import Card from "@mui/material/Card";
+import Icon from "@mui/material/Icon";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
+import Divider from "@mui/material/Divider";
+
+// Vision UI Dashboard PRO React components
 import VuiBox from "components/VuiBox";
 import VuiTypography from "components/VuiTypography";
+import VuiButton from "components/VuiButton";
+
+// Vision UI Dashboard PRO React example components
 import DashboardLayout from "examples/LayoutContainers/DashboardLayout";
+import DashboardNavbar from "examples/Navbars/DashboardNavbar";
 import Footer from "examples/Footer";
-import ComplexProjectCard from "examples/Cards/ProjectCards/ComplexProjectCard";
-import PlaceholderCard from "examples/Cards/PlaceholderCard";
-import Header from "layouts/cash/profile-overview/components/Header/index";
+import DataTable from "examples/Tables/DataTable";
+import Header from "layouts/cash/pages/card/components/Header/index";
 
-import { FaBowlRice } from "react-icons/fa6";
-import { FaPizzaSlice, FaHamburger, FaCoffee, FaCookie, FaEgg } from "react-icons/fa";
+// Data
+import dataTableData from "layouts/cash/pages/breakfast/data/breakfastData.js";
+import { useHistory } from 'react-router-dom';
 
-import { Link } from "react-router-dom";
+function ClientsTable() {
+  const [menu, setMenu] = useState(null);
 
-const PlaceholderIcon = () => <span>Icon Placeholder</span>;
+  const openMenu = (event) => setMenu(event.currentTarget);
+  const closeMenu = () => setMenu(null);
 
-const cashProjects = [
-  {
-    icon: <FaEgg color="white" size="33px" />,
-    title: "Breakfast",
-    color: "info",
-    description: "Start your day with a hearty breakfast. Fuel up for a productive day!",
-    dateTime: "02.03.22",
-  },
-  {
-    icon: <FaBowlRice color="white" size="33px" />,
-    title: "Lunche",
-    color: "info",
-    description: "Enjoy a delicious lunch. Refuel and recharge for the afternoon.",
-    dateTime: "22.11.21",
-  },
-  {
-    icon: <FaPizzaSlice color="white" size="33px" />,
-    title: "Dinner",
-    color: "info",
-    description: "Wrap up your day with a satisfying dinner. Reflect and relax.",
-    dateTime: "06.03.20",
-  },
-  {
-    icon: <FaCoffee color="white" size="33px" />,
-    title: "Coffee break",
-    color: "info",
-    description: "Take a short coffee break. Recharge and socialize with your team.",
-    dateTime: "Date for Coffee break",
-  },
-  {
-    icon: <FaHamburger color="white" size="33px"/>,
-    title: "Distribution",
-    color: "info",
-    description: "Engage in the distribution. Collaborate and distribute tasks effectively.",
-    dateTime: "Date for Distribution",
-  },
-  {
-    icon: <FaCookie color="white" size="33px"/>,
-    title: "Coffee break 2",
-    color: "info",
-    description: "Another coffee break. Take a moment to relax and connect with your team.",
-    dateTime: "Date for Coffee break 2",
-  },
-];
+  const history = useHistory();
 
-function CashMain() {
-  const [projectMenu, setProjectMenu] = useState(null);
+  // Function to navigate to the specified path
+  const addDepartment = () => {
+    history.push('clients/add-department');
+  };
 
-  const openProjectMenu = (event) => setProjectMenu(event.currentTarget);
-  const closeProjectMenu = () => setProjectMenu(null);
-
-
-  const renderMenu = (state, close) => (
+  const renderMenu = (
     <Menu
-      anchorEl={state}
-      anchorOrigin={{ vertical: "top", horizontal: "left" }}
-      transformOrigin={{ vertical: "top", horizontal: "right" }}
-      open={Boolean(state)}
-      onClose={close}
+      anchorEl={menu}
+      anchorOrigin={{ vertical: "bottom", horizontal: "left" }}
+      transformOrigin={{ vertical: "top", horizontal: "left" }}
+      open={Boolean(menu)}
+      onClose={closeMenu}
       keepMounted
     >
-      <MenuItem onClick={close}>View</MenuItem>
+      <MenuItem onClick={closeMenu}>Status: Paid</MenuItem>
+      <MenuItem onClick={closeMenu}>Status: Refunded</MenuItem>
+      <MenuItem onClick={closeMenu}>Status: Canceled</MenuItem>
+      <Divider sx={{ margin: "0.5rem 0" }} />
+      <MenuItem onClick={closeMenu}>
+        <VuiTypography variant="button" color="error" fontWeight="regular">
+          Remove Filter
+        </VuiTypography>
+      </MenuItem>
     </Menu>
   );
 
   return (
     <DashboardLayout>
+      {/* <DashboardNavbar /> */}
       <Header />
-      <VuiBox mt="30px" mb="24px">
-        <Grid container>
-          <Grid item xs={12}>
-            <VuiBox mb={1}>
-              <VuiTypography variant="lg" color="white" fontWeight="bold">
-                Dinner
-              </VuiTypography>
+      <VuiBox my={3}>
+        <VuiBox
+          display="flex"
+          justifyContent="space-between"
+          alignItems="flex-start"
+          mb={2}
+          sx={({ breakpoints }) => ({
+            flexDirection: "column",
+            [breakpoints.up("md")]: {
+              flexDirection: "row",
+            },
+          })}
+        >
+          <VuiBox >
+            <VuiButton 
+              onClick={addDepartment}
+              color="info"
+              sx={({ breakpoints }) => ({
+                mb: "10px",
+    
+                [breakpoints.up("md")]: {
+                  mb: "0px",
+                  
+                },
+              })}
+            >
+              Delete
+            </VuiButton>
+          </VuiBox>
+
+          <VuiBox>
+            <VuiButton
+              color="info"
+              mb={2}
+              sx={({ breakpoints }) => ({
+                mb: "10px",
+                [breakpoints.up("md")]: {
+                  mb: "2px",
+                  ml: "-450px",
+                },
+              })}
+              >
+                Clear
+            </VuiButton>
+          </VuiBox>
+
+          
+          <VuiBox display="flex">
+            <VuiButton
+              variant={menu ? "contained" : "outlined"}
+              color="white"
+              onClick={openMenu}
+              sx={({ palette: { white }, borders: { borderWidth } }) => ({
+                background: "transparent !important",
+                border: `${borderWidth[1]} solid ${white.main} !important`,
+              })}
+            >
+              filters&nbsp;
+              <Icon>keyboard_arrow_down</Icon>
+            </VuiButton>
+            {renderMenu}
+            <VuiBox ml={1}>
+              <VuiButton variant="outlined" color="white">
+                <Icon>description</Icon>
+                &nbsp;export
+              </VuiButton>
             </VuiBox>
-            <VuiBox mb="40px">
-              <VuiTypography fontSize={16} color="text" fontWeight="regular">
-                This is the paragraph where you can write more details about your cash projects. Keep your user engaged by providing meaningful information.
-              </VuiTypography>
-            </VuiBox>
-          </Grid>
-        </Grid>
-        <VuiBox mb={1}>
-          <Grid container spacing={3}>
-            {cashProjects.map((project, index) => (
-              <Grid key={index} item xs={12} md={6} lg={4}>
-                <ComplexProjectCard
-                  icon={project.icon}
-                  title={
-                    <Link to={`/${project.title.toLowerCase()}`}>{project.title}</Link>
-                  }
-                  color={project.color}
-                  description={project.description}
-                  // dateTime={project.dateTime}
-                  dropdown={{
-                    action: openProjectMenu,
-                    menu: renderMenu(projectMenu, closeProjectMenu),
-                  }}
-                />
-              </Grid>
-            ))}
-          </Grid>
+          </VuiBox>
         </VuiBox>
+        <Card>
+          <DataTable table={dataTableData} entriesPerPage={false} canSearch />
+        </Card>
       </VuiBox>
       <Footer />
     </DashboardLayout>
   );
 }
 
-export default CashMain;
+export default ClientsTable;
