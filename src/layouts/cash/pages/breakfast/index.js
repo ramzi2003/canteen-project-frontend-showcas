@@ -17,13 +17,14 @@ import DashboardLayout from "examples/LayoutContainers/DashboardLayout";
 import DashboardNavbar from "examples/Navbars/DashboardNavbar";
 import Footer from "examples/Footer";
 import DataTable from "examples/Tables/DataTable";
-import Header from "layouts/cash/pages/card/components/Header/index";
+import Header from "layouts/cash/pages/CashCard/components/Header/index";
 
 // Data
 import dataTableData from "layouts/cash/pages/breakfast/data/breakfastData.js";
 import { useHistory } from 'react-router-dom';
+import { FaTrash, FaEraser, FaSave } from 'react-icons/fa';
 
-function ClientsTable() {
+function BreakfastPage() {
   const [menu, setMenu] = useState(null);
 
   const openMenu = (event) => setMenu(event.currentTarget);
@@ -45,9 +46,12 @@ function ClientsTable() {
       onClose={closeMenu}
       keepMounted
     >
-      <MenuItem onClick={closeMenu}>Status: Paid</MenuItem>
-      <MenuItem onClick={closeMenu}>Status: Refunded</MenuItem>
-      <MenuItem onClick={closeMenu}>Status: Canceled</MenuItem>
+      <MenuItem onClick={closeMenu}>History</MenuItem>
+      <MenuItem onClick={closeMenu}>Report</MenuItem>
+      <MenuItem onClick={closeMenu}>Admin</MenuItem>
+      <MenuItem onClick={closeMenu}>Settings</MenuItem>
+      <MenuItem onClick={closeMenu}>Portions</MenuItem>
+      <MenuItem onClick={closeMenu}>Open Order</MenuItem>
       <Divider sx={{ margin: "0.5rem 0" }} />
       <MenuItem onClick={closeMenu}>
         <VuiTypography variant="button" color="error" fontWeight="regular">
@@ -74,38 +78,56 @@ function ClientsTable() {
             },
           })}
         >
-          <VuiBox >
-            <VuiButton 
-              onClick={addDepartment}
-              color="info"
-              sx={({ breakpoints }) => ({
-                mb: "10px",
-    
-                [breakpoints.up("md")]: {
-                  mb: "0px",
-                  
-                },
-              })}
-            >
-              Delete
-            </VuiButton>
-          </VuiBox>
+          <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+            <VuiBox>
+              <VuiButton 
+                onClick={addDepartment}
+                color="info"
+                sx={({ breakpoints }) => ({
+                  mb: "10px",
 
-          <VuiBox>
-            <VuiButton
-              color="info"
-              mb={2}
-              sx={({ breakpoints }) => ({
-                mb: "10px",
-                [breakpoints.up("md")]: {
-                  mb: "2px",
-                  ml: "-450px",
-                },
-              })}
+                  [breakpoints.up("md")]: {
+                    mb: "0px",
+                  },
+                })}
               >
-                Clear
-            </VuiButton>
-          </VuiBox>
+                <FaTrash style={{ marginRight: '5px' }} /> Delete
+              </VuiButton>
+            </VuiBox>
+
+            <VuiBox>
+              <VuiButton
+                color="info"
+                mb={2}
+                sx={({ breakpoints }) => ({
+                  mb: "10px",
+                  [breakpoints.up("md")]: {
+                    mb: "2px",
+                    ml: "15px",
+                  },
+                })}
+              >
+                <FaEraser style={{ marginRight: '5px' }} /> Clear
+              </VuiButton>
+            </VuiBox>
+
+            <VuiBox>
+              <VuiButton
+                color="info"
+                mb={2}
+                sx={({ breakpoints }) => ({
+                  mb: "10px",
+                  [breakpoints.up("md")]: {
+                    mb: "2px",
+                    ml: "15px",
+                  },
+                })}
+              >
+                <FaSave style={{ marginRight: '5px' }} /> Make order
+              </VuiButton>
+            </VuiBox>
+          </div>
+
 
           
           <VuiBox display="flex">
@@ -118,7 +140,7 @@ function ClientsTable() {
                 border: `${borderWidth[1]} solid ${white.main} !important`,
               })}
             >
-              filters&nbsp;
+              More&nbsp;
               <Icon>keyboard_arrow_down</Icon>
             </VuiButton>
             {renderMenu}
@@ -129,6 +151,7 @@ function ClientsTable() {
               </VuiButton>
             </VuiBox>
           </VuiBox>
+          
         </VuiBox>
         <Card>
           <DataTable table={dataTableData} entriesPerPage={false} canSearch />
@@ -139,4 +162,4 @@ function ClientsTable() {
   );
 }
 
-export default ClientsTable;
+export default BreakfastPage;

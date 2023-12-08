@@ -1,48 +1,50 @@
-
+import React, { useEffect, useState } from "react";
 import AppBar from "@mui/material/AppBar";
-// @mui material components
 import Card from "@mui/material/Card";
 import Grid from "@mui/material/Grid";
 import Tab from "@mui/material/Tab";
 import Tabs from "@mui/material/Tabs";
-// Images
-import burceMars from "assets/images/avatar-simmmple.png";
-// Vision UI Dashboard PRO React base styles
-import breakpoints from "assets/theme/base/breakpoints";
+import Avatar from "assets/images/avatar7.png";
 import VuiAvatar from "components/VuiAvatar";
-// Vision UI Dashboard PRO React components
 import VuiBox from "components/VuiBox";
 import VuiTypography from "components/VuiTypography";
-// Vision UI Dashboard PRO React icons
 import { IoDocument } from "react-icons/io5";
-import { IoBuild } from "react-icons/io5";
 import { IoMdCube } from "react-icons/io";
-// Vision UI Dashboard PRO React example components
 import DashboardNavbar from "examples/Navbars/DashboardNavbar";
-import { useEffect, useState } from "react";
 
 function Header() {
   const [tabsOrientation, setTabsOrientation] = useState("horizontal");
   const [tabValue, setTabValue] = useState(0);
+  const [currentDateTime, setCurrentDateTime] = useState("");
 
   useEffect(() => {
-    // A function that sets the orientation state of the tabs.
     function handleTabsOrientation() {
-      return window.innerWidth < breakpoints.values.lg
+      return window.innerWidth < 1280
         ? setTabsOrientation("vertical")
         : setTabsOrientation("horizontal");
     }
 
-    /** 
-     The event listener that's calling the handleTabsOrientation function when resizing the window.
-    */
+    function updateCurrentDateTime() {
+      const now = new Date();
+      const options = { weekday: "long", year: "numeric", month: "long", day: "numeric" };
+      const formattedDate = now.toLocaleDateString(undefined, options);
+      const hours = now.getHours();
+      const minutes = now.getMinutes();
+      const formattedTime = `${hours}:${minutes < 10 ? "0" : ""}${minutes}`;
+      const dateTimeString = `${formattedDate} ${formattedTime}`;
+      setCurrentDateTime(dateTimeString);
+    }
+
     window.addEventListener("resize", handleTabsOrientation);
-
-    // Call the handleTabsOrientation function to set the state with the initial value.
     handleTabsOrientation();
+    updateCurrentDateTime();
 
-    // Remove event listener on cleanup
-    return () => window.removeEventListener("resize", handleTabsOrientation);
+    const intervalId = setInterval(updateCurrentDateTime, 60000); // Update time every minute
+
+    return () => {
+      window.removeEventListener("resize", handleTabsOrientation);
+      clearInterval(intervalId);
+    };
   }, [tabsOrientation]);
 
   const handleSetTabValue = (event, newValue) => setTabValue(newValue);
@@ -50,12 +52,7 @@ function Header() {
   return (
     <VuiBox position="relative">
       <DashboardNavbar light />
-      <Card
-        sx={{
-          px: 3,
-          mt: 5,
-        }}
-      >
+      <Card sx={{ px: 3, mt: 5 }}>
         <Grid
           container
           alignItems="center"
@@ -64,10 +61,7 @@ function Header() {
             [breakpoints.up("xs")]: {
               gap: "16px",
             },
-            [breakpoints.up("xs")]: {
-              gap: "0px",
-            },
-            [breakpoints.up("xl")]: {
+            [breakpoints.up("sm")]: {
               gap: "0px",
             },
           })}
@@ -88,7 +82,7 @@ function Header() {
             })}
           >
             <VuiAvatar
-              src={burceMars}
+              src={Avatar}
               alt="profile-image"
               variant="rounded"
               size="xl"
@@ -118,7 +112,7 @@ function Header() {
                 [breakpoints.only("sm")]: {
                   justifyContent: "center",
                   alignItems: "center",
-                  my: "12px"
+                  my: "12px",
                 },
               })}
             >
@@ -131,7 +125,7 @@ function Header() {
             </VuiBox>
           </Grid>
           <Grid item xs={12} md={6} lg={6.5} xl={6} xxl={4} sx={{ ml: "auto" }}>
-            <AppBar position="static" >
+            <AppBar position="static">
               <Tabs
                 orientation={tabsOrientation}
                 value={tabValue}
@@ -147,13 +141,22 @@ function Header() {
                   icon={<IoDocument size="16px" color="white" fontWeight="bold" />}
                   onClick={() => {
                     window.location.href = "/#/cash";
-
                   }}
                 />
-                <Tab
-                  label="SETTINGS"
-                  icon={<IoBuild size="16px" color="white" fontWeight="bold" />}
-                />
+
+                <div style={{ display: "flex", flexDirection: "column", marginLeft: "150px" }}>
+                  <VuiBox display="flex" alignItems="center" justifyContent="center" sx={{ ml: "auto" }}>
+                    <VuiTypography variant="button" color="white" fontWeight="bold">
+                      TOTAL: {"45.00"}
+                    </VuiTypography>
+                  </VuiBox>
+
+                  <VuiBox display="flex" alignItems="center" justifyContent="center" sx={{ ml: "auto" }}>
+                    <VuiTypography variant="button" color="white" fontWeight="bold">
+                      {currentDateTime}
+                    </VuiTypography>
+                  </VuiBox>
+                </div>
               </Tabs>
             </AppBar>
           </Grid>
