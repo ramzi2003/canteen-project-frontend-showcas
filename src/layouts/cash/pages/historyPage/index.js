@@ -20,7 +20,7 @@ import DataTable from "examples/Tables/DataTable";
 import Header from "layouts/cash/component/Header/index";
 
 // Data
-import dataTableData from "layouts/cash/pages/breakfast/data/breakfastData.js";
+import dataTableData from "layouts/cash/pages/historyPage/data/historyData.js";
 import { useHistory } from 'react-router-dom';
 import { FaTrash, FaEraser, FaSave, FaHistory, FaFileAlt, FaUserCog, FaCog, FaUtensils, FaClipboardList } from 'react-icons/fa';
 
@@ -34,7 +34,7 @@ function BreakfastPage() {
 
   // Function to navigate to the specified path
   const addDepartment = () => {
-    history.push('/cash/history');
+    history.push('clients/add-department');
   };
 
   const renderMenu = (
@@ -164,4 +164,4 @@ function BreakfastPage() {
   );
 }
 
-export default BreakfastPage;
+export default HistoryPage;

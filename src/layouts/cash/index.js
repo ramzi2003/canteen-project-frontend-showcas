@@ -8,7 +8,7 @@ import DashboardLayout from "examples/LayoutContainers/DashboardLayout";
 import Footer from "examples/Footer";
 import ComplexProjectCard from "examples/Cards/ProjectCards/ComplexProjectCard";
 import PlaceholderCard from "examples/Cards/PlaceholderCard";
-import Header from "layouts/cash/profile-overview/components/Header/index";
+import Header from "layouts/cash/component/Header/index";
 
 import { FaBowlRice } from "react-icons/fa6";
 import { FaPizzaSlice, FaHamburger, FaCoffee, FaCookie, FaEgg } from "react-icons/fa";
@@ -68,6 +68,10 @@ function CashMain() {
 
   const openProjectMenu = (event) => setProjectMenu(event.currentTarget);
   const closeProjectMenu = () => setProjectMenu(null);
+
+  const historyPage = () => {
+    history.push('cash/history');
+  };
 
 
   const renderMenu = (state, close) => (

@@ -14,7 +14,6 @@ import AddDepartment from "layouts/clients/pages/addDepartment";
 
 
 
-
 // React icons
 import { IoDocument } from "react-icons/io5";
 import { IoDocuments } from "react-icons/io5";
@@ -41,8 +40,9 @@ import Breakfast from "layouts/cash/pages/breakfast";
 import Lunch from "layouts/cash/pages/lunch";
 import Dinner from "layouts/cash/pages/dinner";
 import CoffeeBreak from "layouts/cash/pages/coffeeBreak";
-
 import CoffeeBreak2 from "layouts/cash/pages/cofeeBreak2";
+
+
 
 const routes = [
   {

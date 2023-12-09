@@ -164,7 +164,7 @@ export default function App() {
       <Switch>
         {getRoutes(routes)}
         <Redirect from="*" to="/dashboards/main-page" />
-    
+        
       </Switch>
     </ThemeProvider>
   );
