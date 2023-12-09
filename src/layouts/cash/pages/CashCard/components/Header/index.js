@@ -143,20 +143,11 @@ function Header() {
                     window.location.href = "/#/cash";
                   }}
                 />
-
-                <div style={{ display: "flex", flexDirection: "column", marginLeft: "150px" }}>
-                  <VuiBox display="flex" alignItems="center" justifyContent="center" sx={{ ml: "auto" }}>
-                    <VuiTypography variant="button" color="white" fontWeight="bold">
-                      TOTAL: {"45.00"}
-                    </VuiTypography>
-                  </VuiBox>
-
-                  <VuiBox display="flex" alignItems="center" justifyContent="center" sx={{ ml: "auto" }}>
-                    <VuiTypography variant="button" color="white" fontWeight="bold">
-                      {currentDateTime}
-                    </VuiTypography>
-                  </VuiBox>
-                </div>
+                <VuiBox display="flex" alignItems="center" justifyContent="center" sx={{ ml: "auto" }}>
+                  <VuiTypography variant="button" color="white" fontWeight="bold">
+                    {currentDateTime}
+                  </VuiTypography>
+                </VuiBox>
               </Tabs>
             </AppBar>
           </Grid>

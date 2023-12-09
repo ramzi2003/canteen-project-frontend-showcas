@@ -17,7 +17,7 @@ import DashboardLayout from "examples/LayoutContainers/DashboardLayout";
 import DashboardNavbar from "examples/Navbars/DashboardNavbar";
 import Footer from "examples/Footer";
 import DataTable from "examples/Tables/DataTable";
-import Header from "layouts/cash/pages/card/components/Header/index";
+import Header from "layouts/cash/pages/CashCard/components/Header/index";
 
 // Data
 import dataTableData from "layouts/cash/pages/breakfast/data/breakfastData.js";
