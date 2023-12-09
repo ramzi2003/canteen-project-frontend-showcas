@@ -69,10 +69,6 @@ function CashMain() {
   const openProjectMenu = (event) => setProjectMenu(event.currentTarget);
   const closeProjectMenu = () => setProjectMenu(null);
 
-  const historyPage = () => {
-    history.push('cash/history');
-  };
-
 
   const renderMenu = (state, close) => (
     <Menu

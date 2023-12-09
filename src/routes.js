@@ -40,7 +40,8 @@ import Breakfast from "layouts/cash/pages/breakfast";
 import Lunch from "layouts/cash/pages/lunch";
 import Dinner from "layouts/cash/pages/dinner";
 import CoffeeBreak from "layouts/cash/pages/coffeeBreak";
-import CoffeeBreak2 from "layouts/cash/pages/cofeeBreak2";
+import CoffeeBreak2 from "layouts/cash/pages/coffeeBreak2";
+
 
 
 
