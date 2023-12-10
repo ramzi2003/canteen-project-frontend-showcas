@@ -5,7 +5,6 @@ import Card from "@mui/material/Card";
 import Icon from "@mui/material/Icon";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
-import Divider from "@mui/material/Divider";
 
 // Vision UI Dashboard PRO React components
 import VuiBox from "components/VuiBox";
@@ -14,28 +13,82 @@ import VuiButton from "components/VuiButton";
 
 // Vision UI Dashboard PRO React example components
 import DashboardLayout from "examples/LayoutContainers/DashboardLayout";
-import DashboardNavbar from "examples/Navbars/DashboardNavbar";
 import Footer from "examples/Footer";
 import DataTable from "examples/Tables/DataTable";
 import Header from "layouts/cash/component/Header/index";
 
 // Data
-import historyData from "layouts/cash/pages/historyPage/data/historyData.js";
+import breakfastData from "layouts/cash/pages/historyPage/data/breakfastData.js";
+import lunchData from "layouts/cash/pages/historyPage/data/lunchData.js";
+import dinnerData from "layouts/cash/pages/historyPage/data/dinnerData.js";
+import coffeeBreakData from "layouts/cash/pages/historyPage/data/coffeeBreakData.js";
+import coffeeBreak2Data from "layouts/cash/pages/historyPage/data/coffeeBreak2Data.js";
+import distributionData from "layouts/cash/pages/historyPage/data/distributionData.js";
+import dayTotalData from "layouts/cash/pages/historyPage/data/dayTotalData.js";
+import cashDepositData from "layouts/cash/pages/historyPage/data/cashDepositData.js";
+
 import { useHistory } from 'react-router-dom';
-import { FaTrash, FaEraser, FaSave, FaHistory, FaFileAlt, FaUserCog, FaCog, FaUtensils, FaClipboardList } from 'react-icons/fa';
+import { FaTrash, FaEraser, FaSave, FaHistory, FaFileAlt, FaUserCog, FaCog, FaUtensils } from 'react-icons/fa';
 
 function historyPage() {
   const [menu, setMenu] = useState(null);
+  const [currentTable, setCurrentTable] = useState("default"); // State to track the current table
 
   const openMenu = (event) => setMenu(event.currentTarget);
   const closeMenu = () => setMenu(null);
 
   const history = useHistory();
 
-  // Function to navigate to the specified path
-  const addDepartment = () => {
-    history.push('/cash/history');
+  // function to handle breakfast table click
+  const breakfastTable = () => {
+    setCurrentTable("default");
+    closeMenu();
   };
+ 
+
+  // Function to handle the Lunch button click
+  const lunchTable = () => {
+    setCurrentTable("lunch");
+    closeMenu(); 
+  };
+
+  // function to handle dinner table click
+  const dinnerTable = () => {
+    setCurrentTable("dinner");
+    closeMenu();
+  }
+
+  // function to handle coffee break table click
+  const coffeeBreakTable = () => {
+    setCurrentTable("coffeeBreak");
+    closeMenu();
+  }
+
+  // function to handle coffee break 2 table click
+  const coffeeBreak2Table = () => {
+    setCurrentTable("coffeeBreak2");
+    closeMenu();
+  }
+
+  // function to handle distribution table click
+  const distributionTable = () => {
+    setCurrentTable("distribution");
+    closeMenu();
+  }
+
+  // function to handle dayTotal table click
+  const dayTotalTable = () => {
+    setCurrentTable("dayTotal");
+    closeMenu();
+  }
+
+  // function to handle cash deposit table click
+  const cashDepositTable = () => {
+    setCurrentTable("cashDeposit");
+    closeMenu();
+  }
+
+
 
   const renderMenu = (
     <Menu
@@ -47,20 +100,22 @@ function historyPage() {
       keepMounted
     >
       <VuiBox py={2}>
-        <MenuItem onClick={closeMenu}><FaHistory style={{ marginRight: '8px' }} /> History</MenuItem>
-        <MenuItem onClick={closeMenu}><FaFileAlt style={{ marginRight: '8px' }} /> Report</MenuItem>
-        <MenuItem onClick={closeMenu}><FaUserCog style={{ marginRight: '8px' }} /> Admin </MenuItem>
-        <MenuItem onClick={closeMenu}><FaCog style={{ marginRight: '8px' }} /> Settings</MenuItem>
-        <MenuItem onClick={closeMenu}><FaUtensils style={{ marginRight: '8px' }} /> Portions</MenuItem>
-        <MenuItem onClick={closeMenu}><FaClipboardList style={{ marginRight: '8px' }} /> Open Order</MenuItem>
-        {/* <Divider sx={{ margin: "0.5rem 0" }} /> */}
+        <MenuItem onClick={breakfastTable}><FaHistory style={{ marginRight: '8px' }} /> Breakfast</MenuItem>
+        <MenuItem onClick={lunchTable}><FaHistory style={{ marginRight: '8px' }} /> Lunch</MenuItem>
+        <MenuItem onClick={dinnerTable}><FaFileAlt style={{ marginRight: '8px' }} /> Dinner</MenuItem>
+        <MenuItem onClick={coffeeBreakTable}><FaUserCog style={{ marginRight: '8px' }} /> Coffee Break </MenuItem>
+        <MenuItem onClick={coffeeBreak2Table}><FaCog style={{ marginRight: '8px' }} /> Coffee Break 2</MenuItem>
+        <MenuItem onClick={distributionTable}><FaUtensils style={{ marginRight: '8px' }} /> Distribution</MenuItem>
+        <MenuItem onClick={dayTotalTable}>Day Total</MenuItem>
+        <MenuItem onClick={cashDepositTable}>Cash Deposit</MenuItem>
+        
+        
       </VuiBox>
     </Menu>
   );
 
   return (
     <DashboardLayout>
-      {/* <DashboardNavbar /> */}
       <Header />
       <VuiBox my={3}>
         <VuiBox
@@ -78,11 +133,9 @@ function historyPage() {
           <div style={{ display: 'flex', justifyContent: 'space-between' }}>
             <VuiBox>
               <VuiButton 
-                onClick={addDepartment}
                 color="info"
                 sx={({ breakpoints }) => ({
                   mb: "10px",
-
                   [breakpoints.up("md")]: {
                     mb: "0px",
                   },
@@ -125,8 +178,6 @@ function historyPage() {
             </VuiBox>
           </div>
 
-
-          
           <VuiBox display="flex">
             <VuiButton
               variant={menu ? "contained" : "outlined"}
@@ -141,23 +192,42 @@ function historyPage() {
               <Icon>keyboard_arrow_down</Icon>
             </VuiButton>
             {renderMenu}
-            {/* <VuiBox ml={1}>
+            <VuiBox ml={1}>
               <VuiButton variant="outlined" color="white">
                 <Icon>description</Icon>
                 &nbsp;export
               </VuiButton>
-            </VuiBox> */}
+            </VuiBox>
           </VuiBox>
-          
         </VuiBox>
         <Card>
           <VuiBox pb={0}>
-            <VuiTypography variant="h6" color="white" mb={-6}>
-              TOTAL: {"00.00"}
+            <VuiTypography variant="h4" color="white" mb={2}>
+              {currentTable === "default" && "Breakfast"}
+              {currentTable === "lunch" && "Lunch"}
+              {currentTable === "dinner" && "Dinner"}
+              {currentTable === "coffeeBreak" && "Coffee Break"}
+              {currentTable === "coffeeBreak2" && "Coffee Break 2"}
+              {currentTable === "distribution" && "Distribution"}
+              {currentTable === "dayTotal" && "Day Total"}
+              {currentTable === "cashDeposit" && "Cash Deposit"}
             </VuiTypography>
           </VuiBox>
-          <DataTable table={historyData} entriesPerPage={false} canSearch />
+          {currentTable === "default" && <DataTable table={breakfastData} entriesPerPage={true} canSearch />}
+          {currentTable === "lunch" && <DataTable table={lunchData} entriesPerPage={true} canSearch />} 
+          {currentTable === "dinner" && <DataTable table={dinnerData} entriesPerPage={true} canSearch />}
+          {currentTable === "coffeeBreak" && <DataTable table={coffeeBreakData} entriesPerPage={true} canSearch />}
+          {currentTable === "coffeeBreak2" && <DataTable table={coffeeBreak2Data} entriesPerPage={true} canSearch />}
+          {currentTable === "distribution" && <DataTable table={distributionData} entriesPerPage={true} canSearch />}
+          {currentTable === "dayTotal" && <DataTable table={dayTotalData} entriesPerPage={true} canSearch />}
+          {currentTable === "cashDeposit" && <DataTable table={cashDepositData} entriesPerPage={true} canSearch />}
+          <VuiBox pb={0}>
+            <VuiTypography variant="h6" color="white" mb={3} ml={120}>
+              TOTAL ORDERED: {"00.00"}
+            </VuiTypography>
+          </VuiBox>
         </Card>
+
       </VuiBox>
       <Footer />
     </DashboardLayout>
