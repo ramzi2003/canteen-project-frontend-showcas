@@ -28,7 +28,7 @@ import dayTotalData from "layouts/cash/pages/historyPage/data/dayTotalData.js";
 import cashDepositData from "layouts/cash/pages/historyPage/data/cashDepositData.js";
 
 import { useHistory } from 'react-router-dom';
-import { FaTrash, FaEraser, FaSave, FaHistory, FaFileAlt, FaUserCog, FaCog, FaUtensils } from 'react-icons/fa';
+import { FaSun, FaPizzaSlice, FaWineBottle, FaCoffee, FaMugHot, FaUtensils, FaCalendarDay, FaMoneyBill } from 'react-icons/fa';
 
 function historyPage() {
   const [menu, setMenu] = useState(null);
@@ -100,15 +100,15 @@ function historyPage() {
       keepMounted
     >
       <VuiBox py={2}>
-        <MenuItem onClick={breakfastTable}><FaHistory style={{ marginRight: '8px' }} /> Breakfast</MenuItem>
-        <MenuItem onClick={lunchTable}><FaHistory style={{ marginRight: '8px' }} /> Lunch</MenuItem>
-        <MenuItem onClick={dinnerTable}><FaFileAlt style={{ marginRight: '8px' }} /> Dinner</MenuItem>
-        <MenuItem onClick={coffeeBreakTable}><FaUserCog style={{ marginRight: '8px' }} /> Coffee Break </MenuItem>
-        <MenuItem onClick={coffeeBreak2Table}><FaCog style={{ marginRight: '8px' }} /> Coffee Break 2</MenuItem>
+        <MenuItem onClick={breakfastTable}><FaSun style={{ marginRight: '8px' }} /> Breakfast</MenuItem>
+        <MenuItem onClick={lunchTable}><FaPizzaSlice style={{ marginRight: '8px' }} /> Lunch</MenuItem>
+        <MenuItem onClick={dinnerTable}><FaWineBottle style={{ marginRight: '8px' }} /> Dinner</MenuItem>
+        <MenuItem onClick={coffeeBreakTable}><FaCoffee style={{ marginRight: '8px' }} /> Coffee Break </MenuItem>
+        <MenuItem onClick={coffeeBreak2Table}><FaMugHot style={{ marginRight: '8px' }} /> Coffee Break 2</MenuItem>
         <MenuItem onClick={distributionTable}><FaUtensils style={{ marginRight: '8px' }} /> Distribution</MenuItem>
-        <MenuItem onClick={dayTotalTable}>Day Total</MenuItem>
-        <MenuItem onClick={cashDepositTable}>Cash Deposit</MenuItem>
-        
+        <MenuItem onClick={dayTotalTable}><FaCalendarDay style={{ marginRight: '8px' }} /> Day Total</MenuItem>
+        <MenuItem onClick={cashDepositTable}><FaMoneyBill style={{ marginRight: '8px' }} /> Cash Deposit</MenuItem>
+                
         
       </VuiBox>
     </Menu>
@@ -130,7 +130,7 @@ function historyPage() {
             },
           })}
         >
-          <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+          {/* <div style={{ display: 'flex', justifyContent: 'space-between' }}>
             <VuiBox>
               <VuiButton 
                 color="info"
@@ -176,7 +176,7 @@ function historyPage() {
                 <FaSave style={{ marginRight: '5px' }} /> Make order
               </VuiButton>
             </VuiBox>
-          </div>
+          </div> */}
 
           <VuiBox display="flex">
             <VuiButton
