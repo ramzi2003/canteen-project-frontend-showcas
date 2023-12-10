@@ -41,8 +41,7 @@ import Lunch from "layouts/cash/pages/lunch";
 import Dinner from "layouts/cash/pages/dinner";
 import CoffeeBreak from "layouts/cash/pages/coffeeBreak";
 import CoffeeBreak2 from "layouts/cash/pages/coffeeBreak2";
-
-
+import History from "layouts/cash/pages/historyPage";
 
 
 const routes = [
@@ -167,6 +166,7 @@ const routes = [
       { name: "Dinner", key: "dinner", route: "/cash/dinner", component: Dinner },
       { name: "Coffee Break", key: "coffee-break", route: "/cash/coffeeBreak", component: CoffeeBreak },
       { name: "Coffee Break 2", key: "coffee-break-2", route: "/cash/coffee Break 2", component: CoffeeBreak2 },
+      { name: "History", key: "history", route: "/cash/history", component: History },
 
 
     ],

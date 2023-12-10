@@ -20,11 +20,11 @@ import DataTable from "examples/Tables/DataTable";
 import Header from "layouts/cash/component/Header/index";
 
 // Data
-import dataTableData from "layouts/cash/pages/historyPage/data/historyData.js";
+import historyData from "layouts/cash/pages/historyPage/data/historyData.js";
 import { useHistory } from 'react-router-dom';
 import { FaTrash, FaEraser, FaSave, FaHistory, FaFileAlt, FaUserCog, FaCog, FaUtensils, FaClipboardList } from 'react-icons/fa';
 
-function BreakfastPage() {
+function historyPage() {
   const [menu, setMenu] = useState(null);
 
   const openMenu = (event) => setMenu(event.currentTarget);
@@ -34,7 +34,7 @@ function BreakfastPage() {
 
   // Function to navigate to the specified path
   const addDepartment = () => {
-    history.push('clients/add-department');
+    history.push('/cash/history');
   };
 
   const renderMenu = (
@@ -156,7 +156,7 @@ function BreakfastPage() {
               TOTAL: {"00.00"}
             </VuiTypography>
           </VuiBox>
-          <DataTable table={dataTableData} entriesPerPage={false} canSearch />
+          <DataTable table={historyData} entriesPerPage={false} canSearch />
         </Card>
       </VuiBox>
       <Footer />
@@ -164,4 +164,4 @@ function BreakfastPage() {
   );
 }
 
-export default HistoryPage;
+export default historyPage;
