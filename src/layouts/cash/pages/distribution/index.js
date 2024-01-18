@@ -20,11 +20,11 @@ import DataTable from "examples/Tables/DataTable";
 import Header from "layouts/cash/component/Header/index";
 
 // Data
-import dataTableData from "layouts/cash/pages/dinner/data/dinnerData.js";
+import dataTableData from "layouts/cash/pages/breakfast/data/breakfastData.js";
 import { useHistory } from 'react-router-dom';
 import { FaTrash, FaEraser, FaSave, FaHistory, FaFileAlt, FaUserCog, FaCog, FaUtensils, FaClipboardList } from 'react-icons/fa';
 
-function BreakfastPage() {
+function DistributionPage() {
   const [menu, setMenu] = useState(null);
 
   const openMenu = (event) => setMenu(event.currentTarget);
@@ -163,4 +163,4 @@ function BreakfastPage() {
   );
 }
 
-export default BreakfastPage;
+export default DistributionPage;

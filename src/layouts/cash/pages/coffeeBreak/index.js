@@ -33,7 +33,7 @@ function BreakfastPage() {
   const history = useHistory();
 
   // Function to navigate to the specified path
-  const addDepartment = () => {
+  const historyPage = () => {
     history.push('/cash/history');
   };
 
@@ -47,7 +47,7 @@ function BreakfastPage() {
       keepMounted
     >
       <VuiBox py={2}>
-        <MenuItem onClick={closeMenu}><FaHistory style={{ marginRight: '8px' }} /> History</MenuItem>
+        <MenuItem onClick={historyPage}><FaHistory style={{ marginRight: '8px' }} /> History</MenuItem>
         <MenuItem onClick={closeMenu}><FaFileAlt style={{ marginRight: '8px' }} /> Report</MenuItem>
         <MenuItem onClick={closeMenu}><FaUserCog style={{ marginRight: '8px' }} /> Admin </MenuItem>
         <MenuItem onClick={closeMenu}><FaCog style={{ marginRight: '8px' }} /> Settings</MenuItem>
@@ -78,7 +78,6 @@ function BreakfastPage() {
           <div style={{ display: 'flex', justifyContent: 'space-between' }}>
             <VuiBox>
               <VuiButton 
-                onClick={addDepartment}
                 color="info"
                 sx={({ breakpoints }) => ({
                   mb: "10px",

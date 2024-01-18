@@ -26,7 +26,7 @@ export default {
   rows: [
     {
       id: "#1",
-      time: "25 Dec 8:00 AM",
+      time: "25 Dec 9:00 AM",
       fullName: "John Doe",
       number: 12345,
       departmentType: "Student",

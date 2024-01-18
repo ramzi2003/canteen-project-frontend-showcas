@@ -40,6 +40,7 @@ import Breakfast from "layouts/cash/pages/breakfast";
 import Lunch from "layouts/cash/pages/lunch";
 import Dinner from "layouts/cash/pages/dinner";
 import CoffeeBreak from "layouts/cash/pages/coffeeBreak";
+import Distribution from "layouts/cash/pages/distribution";
 import CoffeeBreak2 from "layouts/cash/pages/coffeeBreak2";
 import History from "layouts/cash/pages/historyPage";
 
@@ -164,9 +165,10 @@ const routes = [
       { name: "Breakfast", key: "breakfast", route: "/cash/breakfast", component: Breakfast },
       { name: "Lunch", key: "lunch", route: "/cash/lunch", component: Lunch },
       { name: "Dinner", key: "dinner", route: "/cash/dinner", component: Dinner },
-      { name: "Coffee Break", key: "coffee-break", route: "/cash/coffeeBreak", component: CoffeeBreak },
+      { name: "Coffee Break", key: "coffee-break", route: "/cash/coffee Break", component: CoffeeBreak },
       { name: "Coffee Break 2", key: "coffee-break-2", route: "/cash/coffee Break 2", component: CoffeeBreak2 },
       { name: "History", key: "history", route: "/cash/history", component: History },
+      { name: "Distribution", key: "distribution", route: "/cash/distribution", component: Distribution },
 
 
     ],
