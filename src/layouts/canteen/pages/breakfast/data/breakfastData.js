@@ -52,7 +52,7 @@ export default {
     {
       id: "#2",
       name: "Product B",
-      count: 5,
+      count: 1,
       price: "$15.00",
       cost: "$75.00",
     },

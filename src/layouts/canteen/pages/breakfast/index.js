@@ -150,6 +150,11 @@ function CanteenBreakfastPage() {
           
         </VuiBox>
         <Card>
+          <VuiBox pb={0}>
+            <VuiTypography variant="h3" color="white">
+              Dessert
+            </VuiTypography>
+          </VuiBox>
           <DataTable table={dataTableData} entriesPerPage={true} canSearch />
         </Card>
       </VuiBox>

@@ -85,9 +85,9 @@ function CanteenMain() {
         <Grid container>
           <Grid item xs={12}>
             <VuiBox mb={3} ml={60}>
-              <VuiTypography variant="lg" color="white" fontWeight="bold">
+              {/* <VuiTypography variant="lg" color="white" fontWeight="bold">
                 Choose Order Type
-              </VuiTypography>
+              </VuiTypography> */}
             </VuiBox>
             <VuiBox mb="40px">
               {/* <VuiTypography fontSize={16} color="text" fontWeight="regular">

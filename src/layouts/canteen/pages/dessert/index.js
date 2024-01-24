@@ -151,11 +151,11 @@ function DessertPage() {
         </VuiBox>
         <Card>
           <VuiBox pb={0}>
-            <VuiTypography variant="h6" color="white" mb={-6}>
-              TOTAL: {"00.00"}
+            <VuiTypography variant="h3" color="white">
+              Dessert
             </VuiTypography>
           </VuiBox>
-          <DataTable table={dataTableData} entriesPerPage={false} canSearch />
+          <DataTable table={dataTableData} entriesPerPage={true} canSearch />
         </Card>
       </VuiBox>
       <Footer />
