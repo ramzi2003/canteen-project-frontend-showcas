@@ -17,14 +17,14 @@ import DashboardLayout from "examples/LayoutContainers/DashboardLayout";
 import DashboardNavbar from "examples/Navbars/DashboardNavbar";
 import Footer from "examples/Footer";
 import DataTable from "examples/Tables/DataTable";
-import Header from "layouts/cash/component/Header/index";
+import Header from "layouts/canteen/component/Header/index";
 
 // Data
-import dataTableData from "layouts/cash/pages/coffeeBreak/data/coffeeBreakData.js";
+import dataTableData from "layouts/canteen/pages/breakfast/data/breakfastData.js";
 import { useHistory } from 'react-router-dom';
 import { FaTrash, FaEraser, FaSave, FaHistory, FaFileAlt, FaUserCog, FaCog, FaUtensils, FaClipboardList } from 'react-icons/fa';
 
-function BreakfastPage() {
+function CanteenBreakfastPage() {
   const [menu, setMenu] = useState(null);
 
   const openMenu = (event) => setMenu(event.currentTarget);
@@ -124,6 +124,8 @@ function BreakfastPage() {
             </VuiBox>
           </div>
 
+
+          
           <VuiBox display="flex">
             <VuiButton
               variant={menu ? "contained" : "outlined"}
@@ -148,12 +150,7 @@ function BreakfastPage() {
           
         </VuiBox>
         <Card>
-          <VuiBox pb={0}>
-            <VuiTypography variant="h6" color="white" mb={-6}>
-              TOTAL: {"00.00"}
-            </VuiTypography>
-          </VuiBox>
-          <DataTable table={dataTableData} entriesPerPage={false} canSearch />
+          <DataTable table={dataTableData} entriesPerPage={true} canSearch />
         </Card>
       </VuiBox>
       <Footer />
@@ -161,4 +158,4 @@ function BreakfastPage() {
   );
 }
 
-export default BreakfastPage;
+export default CanteenBreakfastPage;

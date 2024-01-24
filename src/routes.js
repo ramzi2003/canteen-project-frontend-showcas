@@ -36,6 +36,7 @@ import GuesrCard from "layouts/reception/pages/GuestCard";
 import OrdinaryCard from "layouts/reception/pages/OrdinaryCard";
 import addCard from "layouts/reception/pages/addCard";
 
+// Cash page
 import Breakfast from "layouts/cash/pages/breakfast";
 import Lunch from "layouts/cash/pages/lunch";
 import Dinner from "layouts/cash/pages/dinner";
@@ -43,6 +44,13 @@ import CoffeeBreak from "layouts/cash/pages/coffeeBreak";
 import Distribution from "layouts/cash/pages/distribution";
 import CoffeeBreak2 from "layouts/cash/pages/coffeeBreak2";
 import History from "layouts/cash/pages/historyPage";
+
+// Canteen page
+import CanteenBreakfast from "layouts/canteen/pages/breakfast"
+import Soups from "layouts/canteen/pages/soups";
+import Drinks from "layouts/canteen/pages/drinks";
+import Garnish from "layouts/canteen/pages/garnish";
+import Dessert from "layouts/canteen/pages/dessert";
 
 
 const routes = [
@@ -110,9 +118,6 @@ const routes = [
       { name: "Add Money", key: "add-money", route: "/clients/add-money", component: addMoney},
       { name: "Change Department", key: "change-department", route: "/clients/change-department", component: changeDepartment},
       { name: "Withdraw Money", key: "withdraw-money", route: "/clients/withdraw-money", component: withdrawMoney},
-
-
-
     ],
     
   },
@@ -122,7 +127,14 @@ const routes = [
     key: "canteen",
     route: "/canteen",
     icon: <IoFastFoodSharp size="15px" color="inherit" />,
-    collapse: [{ name: "Canteen", key: "canteen", route: "/canteen", component: CanteenLayout }],
+    collapse: [
+      { name: "Canteen", key: "canteen", route: "/canteen", component: CanteenLayout },
+      { name: "CanteenBreakfast", key: "canteenBreakast", route: "/canteen/breakfast", component: CanteenBreakfast},
+      { name: "Soups", key: "soups", route: "/canteen/soups", component: Soups},
+      { name: "Drinks", key: "drinks", route: "/canteen/drinks", component: Drinks},
+      { name: "Garnish", key: "garnish", route: "/canteen/garnish", component: Garnish},
+      { name: "Dessert", key: "dessert", route: "/canteen/dessert", component: Dessert},
+    ],
   },
   {
     type: "collapse",
