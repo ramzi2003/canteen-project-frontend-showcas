@@ -8,7 +8,7 @@ import DashboardLayout from "examples/LayoutContainers/DashboardLayout";
 import Footer from "examples/Footer";
 import ComplexProjectCard from "examples/Cards/ProjectCards/ComplexProjectCard";
 import PlaceholderCard from "examples/Cards/PlaceholderCard";
-import Header from "layouts/cash/component/Header/index";
+import Header from "layouts/canteen/component/Header/index";
 
 import { FaBowlRice } from "react-icons/fa6";
 import { FaPizzaSlice, FaHamburger, FaCoffee, FaCookie, FaEgg } from "react-icons/fa";
@@ -54,6 +54,13 @@ const cashProjects = [
     description: "Another coffee break. Take a moment to relax and connect with your team.",
     dateTime: "22.11.21",
   },
+  {
+    icon: <FaPizzaSlice color="white" size="33px"/>,
+    title: "Other pages",
+    color: "info",
+    description: "Take a short coffee break. Recharge and socialize with your team.",
+    dateTime: "22.11.21",
+  }
 ];
 
 
@@ -75,6 +82,15 @@ function CanteenMain() {
       keepMounted
     >
       <MenuItem onClick={close}>View</MenuItem>
+      <MenuItem onClick={close}>Out of stock</MenuItem>
+      <MenuItem onClick={close}>Negative balance</MenuItem>
+      <MenuItem onClick={close}>Weekly menu plan</MenuItem>
+      <MenuItem onClick={close}>Stock report</MenuItem>
+      <MenuItem onClick={close}>Canteen report</MenuItem>
+      <MenuItem onClick={close}>Other reports</MenuItem>
+      <MenuItem onClick={close}>Dishes</MenuItem>
+      <MenuItem onClick={close}>Main storage</MenuItem>
+      <MenuItem onClick={close}>Documents</MenuItem>
     </Menu>
   );
 
@@ -107,11 +123,15 @@ function CanteenMain() {
                 }
                   color={project.color}
                   description={project.description}
-                  // dateTime={project.dateTime}
-                  dropdown={{
-                    action: openProjectMenu,
-                    menu: renderMenu(projectMenu, closeProjectMenu),
-                  }}
+                  dateTime={project.dateTime}
+                  dropdown={
+                    project.title === "Other pages"
+                      ? {
+                          action: openProjectMenu,
+                          menu: renderMenu(projectMenu, closeProjectMenu),
+                        }
+                      : undefined
+                  }
                 />
               </Grid>
             ))}
