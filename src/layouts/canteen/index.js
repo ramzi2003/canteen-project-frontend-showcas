@@ -15,6 +15,7 @@ import { FaPizzaSlice, FaHamburger, FaCoffee, FaCookie, FaEgg } from "react-icon
 
 import { Link } from "react-router-dom";
 import styles from "components/VuiSelect/styles";
+import { useHistory } from 'react-router-dom';
 
 const PlaceholderIcon = () => <span>Icon Placeholder</span>;
 
@@ -71,6 +72,13 @@ function CanteenMain() {
   const openProjectMenu = (event) => setProjectMenu(event.currentTarget);
   const closeProjectMenu = () => setProjectMenu(null);
 
+  // Navigating to the specified path
+  const history = useHistory();
+
+  const outOfStockPage = () => {
+    history.push('/canteen/out-of-stock');
+  };
+
 
   const renderMenu = (state, close) => (
     <Menu
@@ -82,7 +90,7 @@ function CanteenMain() {
       keepMounted
     >
       <MenuItem onClick={close}>View</MenuItem>
-      <MenuItem onClick={close}>Out of stock</MenuItem>
+      <MenuItem onClick={outOfStockPage}>Out of stock</MenuItem>
       <MenuItem onClick={close}>Negative balance</MenuItem>
       <MenuItem onClick={close}>Weekly menu plan</MenuItem>
       <MenuItem onClick={close}>Stock report</MenuItem>

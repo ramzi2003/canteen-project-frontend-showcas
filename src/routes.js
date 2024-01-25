@@ -51,6 +51,7 @@ import Soups from "layouts/canteen/pages/soups";
 import Drinks from "layouts/canteen/pages/drinks";
 import Garnish from "layouts/canteen/pages/garnish";
 import Dessert from "layouts/canteen/pages/dessert";
+import OutOfStock from "layouts/canteen/pages/outOfStock";
 
 
 const routes = [
@@ -134,6 +135,7 @@ const routes = [
       { name: "Drinks", key: "drinks", route: "/canteen/drinks", component: Drinks},
       { name: "Garnish", key: "garnish", route: "/canteen/garnish", component: Garnish},
       { name: "Dessert", key: "dessert", route: "/canteen/dessert", component: Dessert},
+      { name: "Out Of Stock", key: "outOfStock", route: "/canteen/out-of-stock", component: OutOfStock},
     ],
   },
   {
