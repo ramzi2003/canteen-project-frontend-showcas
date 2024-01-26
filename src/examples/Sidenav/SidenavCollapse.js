@@ -8,7 +8,7 @@ import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import Icon from "@mui/material/Icon";
 
-// Vision UI Dashboard PRO React components
+//  components
 import VuiBox from "components/VuiBox";
 
 // Custom styles for the SidenavCollapse
@@ -20,7 +20,7 @@ import {
   collapseArrow,
 } from "examples/Sidenav/styles/sidenavCollapse";
 
-// Vision UI Dashboard PRO React context
+//  context
 import { useVisionUIController } from "context";
 
 function SidenavCollapse({ color, icon, name, children, active, noCollapse, open, ...rest }) {
@@ -46,20 +46,10 @@ function SidenavCollapse({ color, icon, name, children, active, noCollapse, open
             sx={(theme) => collapseText(theme, { miniSidenav, transparentSidenav, active })}
           />
 
-          <Icon
-            sx={(theme) =>
-              collapseArrow(theme, { noCollapse, transparentSidenav, miniSidenav, open })
-            }
-          >
-            expand_less
-          </Icon>
+         
         </VuiBox>
       </ListItem>
-      {children && (
-        <Collapse in={open} unmountOnExit>
-          {children}
-        </Collapse>
-      )}
+
     </>
   );
 }

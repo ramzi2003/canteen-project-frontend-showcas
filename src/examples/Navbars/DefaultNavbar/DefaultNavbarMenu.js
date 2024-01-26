@@ -7,7 +7,7 @@ import PropTypes from "prop-types";
 import Popper from "@mui/material/Popper";
 import Grow from "@mui/material/Grow";
 
-// Vision UI Dashboard PRO React components
+//  components
 import VuiBox from "components/VuiBox";
 
 function DefaultNavbarMenu({ open, close, placement, children, style }) {

@@ -1,19 +1,4 @@
-/** 
 
-=========================================================
-* Vision UI PRO React - v1.0.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/vision-ui-dashboard-pro-react
-* Copyright 2021 Creative Tim (https://www.creative-tim.com/)
-
-* Design and Coded by Simmmple & Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Visionware.
-
-*/
 
 import { forwardRef } from "react";
 
@@ -26,7 +11,7 @@ import VuiInputWithIconRoot from "components/VuiInput/VuiInputWithIconRoot";
 import VuiInputIconBoxRoot from "components/VuiInput/VuiInputIconBoxRoot";
 import VuiInputIconRoot from "components/VuiInput/VuiInputIconRoot";
 
-// Vision UI Dashboard PRO React contexts
+//  contexts
 import { useVisionUIController } from "context";
 
 const VuiInput = forwardRef(({ size, icon, error, success, disabled, ...rest }, ref) => {

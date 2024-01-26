@@ -13,12 +13,12 @@ import IconButton from "@mui/material/IconButton";
 import Menu from "@mui/material/Menu";
 import Icon from "@mui/material/Icon";
 
-// Vision UI Dashboard PRO React components
+//  components
 import VuiBox from "components/VuiBox";
 import VuiTypography from "components/VuiTypography";
 import VuiInput from "components/VuiInput";
 
-// Vision UI Dashboard PRO React example components
+//  example components
 import Breadcrumbs from "examples/Breadcrumbs";
 
 // Custom styles for DashboardNavbar
@@ -31,7 +31,7 @@ import {
   navbarMobileMenu,
 } from "examples/Navbars/DashboardNavbar/styles";
 
-// Vision UI Dashboard PRO React context
+//  context
 import {
   useVisionUIController,
   setTransparentNavbar,

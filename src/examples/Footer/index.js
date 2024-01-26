@@ -5,11 +5,11 @@ import PropTypes from "prop-types";
 import Link from "@mui/material/Link";
 import Icon from "@mui/material/Icon";
 
-// Vision UI Dashboard PRO React components
+//  components
 import VuiBox from "components/VuiBox";
 import VuiTypography from "components/VuiTypography";
 
-// Vision UI Dashboard PRO React base styles
+//  base styles
 import typography from "assets/theme/base/typography";
 
 function Footer({ links }) {

@@ -6,7 +6,7 @@ import PropTypes from "prop-types";
 // react-select components
 import Select from "react-select";
 
-// Vision UI Dashboard PRO React base styles
+//  base styles
 import colors from "assets/theme/base/colors";
 
 // Custom styles for VuiSelect

@@ -6,7 +6,7 @@ import Divider from "@mui/material/Divider";
 import IconButton from "@mui/material/IconButton";
 import Icon from "@mui/material/Icon";
 
-// Vision UI Dashboard PRO React components
+//  components
 import VuiBox from "components/VuiBox";
 import VuiTypography from "components/VuiTypography";
 import VuiButton from "components/VuiButton";
@@ -15,7 +15,7 @@ import VuiSwitch from "components/VuiSwitch";
 // Custom styles for the Configurator
 import ConfiguratorRoot from "examples/Configurator/ConfiguratorRoot";
 
-// Vision UI Dashboard PRO React context
+//  context
 import {
   useVisionUIController,
   setOpenConfigurator,

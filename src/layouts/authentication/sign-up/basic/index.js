@@ -1,19 +1,4 @@
-/** 
 
-=========================================================
-* Vision UI PRO React - v1.0.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/vision-ui-dashboard-pro-react
-* Copyright 2021 Creative Tim (https://www.creative-tim.com/)
-
-* Design and Coded by Simmmple & Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Visionware.
-
-*/
 
 import { useState } from "react";
 
@@ -28,20 +13,20 @@ import Stack from "@mui/material/Stack";
 // Icons
 import { FaApple, FaFacebook, FaGoogle } from "react-icons/fa";
 
-// Vision UI Dashboard PRO React components
+//  components
 import VuiBox from "components/VuiBox";
 import VuiTypography from "components/VuiTypography";
 import VuiInput from "components/VuiInput";
 import VuiButton from "components/VuiButton";
 import VuiSwitch from "components/VuiSwitch";
 
-// Vision UI Dashboard components
+//  components
 import GradientBorder from "examples/GradientBorder";
 
 // Authentication layout components
 import BasicLayout from "layouts/authentication/components/BasicLayout";
 
-// Vision UI Dashboard assets
+//  assets
 import radialGradient from "assets/theme/functions/radialGradient";
 import rgba from "assets/theme/functions/rgba";
 import palette from "assets/theme/base/colors";
@@ -58,7 +43,6 @@ function Basic() {
   return (
     <BasicLayout
       title="Welcome!"
-      description="Use these awesome forms to login or create new account in your project for free."
       image={bgBasic}
     >
       <GradientBorder borderRadius={borders.borderRadius.form} minWidth="100%" maxWidth="100%">

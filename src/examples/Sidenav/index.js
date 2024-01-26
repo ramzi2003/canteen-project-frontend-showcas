@@ -12,16 +12,16 @@ import Divider from "@mui/material/Divider";
 import Link from "@mui/material/Link";
 import Icon from "@mui/material/Icon";
 
-// Vision UI Dashboard PRO React components
+//  components
 import VuiBox from "components/VuiBox";
 import VuiTypography from "components/VuiTypography";
 
-// Vision UI Dashboard PRO React example components
+//  example components
 import SidenavCollapse from "examples/Sidenav/SidenavCollapse";
 import SidenavList from "examples/Sidenav/SidenavList";
 import SidenavItem from "examples/Sidenav/SidenavItem";
 
-// Vision UI Dashboard PRO custom icons
+// Dashboard PRO custom icons
 import SimmmpleLogo from "examples/Icons/SimmmpleLogo";
 
 // Custom styles for the Sidenav
@@ -31,7 +31,7 @@ import sidenavLogoLabel from "examples/Sidenav/styles/sidenav";
 // Scrollbar component
 import { Scrollbars } from "react-custom-scrollbars-2";
 
-// Vision UI Dashboard PRO React context
+//  context
 import { useVisionUIController, setMiniSidenav, setTransparentSidenav } from "context";
 
 function Sidenav({ color, brand, routes, ...rest }) {
@@ -70,36 +70,35 @@ function Sidenav({ color, brand, routes, ...rest }) {
     }
   }, []);
 
-  // Render all the nested collapse items from the routes.js
-  const renderNestedCollapse = (collapse) => {
-    const template = collapse.map(({ name, route, key, href }) =>
-      href ? (
-        <Link
-          key={key}
-          href={href}
-          target="_blank"
-          rel="noreferrer"
-          sx={{ textDecoration: "none" }}
-        >
-          <SidenavItem color={color} name={name} nested />
-        </Link>
-      ) : (
-        <NavLink to={route} key={key} sx={{ textDecoration: "none" }}>
-          <SidenavItem color={color} name={name} active={route === pathname} nested />
-        </NavLink>
-      )
-    );
+  // // Render all the nested collapse items from the routes.js
+  // const renderNestedCollapse = (collapse) => {
+  //   const template = collapse.map(({ name, route, key, href }) =>
+  //     href ? (
+  //       <Link
+  //         key={key}
+  //         href={href}
+  //         target="_blank"
+  //         rel="noreferrer"
+  //         sx={{ textDecoration: "none" }}
+  //       >
+  //         <SidenavItem color={color} name={name} nested />
+  //       </Link>
+  //     ) : (
+  //       <NavLink to={route} key={key} sx={{ textDecoration: "none" }}>
+  //         <SidenavItem color={color} name={name} active={route === pathname} nested />
+  //       </NavLink>
+  //     )
+  //   );
 
-    return template;
-  };
+  //   return template;
+  // };
 
   // Render the all the collpases from the routes.js
   const renderCollapse = (collapses) =>
     collapses.map(({ name, collapse, route, href, key }) => {
       let returnValue;
 
-      if (collapse) {
-        returnValue = (
+      
           <SidenavItem
             color={color}
             key={key}
@@ -114,86 +113,140 @@ function Sidenav({ color, brand, routes, ...rest }) {
           >
             {renderNestedCollapse(collapse)}
           </SidenavItem>
-        );
-      } else {
-        returnValue = href ? (
-          <Link
-            href={href}
-            key={key}
-            target="_blank"
-            rel="noreferrer"
-            sx={{ textDecoration: "none" }}
-          >
-            <SidenavItem color={color} name={name} active={key === itemName} />
-          </Link>
-        ) : (
-          <NavLink to={route} key={key} sx={{ textDecoration: "none" }}>
-            <SidenavItem color={color} name={name} active={key === itemName} />
-          </NavLink>
-        );
-      }
+        
+  //     } else {
+  //       returnValue = href ? (
+  //         <Link
+  //           href={href}
+  //           key={key}
+  //           target="_blank"
+  //           rel="noreferrer"
+  //           sx={{ textDecoration: "none" }}
+  //         >
+  //           <SidenavItem color={color} name={name} active={key === itemName} />
+  //         </Link>
+  //       ) : (
+  //         <NavLink to={route} key={key} sx={{ textDecoration: "none" }}>
+  //           <SidenavItem color={color} name={name} active={key === itemName} />
+  //         </NavLink>
+  //       );
+  //     }
       return <SidenavList key={key}>{returnValue}</SidenavList>;
     });
 
-  // Render all the routes from the routes.js (All the visible items on the Sidenav)
-  const renderRoutes = routes.map(
-    ({ type, name, icon, title, collapse, noCollapse, key, href }) => {
+    
+    const renderRoutes = routes.map(({ type, name, route, icon, title, collapse, noCollapse, key, href }) => {
       let returnValue;
-
-      if (type === "collapse") {
-        returnValue = href ? (
-          <Link
-            href={href}
-            key={key}
-            target="_blank"
-            rel="noreferrer"
-            sx={{ textDecoration: "none" }}
-          >
-            <SidenavCollapse
-              color={color}
-              name={name}
-              icon={icon}
-              active={key === collapseName}
-              noCollapse={noCollapse}
-            />
-          </Link>
-        ) : (
-          <SidenavCollapse
-            color={color}
-            key={key}
-            name={name}
-            icon={icon}
-            active={key === collapseName}
-            open={openCollapse === name}
-            onClick={() => (openCollapse === name ? setOpenCollapse(false) : setOpenCollapse(name))}
-          >
-            {collapse ? renderCollapse(collapse) : null}
-          </SidenavCollapse>
-        );
-      } else if (type === "title") {
-        returnValue = (
-          <VuiTypography
-            key={key}
-            display="block"
-            variant="caption"
-            fontWeight="bold"
-            color="white"
-            textTransform="uppercase"
-            pl={3}
-            my={3}
-            ml={1}
-          >
-            {title}
-            
-          </VuiTypography>
-        );
-      } else if (type === "divider") {
-        returnValue = <Divider key={key} />;
+    
+      switch (type) {
+        case "link":
+          returnValue = (
+            <NavLink
+              to={route} // use the 'route' prop for internal navigation
+              key={key}
+              sx={{ textDecoration: "none" }}
+            >
+              <SidenavCollapse
+                color={color}
+                name={name}
+                icon={icon}
+                active={key === collapseName}
+                noCollapse={noCollapse}
+              />
+            </NavLink>
+          );
+          break;
+    
+        case "title":
+          returnValue = (
+            <VuiTypography
+              key={key}
+              display="block"
+              variant="caption"
+              fontWeight="bold"
+              color="white"
+              textTransform="uppercase"
+              pl={3}
+              my={3}
+              ml={1}
+            >
+              {title}
+            </VuiTypography>
+          );
+          break;
+    
+        case "divider":
+          returnValue = <Divider key={key} />;
+          break;
+    
+        default:
+          returnValue = null; // Default return value for unexpected types
       }
-
+    
       return returnValue;
-    }
-  );
+    });
+    
+
+  // // Render all the routes from the routes.js (All the visible items on the Sidenav)
+  // const renderRoutes = routes.map(
+  //   ({ type, name, icon, title, collapse, noCollapse, key, href }) => {
+  //     let returnValue;
+
+  //     if (type === "link") {
+  //       returnValue = href ? (
+  //         <Link
+  //           href={href}
+  //           key={key}
+  //           target="_blank"
+  //           rel="noreferrer"
+  //           sx={{ textDecoration: "none" }}
+  //         >
+  //          <SidenavCollapse
+  //             color={color}
+  //             name={name}
+  //             icon={icon}
+  //             active={key === collapseName}
+  //             noCollapse={noCollapse}
+  //           />
+  //         </Link>
+  //       ) 
+  // //       ) : (
+  // //         <SidenavCollapse
+  // //           color={color}
+  // //           key={key}
+  // //           name={name}
+  // //           icon={icon}
+  // //           active={key === collapseName}
+  // //           open={openCollapse === name}
+  // //           onClick={() => (openCollapse === name ? setOpenCollapse(false) : setOpenCollapse(name))}
+  // //         >
+  // //           {collapse ? renderCollapse(collapse) : null}
+  // //         </SidenavCollapse>
+  // //       );
+  //     } else if (type === "title") {
+  //       returnValue = (
+  //         <VuiTypography
+  //           key={key}
+  //           display="block"
+  //           variant="caption"
+  //           fontWeight="bold"
+  //           color="white"
+  //           textTransform="uppercase"
+  //           pl={3}
+  //           my={3}
+  //           ml={1}
+  //         >
+  //           {title}
+            
+  //         </VuiTypography>
+  //       );
+  //     } else if (type === "divider") {
+  //       returnValue = <Divider key={key} />;
+  //     }
+
+  //     return returnValue;
+  //   }
+  // );
 
   return (
     <SidenavRoot {...rest} variant="permanent" ownerState={{ miniSidenav, transparentSidenav }}>
@@ -242,7 +295,12 @@ function Sidenav({ color, brand, routes, ...rest }) {
             </VuiBox>
             <Divider light />
           </VuiBox>
-          <List sx={{ mb: "auto" }}>{renderRoutes}</List>
+          <List sx={{ mb: "auto" }}>
+                
+            {renderRoutes}
+
+
+          </List>
         </VuiBox>
     
     </SidenavRoot>

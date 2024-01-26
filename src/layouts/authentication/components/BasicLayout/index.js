@@ -1,19 +1,4 @@
-/** 
 
-=========================================================
-* Vision UI PRO React - v1.0.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/vision-ui-dashboard-pro-react
-* Copyright 2021 Creative Tim (https://www.creative-tim.com/)
-
-* Design and Coded by Simmmple & Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Visionware.
-
-*/
 
 // prop-types is a library for typechecking of props
 import PropTypes from "prop-types";
@@ -21,18 +6,18 @@ import PropTypes from "prop-types";
 // @mui material components
 import Grid from "@mui/material/Grid";
 
-// Vision UI Dashboard PRO React components
+//  components
 import VuiBox from "components/VuiBox";
 import VuiTypography from "components/VuiTypography";
 
-// Vision UI Dashboard PRO React example components
+//  example components
 import DefaultNavbar from "examples/Navbars/DefaultNavbar";
 import PageLayout from "examples/LayoutContainers/PageLayout";
 
 // Authentication layout components
 import Footer from "layouts/authentication/components/Footer";
 
-// Vision UI Dashboard PRO React page layout routes
+//  page layout routes
 
 
 function BasicLayout({ title, description, image, children }) {
@@ -89,7 +74,6 @@ function BasicLayout({ title, description, image, children }) {
           {children}
         </VuiBox>
       </VuiBox>
-      <Footer full />
     </PageLayout>
   );
 }

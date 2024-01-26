@@ -7,13 +7,13 @@ import PropTypes from "prop-types";
 import Menu from "@mui/material/Menu";
 // import Grid from "@mui/material/Grid";
 
-// Vision UI Dashboard PRO React components
+//  components
 import VuiBox from "components/VuiBox";
 
-// Vision UI Dashboard PRO React example components
+//  example components
 import DefaultNavbarLink from "examples/Navbars/DefaultNavbar/DefaultNavbarLink";
 
-// Vision UI Dashboard PRO React base styles
+//  base styles
 import colors from "assets/theme/base/colors";
 
 // DefaultNavbar dropdown menus

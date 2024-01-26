@@ -8,10 +8,10 @@ import { Link } from "react-router-dom";
 import MenuItem from "@mui/material/MenuItem";
 import Icon from "@mui/material/Icon";
 
-// Vision UI Dashboard PRO React components
+//  components
 import VuiBox from "components/VuiBox";
 
-// Vision UI Dashboard PRO React example components
+//  example components
 import DefaultNavbarMenu from "examples/Navbars/DefaultNavbar/DefaultNavbarMenu";
 
 function ApplicationsMenu({ routes, open, close, mobileMenu }) {

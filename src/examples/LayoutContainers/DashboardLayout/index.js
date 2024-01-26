@@ -6,10 +6,10 @@ import { useLocation } from "react-router-dom";
 // prop-types is a library for typechecking of props.
 import PropTypes from "prop-types";
 
-// Vision UI Dashboard PRO React components
+//  components
 import VuiBox from "components/VuiBox";
 
-// Vision UI Dashboard PRO React context
+//  context
 import { useVisionUIController, setLayout } from "context";
 
 function DashboardLayout({ children }) {

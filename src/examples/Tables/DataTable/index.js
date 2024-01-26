@@ -13,14 +13,14 @@ import TableContainer from "@mui/material/TableContainer";
 import TableRow from "@mui/material/TableRow";
 import Icon from "@mui/material/Icon";
 
-// Vision UI Dashboard PRO React components
+//  components
 import VuiBox from "components/VuiBox";
 import VuiTypography from "components/VuiTypography";
 import VuiSelect from "components/VuiSelect";
 import VuiInput from "components/VuiInput";
 import VuiPagination from "components/VuiPagination";
 
-// Vision UI Dashboard PRO React example components
+//  example components
 import DataTableHeadCell from "examples/Tables/DataTable/DataTableHeadCell";
 import DataTableBodyCell from "examples/Tables/DataTable/DataTableBodyCell";
 

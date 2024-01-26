@@ -6,7 +6,7 @@ import PropTypes from "prop-types";
 import Collapse from "@mui/material/Collapse";
 import Icon from "@mui/material/Icon";
 
-// Vision UI Dashboard PRO React components
+//  components
 import VuiBox from "components/VuiBox";
 import VuiTypography from "components/VuiTypography";
 

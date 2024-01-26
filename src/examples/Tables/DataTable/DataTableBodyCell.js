@@ -2,10 +2,10 @@
 // prop-types is a library for typechecking of props
 import PropTypes from "prop-types";
 
-// Vision UI Dashboard PRO React components
+// components
 import VuiBox from "components/VuiBox";
 
-// Vision UI Dashboard PRO React base styles
+//  base styles
 import colors from "assets/theme/base/colors";
 import typography from "assets/theme/base/typography";
 import borders from "assets/theme/base/borders";

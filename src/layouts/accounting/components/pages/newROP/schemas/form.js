@@ -1,0 +1,55 @@
+export default {
+  formId: "new-rop-form",
+  formField: {
+    owner: {
+      name: "owner",
+      label: "Owner",
+      type: "text",
+      placeholder: "Owner's name",
+      errorMsg: "Owner is required.",
+    },
+    requestor: {
+      name: "requestor",
+      label: "Requestor",
+      type: "text",
+      placeholder: "Requestor's name",
+      errorMsg: "Requestor is required.",
+    },
+    activeForm: {
+      name: "activeForm",
+      label: "Active Form",
+      type: "text",
+      placeholder: "e.g. Form X",
+      errorMsg: "Active Form is required.",
+    },
+    ActiveUntil: {
+      name: "ActiveUntil",
+      label: "Active Until",
+      type: "date",
+      errorMsg: "Active Until date is required.",
+    },
+    Sum: {
+      name: "Sum",
+      label: "Sum",
+      type: "number",
+      placeholder: "e.g. 100",
+      errorMsg: "Sum is required.",
+      invalidMsg: "Sum should be a valid number.",
+    },
+    NumberOfPersons: {
+      name: "NumberOfPersons",
+      label: "Number of Persons",
+      type: "number",
+      placeholder: "e.g. 5",
+      errorMsg: "Number of Persons is required.",
+      invalidMsg: "Number of Persons should be a valid number.",
+    },
+    Comments: {
+      name: "Comments",
+      label: "Comments",
+      type: "text",
+      placeholder: "Additional comments",
+      errorMsg: "Comments are required.",
+    },
+  },
+};

@@ -1,10 +1,10 @@
-// Vision UI Dashboard PRO React base styles
+//  base styles
 import colors from "assets/theme/base/colors";
 import typography from "assets/theme/base/typography";
 import borders from "assets/theme/base/borders";
 import boxShadows from "assets/theme/base/boxShadows";
 
-// Vision UI Dashboard PRO React helper functions
+//  helper functions
 import pxToRem from "assets/theme/functions/pxToRem";
 import linearGradient from "assets/theme/functions/linearGradient";
 import boxShadow from "assets/theme/functions/boxShadow";

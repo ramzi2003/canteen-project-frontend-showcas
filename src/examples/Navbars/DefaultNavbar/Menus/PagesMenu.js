@@ -10,10 +10,10 @@ import { Link } from "react-router-dom";
 import Grid from "@mui/material/Grid";
 import MenuItem from "@mui/material/MenuItem";
 
-// Vision UI Dashboard PRO React components
+//  components
 import VuiBox from "components/VuiBox";
 
-// Vision UI Dashboard PRO React example components
+//  example components
 import DefaultNavbarCategory from "examples/Navbars/DefaultNavbar/DefaultNavbarCategory";
 import DefaultNavbarMenu from "examples/Navbars/DefaultNavbar/DefaultNavbarMenu";
 

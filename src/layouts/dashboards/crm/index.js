@@ -1,12 +1,12 @@
 // @mui material components
 import Grid from "@mui/material/Grid";
 
-// Vision UI Dashboard PRO React components
+//  components
 import VuiBox from "components/VuiBox";
 import VuiTypography from "components/VuiTypography";
 import MiniGradientLineChart from "examples/Charts/LineCharts/MiniGradientLineChart";
 import Footer from "examples/Footer";
-// Vision UI Dashboard PRO React example components
+//  example components
 import DashboardLayout from "examples/LayoutContainers/DashboardLayout";
 import DashboardNavbar from "examples/Navbars/DashboardNavbar";
 import Welcome from "layouts/dashboards/crm/components/Welcome";

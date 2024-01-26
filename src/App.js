@@ -8,14 +8,14 @@ import { ThemeProvider } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 import Icon from "@mui/material/Icon";
 
-// Vision UI Dashboard PRO React components
+// Canteen System components
 import VuiBox from "components/VuiBox";
 
-// Vision UI Dashboard PRO React example components
+// Canteen System example components
 import Sidenav from "examples/Sidenav";
 import Configurator from "examples/Configurator";
 
-// Vision UI Dashboard PRO React themes
+// Canteen System themes
 import theme from "assets/theme";
 import themeRTL from "assets/theme/theme-rtl";
 
@@ -24,10 +24,10 @@ import rtlPlugin from "stylis-plugin-rtl";
 import { CacheProvider } from "@emotion/react";
 import createCache from "@emotion/cache";
 
-// Vision UI Dashboard PRO React routes
+// Canteen System routes
 import routes from "routes";
 
-// Vision UI Dashboard PRO React contexts
+// Canteen System contexts
 import { useVisionUIController, setMiniSidenav, setOpenConfigurator } from "context";
 
 // Plugins custom css
@@ -150,7 +150,6 @@ export default function App() {
         <>
           <Sidenav
             color={sidenavColor}
-            // brandName="VISION UI PRO"
             brandName="UCA Canteen"
             routes={routes}
             onMouseEnter={handleOnMouseEnter}
