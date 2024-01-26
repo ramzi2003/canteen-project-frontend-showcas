@@ -7,7 +7,7 @@ import VuiTypography from "components/VuiTypography";
 import DashboardLayout from "examples/LayoutContainers/DashboardLayout";
 import Footer from "examples/Footer";
 import ComplexProjectCard from "examples/Cards/ProjectCards/ComplexProjectCard";
-import PlaceholderCard from "examples/Cards/PlaceholderCard";
+// import PlaceholderCard from "examples/Cards/PlaceholderCard";
 import Header from "layouts/canteen/component/Header/index";
 
 import { FaBowlRice } from "react-icons/fa6";

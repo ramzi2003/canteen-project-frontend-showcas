@@ -53,6 +53,14 @@ import Distribution from "layouts/cash/pages/distribution";
 import CoffeeBreak2 from "layouts/cash/pages/coffeeBreak2";
 import History from "layouts/cash/pages/historyPage";
 
+// Canteen pages
+import CanteenBreakfast from "layouts/canteen/pages/breakfast";
+import Dessert from "layouts/canteen/pages/dessert";
+import Drinks from "layouts/canteen/pages/drinks";
+import Garnish from "layouts/canteen/pages/garnish";
+import OutOfStock from "layouts/canteen/pages/outOfStock";
+import Soups from "layouts/canteen/pages/soups";
+
 const routes = [
   {
     type: "link",
@@ -167,7 +175,20 @@ const routes = [
     route: "/canteen",
     component: CanteenLayout,
     icon: <IoFastFoodSharp size="15px" color="inherit" />,
-    collapse: [{ name: "Canteen", key: "canteen", route: "/canteen", component: CanteenLayout }],
+    collapse: [
+      { name: "Canteen", key: "canteen", route: "/canteen", component: CanteenLayout },
+      {
+        name: "Breakfast",
+        key: "canteen-breakfast",
+        route: "/canteen/breakfast",
+        component: CanteenBreakfast,
+      },
+      { name: "Dessert", key: "dessert", route: "/canteen/dessert", component: Dessert },
+      { name: "Drinks", key: "drinks", route: "/canteen/drinks", component: Drinks },
+      { name: "Garnish", key: "garnish", route: "/canteen/garnish", component: Garnish },
+      { name: "Out of Stock", key: "out-of-stock", route: "/canteen/out-of-stock", component: OutOfStock },
+      { name: "Soups", key: "soups", route: "/canteen/soups", component: Soups },
+    ],
   },
   {
     type: "link",
