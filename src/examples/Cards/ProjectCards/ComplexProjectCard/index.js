@@ -1,20 +1,3 @@
-/** 
-
-=========================================================
-* Vision UI PRO React - v1.0.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/vision-ui-dashboard-pro-react
-* Copyright 2021 Creative Tim (https://www.creative-tim.com/)
-
-* Design and Coded by Simmmple & Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Visionware.
-
-*/
-
 // prop-types is library for typechecking of props
 import PropTypes from "prop-types";
 
@@ -23,7 +6,7 @@ import Card from "@mui/material/Card";
 import Divider from "@mui/material/Divider";
 import Icon from "@mui/material/Icon";
 
-// Vision UI Dashboard PRO React components
+//  components
 import VuiBox from "components/VuiBox";
 import VuiTypography from "components/VuiTypography";
 import VuiAvatar from "components/VuiAvatar";
@@ -101,12 +84,12 @@ function ComplexProjectCard({ color, icon, title, dateTime, description, members
         <VuiBox display="flex" justifyContent="space-between" alignItems="center">
           {members.length > -1 ? (
             <VuiBox display="flex" flexDirection="column" lineHeight={0}>
-              <VuiTypography variant="button" color="white" fontWeight="medium">
+              {/* <VuiTypography variant="button" color="white" fontWeight="medium">
                 {members.length}
               </VuiTypography>
               <VuiTypography variant="button" fontWeight="medium" color="text">
                 Participants
-              </VuiTypography>
+              </VuiTypography> */}
             </VuiBox>
           ) : null}
           {dateTime ? (

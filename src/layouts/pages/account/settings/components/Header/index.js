@@ -1,19 +1,4 @@
-/** 
 
-=========================================================
-* Vision UI PRO React - v1.0.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/vision-ui-dashboard-pro-react
-* Copyright 2021 Creative Tim (https://www.creative-tim.com/)
-
-* Design and Coded by Simmmple & Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Visionware.
-
-*/
 
 import { useState } from "react";
 
@@ -22,13 +7,13 @@ import Card from "@mui/material/Card";
 import Grid from "@mui/material/Grid";
 import VuiSwitch from "components/VuiSwitch";
 
-// Vision UI Dashboard PRO React components
+//  components
 import VuiBox from "components/VuiBox";
 import VuiTypography from "components/VuiTypography";
 import VuiAvatar from "components/VuiAvatar";
 
 // Images
-import burceMars from "assets/images/avatar-simmmple.png";
+
 
 function Header() {
   const [visible, setVisible] = useState(true);
@@ -41,7 +26,6 @@ function Header() {
         <Grid container spacing={3} alignItems="center">
           <Grid item>
             <VuiAvatar
-              src={burceMars}
               alt="profile-image"
               variant="rounded"
               size="xl"
@@ -54,7 +38,7 @@ function Header() {
                 Mark Johnson
               </VuiTypography>
               <VuiTypography variant="button" color="text" fontWeight="regular">
-                mark@simmmple.com
+                mark@gmail.com
               </VuiTypography>
             </VuiBox>
           </Grid>

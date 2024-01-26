@@ -7,13 +7,13 @@ import ListItem from "@mui/material/ListItem";
 import ListItemText from "@mui/material/ListItemText";
 import Icon from "@mui/material/Icon";
 
-// Vision UI Dashboard PRO React components
+//  components
 import VuiBox from "components/VuiBox";
 
 // Custom styles for the SidenavItem
 import { item, itemContent, itemArrow } from "examples/Sidenav/styles/sidenavItem";
 
-// Vision UI Dashboard PRO React contexts
+//  contexts
 import { useVisionUIController } from "context";
 
 function SidenavItem({ color, name, active, nested, children, open, ...rest }) {

@@ -102,9 +102,14 @@ function collapseIconBox(theme, ownerState) {
   };
 }
 
-const collapseIcon = ({ palette: { white, gradients } }, { active }) => ({
+// const collapseIcon = ({ palette: { white, gradients } }, { active }) => ({
+//   color: active ? white.main : info.main,
+// });
+
+const collapseIcon = ({ palette: { white, gradients, info } }, { active }) => ({
   color: active ? white.main : info.main,
 });
+
 
 function collapseText(theme, ownerState) {
   const { typography, transitions, breakpoints, functions } = theme;

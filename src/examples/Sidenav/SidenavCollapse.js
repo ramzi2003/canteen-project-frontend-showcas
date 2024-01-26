@@ -1,20 +1,3 @@
-/** 
-
-=========================================================
-* Vision UI PRO React - v1.0.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/vision-ui-dashboard-pro-react
-* Copyright 2021 Creative Tim (https://www.creative-tim.com/)
-
-* Design and Coded by Simmmple & Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Visionware.
-
-*/
-
 // prop-types is a library for typechecking of props.
 import PropTypes from "prop-types";
 
@@ -25,7 +8,7 @@ import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import Icon from "@mui/material/Icon";
 
-// Vision UI Dashboard PRO React components
+//  components
 import VuiBox from "components/VuiBox";
 
 // Custom styles for the SidenavCollapse
@@ -37,7 +20,7 @@ import {
   collapseArrow,
 } from "examples/Sidenav/styles/sidenavCollapse";
 
-// Vision UI Dashboard PRO React context
+//  context
 import { useVisionUIController } from "context";
 
 function SidenavCollapse({ color, icon, name, children, active, noCollapse, open, ...rest }) {
@@ -63,20 +46,10 @@ function SidenavCollapse({ color, icon, name, children, active, noCollapse, open
             sx={(theme) => collapseText(theme, { miniSidenav, transparentSidenav, active })}
           />
 
-          <Icon
-            sx={(theme) =>
-              collapseArrow(theme, { noCollapse, transparentSidenav, miniSidenav, open })
-            }
-          >
-            expand_less
-          </Icon>
+         
         </VuiBox>
       </ListItem>
-      {children && (
-        <Collapse in={open} unmountOnExit>
-          {children}
-        </Collapse>
-      )}
+
     </>
   );
 }

@@ -1,20 +1,3 @@
-/** 
-
-=========================================================
-* Vision UI PRO React - v1.0.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/vision-ui-dashboard-pro-react
-* Copyright 2021 Creative Tim (https://www.creative-tim.com/)
-
-* Design and Coded by Simmmple & Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Visionware.
-
-*/
-
 import { useState, useEffect } from "react";
 
 
@@ -23,7 +6,7 @@ import Divider from "@mui/material/Divider";
 import IconButton from "@mui/material/IconButton";
 import Icon from "@mui/material/Icon";
 
-// Vision UI Dashboard PRO React components
+//  components
 import VuiBox from "components/VuiBox";
 import VuiTypography from "components/VuiTypography";
 import VuiButton from "components/VuiButton";
@@ -32,7 +15,7 @@ import VuiSwitch from "components/VuiSwitch";
 // Custom styles for the Configurator
 import ConfiguratorRoot from "examples/Configurator/ConfiguratorRoot";
 
-// Vision UI Dashboard PRO React context
+//  context
 import {
   useVisionUIController,
   setOpenConfigurator,
@@ -112,6 +95,8 @@ function Configurator() {
             strokeWidth: "2px",
             cursor: "pointer",
             mt: 2,
+            color: ({ palette: { white, dark } }) => (openConfigurator ? white.main : dark.main),
+            
           })}
           onClick={handleCloseConfigurator}
         >
@@ -210,7 +195,16 @@ function Configurator() {
           <VuiSwitch color="info" checked={fixedNavbar} onChange={handleFixedNavbar} />
         </VuiBox>
 
-        <Divider />
+        <VuiBox mt={3} mb={2} lineHeight={1}>
+          <VuiTypography color="white" variant="h6">
+            Mini Sidenav
+          </VuiTypography>
+
+          <VuiSwitch color="info" checked={miniSidenav} onChange={handleMiniSidenav} />
+        </VuiBox>
+
+
+        <Divider/>
 
        
       </VuiBox>

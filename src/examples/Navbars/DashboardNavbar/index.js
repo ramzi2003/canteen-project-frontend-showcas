@@ -1,20 +1,3 @@
-/** 
-
-=========================================================
-* Vision UI PRO React - v1.0.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/vision-ui-dashboard-pro-react
-* Copyright 2021 Creative Tim (https://www.creative-tim.com/)
-
-* Design and Coded by Simmmple & Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Visionware.
-
-*/
-
 import { useState, useEffect } from "react";
 
 // react-router components
@@ -30,12 +13,12 @@ import IconButton from "@mui/material/IconButton";
 import Menu from "@mui/material/Menu";
 import Icon from "@mui/material/Icon";
 
-// Vision UI Dashboard PRO React components
+//  components
 import VuiBox from "components/VuiBox";
 import VuiTypography from "components/VuiTypography";
 import VuiInput from "components/VuiInput";
 
-// Vision UI Dashboard PRO React example components
+//  example components
 import Breadcrumbs from "examples/Breadcrumbs";
 
 // Custom styles for DashboardNavbar
@@ -48,7 +31,7 @@ import {
   navbarMobileMenu,
 } from "examples/Navbars/DashboardNavbar/styles";
 
-// Vision UI Dashboard PRO React context
+//  context
 import {
   useVisionUIController,
   setTransparentNavbar,
@@ -120,6 +103,7 @@ function DashboardNavbar({ absolute, light, isMini }) {
                 sx={({ breakpoints }) => ({
                   [breakpoints.down("sm")]: {
                     maxWidth: "80px",
+                    
                   },
                   [breakpoints.only("sm")]: {
                     maxWidth: "80px",
