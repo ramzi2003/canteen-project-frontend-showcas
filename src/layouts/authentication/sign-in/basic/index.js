@@ -179,12 +179,12 @@ function Basic() {
             >
               <VuiInput
                 type="email"
-                col
+                color="white"
                 placeholder="Your email..."
                 sx={({ typography: { size } }) => ({
                   fontSize: size.sm,
                 })}
-                color="white"
+              
               />
             </GradientBorder>
           </VuiBox>
