@@ -144,56 +144,22 @@
 
 import React, { useState, useEffect } from 'react';
 
-const App = () => {
+const ClientsPage = () => {
   const [clientData, setClientData] = useState(null);
   const [error, setError] = useState(null);
-  const [accessToken, setAccessToken] = useState(null);
-
-  const signIn = async () => {
-    const credentials = {
-      username: 'admin',
-      password: 'admin'
-    };
-  
-    try {
-      const tokenResponse = await fetch('http://localhost:8080/api/auth/sign-in', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(credentials),
-      });
-  
-      if (!tokenResponse.ok) {
-        throw new Error('Failed to sign in');
-      }
-  
-      const responseData = await tokenResponse.json();
-      console.log('Response Data:', responseData); // Log the response data
-  
-      if (!responseData.data || !responseData.data.access_token) {
-        throw new Error('Access token not found in response');
-      }
-  
-      const { access_token } = responseData.data;
-      setAccessToken(access_token);
-    } catch (error) {
-      console.error('Sign In Error:', error);
-      setError('Error signing in. Please try again.');
-      setAccessToken(null);
-    }
-  };
-  
 
   useEffect(() => {
     const fetchData = async () => {
       try {
+        const accessToken = localStorage.getItem('accessToken');
+        console.log('Access Token:', accessToken);
         if (!accessToken) {
           throw new Error('Access token is missing. Please sign in.');
         }
-  
-        const clientId = 2;
-  
+
+        // Fetch all clients
+        const clientId = 1;
+
         const apiResponse = await fetch(`http://localhost:8080/api/clients/${clientId}`, {
           method: 'GET',
           headers: {
@@ -201,12 +167,13 @@ const App = () => {
             'Content-Type': 'application/json',
           },
         });
-  
+        console.log('API Response:', apiResponse);
+
         if (!apiResponse.ok) {
           console.error('Error fetching data:', apiResponse.status, apiResponse.statusText);
           throw new Error('Failed to fetch data');
         }
-  
+
         const result = await apiResponse.json();
         console.log('Fetched Client Data:', result); // Log the fetched data
         setClientData(result);
@@ -217,32 +184,26 @@ const App = () => {
         setClientData(null);
       }
     };
-  
-    if (accessToken) {
-      fetchData();
-    }
-  
-  }, [accessToken]);
-  
+
+    fetchData();
+  }, []);
+
   return (
     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-      <button onClick={signIn} style={{ marginBottom: '20px' }}>
-        Sign In and Fetch Client Data
-      </button>
       {error && <p>{error}</p>}
       {clientData && (
         <div>
           <h2>Client Information:</h2>
-          <p style={{color: 'white'}}> 
-            <strong >Name:</strong> {clientData.data.name}
-          </p >
-          <p style={{color: 'white'}}>
+          <p style={{ color: 'white' }}>
+            <strong>Name:</strong> {clientData.data.name}
+          </p>
+          <p style={{ color: 'white' }}>
             <strong>Email:</strong> {clientData.data.email}
           </p>
-          <p style={{color: 'white'}}>
+          <p style={{ color: 'white' }}>
             <strong>Age:</strong> {clientData.data.age}
           </p>
-          <p style={{color: 'white'}}>
+          <p style={{ color: 'white' }}>
             <strong>Gender:</strong> {clientData.data.gender}
           </p>
         </div>
@@ -250,6 +211,6 @@ const App = () => {
       {!clientData && !error && <p>Loading...</p>}
     </div>
   );
-}  
+};
 
-export default App;
+export default ClientsPage;
