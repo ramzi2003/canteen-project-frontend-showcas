@@ -130,7 +130,7 @@ function ClientsTable() {
           </VuiBox>
         </VuiBox>
         <Card>
-          <DataTable table={dataTableData} entriesPerPage={false} canSearch />
+          <DataTable table={dataTableData} entriesPerPage={true} canSearch />
         </Card>
       </VuiBox>
       <Footer />
@@ -140,6 +140,7 @@ function ClientsTable() {
 
 export default ClientsTable;
 
+// ////////////////////////////////////////// Test API //////////////////////////////////////////
 
 // import React, { useState, useEffect } from 'react';
 
@@ -153,7 +154,7 @@ export default ClientsTable;
 //       username: 'admin',
 //       password: 'admin'
 //     };
-
+  
 //     try {
 //       const tokenResponse = await fetch('http://localhost:8080/api/auth/sign-in', {
 //         method: 'POST',
@@ -162,12 +163,19 @@ export default ClientsTable;
 //         },
 //         body: JSON.stringify(credentials),
 //       });
-
+  
 //       if (!tokenResponse.ok) {
 //         throw new Error('Failed to sign in');
 //       }
-
-//       const { access_token } = await tokenResponse.json();
+  
+//       const responseData = await tokenResponse.json();
+//       console.log('Response Data:', responseData); // Log the response data
+  
+//       if (!responseData.data || !responseData.data.access_token) {
+//         throw new Error('Access token not found in response');
+//       }
+  
+//       const { access_token } = responseData.data;
 //       setAccessToken(access_token);
 //     } catch (error) {
 //       console.error('Sign In Error:', error);
@@ -175,6 +183,7 @@ export default ClientsTable;
 //       setAccessToken(null);
 //     }
 //   };
+  
 
 //   useEffect(() => {
 //     const fetchData = async () => {
@@ -182,10 +191,9 @@ export default ClientsTable;
 //         if (!accessToken) {
 //           throw new Error('Access token is missing. Please sign in.');
 //         }
-
-//         // Replace '1' with the actual client ID or a variable containing the client ID
-//         const clientId = 1;
-
+  
+//         const clientId = 2;
+  
 //         const apiResponse = await fetch(`http://localhost:8080/api/clients/${clientId}`, {
 //           method: 'GET',
 //           headers: {
@@ -193,13 +201,14 @@ export default ClientsTable;
 //             'Content-Type': 'application/json',
 //           },
 //         });
-
+  
 //         if (!apiResponse.ok) {
 //           console.error('Error fetching data:', apiResponse.status, apiResponse.statusText);
 //           throw new Error('Failed to fetch data');
 //         }
-
+  
 //         const result = await apiResponse.json();
+//         console.log('Fetched Client Data:', result); // Log the fetched data
 //         setClientData(result);
 //         setError(null);
 //       } catch (error) {
@@ -208,13 +217,13 @@ export default ClientsTable;
 //         setClientData(null);
 //       }
 //     };
-
+  
 //     if (accessToken) {
 //       fetchData();
 //     }
-
+  
 //   }, [accessToken]);
-
+  
 //   return (
 //     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
 //       <button onClick={signIn} style={{ marginBottom: '20px' }}>
@@ -224,23 +233,23 @@ export default ClientsTable;
 //       {clientData && (
 //         <div>
 //           <h2>Client Information:</h2>
-//           <p>
-//             <strong>Name:</strong> {`${clientData.first_name} ${clientData.last_name}`}
+//           <p style={{color: 'white'}}> 
+//             <strong >Name:</strong> {clientData.data.name}
+//           </p >
+//           <p style={{color: 'white'}}>
+//             <strong>Email:</strong> {clientData.data.email}
 //           </p>
-//           <p>
-//             <strong>Email:</strong> {clientData.email}
+//           <p style={{color: 'white'}}>
+//             <strong>Age:</strong> {clientData.data.age}
 //           </p>
-//           <p>
-//             <strong>Age:</strong> {clientData.age}
+//           <p style={{color: 'white'}}>
+//             <strong>Gender:</strong> {clientData.data.gender}
 //           </p>
-//           <p>
-//             <strong>Gender:</strong> {clientData.gender}
-//           </p>
-//           {/* Add more information as needed */}
 //         </div>
 //       )}
+//       {!clientData && !error && <p>Loading...</p>}
 //     </div>
 //   );
-// };
+// }  
 
 // export default App;
