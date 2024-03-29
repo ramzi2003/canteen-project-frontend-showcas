@@ -38,12 +38,12 @@ function Basic() {
       setError('Please fill in both username and password.');
       return;
     }
-
+  
     const credentials = {
       username,
       password
     };
-
+  
     try {
       const tokenResponse = await fetch('http://localhost:8080/api/auth/sign-in', {
         method: 'POST',
@@ -52,18 +52,23 @@ function Basic() {
         },
         body: JSON.stringify(credentials),
       });
-
+  
       if (!tokenResponse.ok) {
         throw new Error('Failed to sign in');
       }
-
+  
       const responseData = await tokenResponse.json();
-
+  
       if (!responseData.data || !responseData.data.access_token) {
         throw new Error('Access token not found in response');
       }
-
-      const { access_token } = responseData.data;
+  
+      const { access_token, refresh_token } = responseData.data;
+  
+      // Store tokens in localStorage
+      localStorage.setItem('accessToken', access_token);
+      localStorage.setItem('refreshToken', refresh_token);
+  
       setAccessToken(access_token);
       setError('');
     } catch (error) {
@@ -76,6 +81,7 @@ function Basic() {
       setAccessToken(null);
     }
   };
+  
 
   return (
     <BasicLayout
