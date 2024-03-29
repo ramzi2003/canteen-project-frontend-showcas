@@ -32,7 +32,7 @@ const ClientsPage = () => {
               throw new Error('Refresh token is missing. Please sign in again.');
             }
 
-            const refreshResponse = await fetch('http://localhost:8080/api/auth/refresh', {
+            const refreshResponse = await fetch('http://localhost:8080/api/auth/refresh-token', {
               method: 'POST',
               headers: {
                 'Authorization': `Bearer ${refreshToken}`,
