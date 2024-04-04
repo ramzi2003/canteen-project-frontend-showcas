@@ -8,7 +8,8 @@ import VuiTypography from "components/VuiTypography";
 import DataTable from "examples/Tables/DataTable";
 
 // Data
-import adminTableData from "./data/adminTableData";
+// import adminTableData from "./data/adminTableData";
+import adminTableData from "layouts/admin/components/data/adminTableData";
 
 function AdminTables() {
   return (

@@ -2,6 +2,8 @@
 import VuiButton from "components/VuiButton";
 import { Link } from "react-router-dom";
 
+
+
 export default {
   columns: [
     { Header: "USERNAME", accessor: "username", width: "10%" },

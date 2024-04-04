@@ -21,6 +21,7 @@
 
 // // Data
 // import dataTableData from "layouts/clients/data/dataTableData";
+// import AllClients from "layouts/clients/data/AllClients";
 // import { useHistory } from 'react-router-dom';
 
 // function ClientsTable() {
@@ -129,8 +130,13 @@
 //             </VuiBox>
 //           </VuiBox>
 //         </VuiBox>
-//         <Card>
+//         <Card style={{ marginBottom: '50px' }}>
 //           <DataTable table={dataTableData} entriesPerPage={true} canSearch />
+//         </Card>
+
+
+//         <Card>
+//           <DataTable table={AllClients} entriesPerPage={true} canSearch />
 //         </Card>
 //       </VuiBox>
 //       <Footer />
@@ -170,7 +176,7 @@ const ClientsPage = () => {
         }
 
         const result = await apiResponse.json();
-        console.log('Fetched Client Data:', result); // Log the fetched data
+        console.log('Fetched Client Data:', result);
         setClientData(result.data);
         setError(null);
       } catch (error) {
