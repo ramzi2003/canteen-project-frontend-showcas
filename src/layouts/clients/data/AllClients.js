@@ -1,122 +1,138 @@
-/* eslint-disable react/prop-types */
-import VuiTypography from "components/VuiTypography/index";
+// /* eslint-disable react/prop-types */
+// import VuiTypography from "components/VuiTypography/index";
 
-// totalsList page components
-import IdCell from "layouts/clients/components/IdCell";
-import DefaultCell from "layouts/clients/components/DefaultCell";
-import StatusCell from "layouts/clients/components/StatusCell";
-import CustomerCell from "layouts/clients/components/CustomerCell";
+// // totalsList page components
+// import IdCell from "layouts/clients/components/IdCell";
+// import DefaultCell from "layouts/clients/components/DefaultCell";
+// import StatusCell from "layouts/clients/components/StatusCell";
+// import CustomerCell from "layouts/clients/components/CustomerCell";
 
-// Images
-import team1 from "assets/images/team-1.jpg";
-import team2 from "assets/images/team-2.jpg";
-import team3 from "assets/images/team-3.jpg";
-import team4 from "assets/images/team-4.jpg";
-import VuiButton from "components/VuiButton";
+// // Images
+// import team1 from "assets/images/team-1.jpg";
+// import team2 from "assets/images/team-2.jpg";
+// import team3 from "assets/images/team-3.jpg";
+// import team4 from "assets/images/team-4.jpg";
+// import VuiButton from "components/VuiButton";
 
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 
 
-export default {
+// const AllClients = {
+
+//   columns: [
+//     // { Header: "ID", accessor: "id" },
+//     { Header: "Name", accessor: "name",
+    
+//     Cell: ({ value: { name, image } }) => (
+//       <CustomerCell image={image} color={"dark"} name={name} />
+//     ),
   
-  columns: [
-    // { Header: "ID", accessor: "id", 
-    
-    //   Cell: ({ value }) => <IdCell id={value} /> 
-    
-    // },
-    { Header: "DEPARTMENTS", accessor: "department",
+//   },
+//     { Header: "Email", accessor: "email" },
+//     { Header: "Age", accessor: "age" },
+//     { Header: "Gender", accessor: "gender" },
+//     { Header: "Balance", accessor: "balance" },
+//     { Header: "Client Category ID", accessor: "client_category_id" },
+//     { Header: "Active", accessor: "is_active" }
+//   ],
 
-    Cell: ({ value: [name, data] }) => (
-      <CustomerCell image={data.image} color={data.color || "dark"} name={name} />
-    ),
-  },
-    { Header: "DATE", accessor: "date", Cell: ({ value }) => <DefaultCell value={value} />},
-    // { Header: "STATUS", accessor: "status",
+//   // Fetching data from the API and
 
-    //   Cell: ({ value }) => {
-    //     let status;
+//   rows: [
+//     {
+//       id: 0,
+//       name: { name: "Test", image: team1 },
+//       email: "test@gmail.com",
+//       age: 0,
+//       gender: "Male",
+//       balance: 0,
+//       client_category_id: 0,
+//       is_active: true
+//     }
+//   ]
+// };
 
-    //     if (value === "paid") {
-    //       status = <StatusCell icon="done" color="success" status="Paid" />;
-    //     } else if (value === "refunded") {
-    //       status = <StatusCell icon="replay" color="dark" status="Refunded" />;
-    //     } else {
-    //       status = <StatusCell icon="close" color="error" status="Canceled" />;
-    //     }
+// export default AllClients;
 
-    //     return status;
-    //   },
-    // },
-   
-    { Header: "TOTAL", accessor: "total",
-    
-    Cell: ({ value }) => {
-      const numericValue = parseInt(value);
-    
-      return (
-        <DefaultCell
-          value={numericValue}
+
+import React, { useState, useEffect } from 'react';
+import DataTable from "examples/Tables/DataTable";
+
+
+
+const ClientsPage = () => {
+  const [clientData, setClientData] = useState([]);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        let accessToken = localStorage.getItem('accessToken');
+        console.log('Access Token:', accessToken);
+        if (!accessToken) {
+          throw new Error('Access token is missing. Please sign in.');
+        }
+
+        const apiResponse = await fetch('http://localhost:8080/api/clients', {
+          method: 'GET',
+          headers: {
+            'Authorization': `Bearer ${accessToken}`,
+            'Content-Type': 'application/json',
+          },
+        });
+
+        if (!apiResponse.ok) {
+          throw new Error('Failed to fetch data.');
+        }
+
+        const result = await apiResponse.json();
+        console.log('Fetched Client Data:', result);
+        setClientData(result.data);
+        setError(null);
+      } catch (error) {
+        console.error('Fetch Data Error:', error);
+        setError('Error fetching data. Please try again.');
+        setClientData([]);
+      }
+    };
+
+    fetchData();
+  }, []);
+
+  return (
+    <div>
+      {error && <p>{error}</p>}
+      
+
+      
+        <DataTable
+          table={{
+            columns: [
+              { Header: "Name", accessor: "name" },
+              { Header: "Email", accessor: "email" },
+              { Header: "Age", accessor: "age" },
+              { Header: "Gender", accessor: "gender" },
+              { Header: "Balance", accessor: "balance" },
+              { Header: "Client Category ID", accessor: "client_category_id" },
+              { Header: "Active", accessor: "is_active" }
+            ],
+            rows: clientData.map(client => ({
+              name: client.name,
+              email: client.email,
+              age: client.age,
+              gender: client.gender,
+              balance: client.balance,
+              client_category_id: client.client_category_id,
+              is_active: client.is_active
+            }))
+          }}
+          entriesPerPage={true}
+          canSearch
         />
-      );
-    },
-    
-    
-    },
-    { Header: "ACTION", accessor: "action", Cell: ({ value }) => <DefaultCell value={value} /> },
-  ],
-
-  rows: [
-    {
-      id: "#10421",
-      date: "20 Feb, 2023",
-      status: "paid",
-      department: ["Contractors", { image: team2 }],
-      total: "4",
-      action:  (
-        <Link to="/clients/contractor-table">
-         <VuiButton color="primary" variant="contained" size="small">View</VuiButton>
-        </Link>
-      ),
-    },
-    {
-      id: "#10422",
-      date: "10 Jan, 2023",
-      status: "paid",
-      department: ["Students", { image: team1 }],
-      total: "5",
-      action:  (
-        <Link to="/clients/student-table">
-         <VuiButton color="primary" variant="contained" size="small">View</VuiButton>
-        </Link>
-      ),
-    },
-    {
-      id: "#10423",
-      date: "12 Nov, 2023",
-      status: "refunded",
-      department: ["Faculty", { image: "M", color: "info" }],
-      total: "7",
-      action:  (
-        <Link to="/clients/faculty-table">
-         <VuiButton color="primary" variant="contained" size="small">View</VuiButton>
-        </Link>
-      ),
-    },
-    {
-      id: "#10424",
-      date: "1 Dec, 2023",
-      status: "paid",
-      department: ["Guests", { image: team3 }],
-      total: "29",
-      action:  (
-        <Link to="/clients/guest-table">
-         <VuiButton color="primary" variant="contained" size="small">View</VuiButton>
-        </Link>
-      ),
-    },
-    
-  ],
+      
+    </div>
+  );
 };
 
+export default ClientsPage;
