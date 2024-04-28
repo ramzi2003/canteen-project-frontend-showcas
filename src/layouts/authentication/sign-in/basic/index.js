@@ -45,7 +45,7 @@ function Basic() {
     };
   
     try {
-      const tokenResponse = await fetch('http://localhost:8080/api/auth/sign-in', {
+      const tokenResponse = await fetch('http://10.121.4.111:8080/api/auth/sign-in', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
