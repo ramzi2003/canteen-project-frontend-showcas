@@ -275,22 +275,6 @@ This public version demonstrates the system's architecture, features, and implem
 - Some features may require backend API integration
 - Environment variables may need to be configured for full functionality
 
-## 👥 Author
-
-**University of Central Asia (UCA)**
-
-## 📄 License
-
-This project is a showcase repository. Please refer to the original project for licensing information.
-
-## 🤝 Contributing
-
-As this is a showcase repository, contributions may be limited. For issues or questions related to the original project, please contact the development team at the University of Central Asia.
-
-## 📞 Support
-
-For support or inquiries about the original project, please contact the University of Central Asia development team.
-
 ---
 
 **Version:** 3.0.0  
